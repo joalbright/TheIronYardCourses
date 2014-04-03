@@ -11,7 +11,6 @@
 @implementation TDLTableViewController
 {
     NSArray * listItems;
-    NSArray * listImages;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style
@@ -19,13 +18,17 @@
     self = [super initWithStyle:style];
     if (self)
     {
-
-        listItems = @[@"Savitha Reddy", @"Jeff King"];
+//        NSDictionary * listExample = [[NSDictionary alloc] initWithObjects:@[@"Savitha Reddy"] forKeys:@[@"name"]];
         
-        listImages = @[
-                       [UIImage imageNamed:@"savithareddy"],
-                       [UIImage imageNamed:@"jeffking"]
-                       ];
+//        NSDictionary * list = @{
+//                                @"name" : @"Savitha Reddy",
+//                                @"image" : [UIImage imageNamed:@"savithareddy"]
+//                                };
+
+        listItems = @[
+                      @{@"name" : @"Savitha Reddy", @"image" : [UIImage imageNamed:@"savithareddy"]},
+                      @{@"name" : @"Jeff King", @"image" : [UIImage imageNamed:@"jeffking"]}
+                      ];
     
         self.tableView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0);
         self.tableView.rowHeight = 100;
@@ -79,10 +82,19 @@
     
     if (cell == nil) cell = [[UITableViewCell alloc] init];
     
-    int index = [indexPath row];
+//    int index = [indexPath row];
+    int index = indexPath.row;
     
-    cell.textLabel.text = listItems[index];
-    cell.imageView.image = listImages[index];
+//    cell.textLabel.text = listItems[index];
+//    cell.imageView.image = listImages[index];
+    
+    
+//    NSDictionary * listItem = [listItems objectAtIndex:index];
+    NSDictionary * listItem = listItems[index];
+    
+//    cell.textLabel.text = [listItem objectForKey:@"name"];
+    cell.textLabel.text = listItems[index][@"name"];
+    cell.imageView.image = listItem[@"image"];
     
     return cell;
 }
