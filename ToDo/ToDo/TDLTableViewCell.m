@@ -21,6 +21,7 @@
     if (self)
     {
         self.backgroundColor = [UIColor clearColor];
+//        self.selectionStyle = UITableViewCellSelectionStyleNone;
         
         profileImage = [[UIImageView alloc] initWithFrame:CGRectMake(20, 20, 60, 60)];
         
