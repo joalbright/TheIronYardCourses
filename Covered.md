@@ -1,55 +1,75 @@
 # Covered 
 
 - Mac Basics & Tools
-- Xcode Intro & Device Setup
-- Testflight & Dev Portal
+- Xcode Intro & Navigation
+- TestFlight & Dev Portal
+- GitHub
 
 ---
 
-- appDelegate & rootViewController
-- pointers
-- variables : class, instance & more
-- classes : subclass & superclass (inheritance)
-- methods : class & instance
-- properties : getters, setters & more
+- AppDelegate & rootViewController
+- Pointers
+- Variables : Instance & Scope
+- Classes : Subclass & Superclass (inheritance)
+- Methods : Class & Instance
+- Properties : Getters, Setters & Synthesize
+- Objects : Mutable & Immutable
 - Literals
+
+### Basics
+
+- Conditionals
+- Loops
+- Scope
+- .h & .m files
+- Interface & Implementation
+- Public & Private
 
 ### Storyboard
 
-- adding objects to the view
-- connecting IBOutlets & IBActions
+- Adding objects to the view.
+- Connecting IBOutlets & IBActions to provide functionality.
+- Changing objects with the utilities panel.
 
 ### Classes
 
 - UIKit
-	- UIView
 	- UIViewController
-	- UIButton
-	- UITableView
+	- UIView
 	- UITableViewController
+	- UITableView
+	- UITableViewCell
+	- UIButton
 	- UIImage
+	- UIImageView
 	- UILabel
 	- UITextField
-	- UITableViewCell
 	- UIColor
 	- UIFont (a little)
 	- UIEdgeInset (top,left,bottom,right)
 
+---
+
 - NSString
 - NSArray
 - NSDictionary
+- NSLog
 
-
+---
 
 - BOOL
 - int
 - CGRect (x,y,width,height)
 
+---
 
+- nil (not in depth yet)
 
 A ridiculous amount of properties on different objects like but not limited to :
 
-- textcolor
+- textColor
 - backgroundColor
 - cornerRadius
 - font
+- frame
+- 

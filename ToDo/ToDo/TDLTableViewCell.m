@@ -8,6 +8,8 @@
 
 #import "TDLTableViewCell.h"
 
+#import <CoreLocation/CoreLocation.h>
+
 @implementation TDLTableViewCell
 {
     UIImageView * profileImage;
@@ -20,6 +22,8 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self)
     {
+        
+        
         self.backgroundColor = [UIColor clearColor];
 //        self.selectionStyle = UITableViewCellSelectionStyleNone;
         
