@@ -34,11 +34,14 @@
 ### Classes
 
 - UIKit
+	- UINavigationController
 	- UIViewController
 	- UIView
 	- UITableViewController
+		- Move & Delete Rows, Toggle Edit Mode
 	- UITableView
 	- UITableViewCell
+	- UIWebView
 	- UIButton
 	- UIImage
 	- UIImageView
@@ -51,25 +54,25 @@
 ---
 
 - NSString
-- NSArray
-- NSDictionary
+- NSInteger
+- NSArray & NSMutableArray
+- NSDictionary & NSMutableDictionary
 - NSLog
+- NSData
+- NSURL
+- NSURLRequest
+- NSURLConnection
+- NSJSONSerialization
+- NSURLResponse
+- NSError
 
 ---
 
 - BOOL
 - int
+- float
 - CGRect (x,y,width,height)
 
 ---
 
 - nil (not in depth yet)
-
-A ridiculous amount of properties on different objects like but not limited to :
-
-- textColor
-- backgroundColor
-- cornerRadius
-- font
-- frame
-- 
