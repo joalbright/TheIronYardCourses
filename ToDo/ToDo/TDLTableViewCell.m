@@ -50,13 +50,22 @@
 
 
     }
-    return self;
+    return self; 
 }
 
 - (void)setProfileInfo:(NSDictionary *)profileInfo
 {
+    NSURL * imageUrl = [NSURL URLWithString:profileInfo[@"image"]];
     
-    profileImage.image = profileInfo[@"image"];
+    //GOOD LINE
+    NSData * imageData = [NSData dataWithContentsOfURL:imageUrl];
+ 
+    //BAD LINE
+    //NSData * imageData = [NSData dataWithContentsOfURL:profileInfo[@"image"]];
+
+    UIImage * image = [UIImage imageWithData:imageData];
+    
+    profileImage.image = image;
     profileName.text = profileInfo[@"name"];
     profileURL.text = profileInfo[@"github"];
     
