@@ -18,32 +18,24 @@
     UITextField * nameField;
 }
 
-- (void)toggleEdit
-{
-    [self.tableView setEditing:!self.tableView.editing animated:YES];
-}
+//- (void)toggleEdit
+//{
+//    [self.tableView setEditing:!self.tableView.editing animated:YES];
+//}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self)
     {
-        UIBarButtonItem * editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(toggleEdit)];
+//        UIBarButtonItem * editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(toggleEdit)];
+//        
+//        self.navigationItem.rightBarButtonItem = editButton;
         
-        self.navigationItem.rightBarButtonItem = editButton;
+        listItems = [@[] mutableCopy];
         
-        listItems = [@[
-                       @{
-                           @"name" : @"Jo Albright",
-                           @"image" : @"https://avatars.githubusercontent.com/u/1536630?",
-                           @"github" : @"https://github.com/joalbright"
-                           },
-                       @{
-                           @"name" : @"John Yam",
-                           @"image" : @"https://avatars1.githubusercontent.com/u/2688381?",
-                           @"github" : @"https://github.com/yamski"
-                           }
-                       ] mutableCopy];
+        [self loadListItems];
+        
         
         self.tableView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0);
         self.tableView.rowHeight = 100;
@@ -85,6 +77,7 @@
 {
     [super viewDidLoad];
     
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)newUser
@@ -101,11 +94,23 @@
     
     NSDictionary * userInfo = [TDLGitHubRequest getUserWithUsername:username];
     
-    if([[userInfo allKeys] count] == 3) [listItems addObject:userInfo];
-    else NSLog(@"not enough data");
+    if([[userInfo allKeys] count] == 3)
+    {
+        [listItems addObject:userInfo];
+    } else {
+        NSLog(@"not enough data");
+        
+        UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:@"Bad Information" message:@"Unable to Add User" delegate:self cancelButtonTitle:@"Try Again" otherButtonTitles:nil];
+        
+        [alertView show];
+    }
     
     [nameField resignFirstResponder];
     [self.tableView reloadData];
+    
+//    [self.tableView insertRowsAtIndexPaths:<#(NSArray *)#> withRowAnimation:<#(UITableViewRowAnimation)#>]
+    
+    [self saveData];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -176,9 +181,15 @@
     
     [listItems removeObjectIdenticalTo:listItem];
     
-    [self.tableView reloadData];
+//    [self.tableView reloadData];
+    
+    TDLTableViewCell *cell = (TDLTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
+    cell.alpha = 0;
+    
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     
     NSLog(@"%@",listItems);
+    [self saveData];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
@@ -200,12 +211,37 @@
 //    [listItems removeObjectAtIndex:[listItems indexOfObject:sourceItem]];
     [listItems insertObject:sourceItem atIndex:[listItems indexOfObject:toItem]];
     
+    [self saveData];
 }
 
 - (NSDictionary *)getListItem:(NSInteger)row
 {
     NSArray * reverseArray = [[listItems reverseObjectEnumerator] allObjects];
     return reverseArray[row];
+}
+
+- (void)saveData
+{
+		NSString *path = [self listArchivePath];
+		NSData *data = [NSKeyedArchiver archivedDataWithRootObject:listItems];
+		[data writeToFile:path options:NSDataWritingAtomic error:nil];
+}
+
+- (NSString *)listArchivePath
+{
+    NSArray *documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString *documentDirectory = documentDirectories[0];
+    return [documentDirectory stringByAppendingPathComponent:@"listdata.data"];
+}
+
+- (void)loadListItems
+{
+    NSString *path = [self listArchivePath];
+    NSLog(@"%@",path);
+    if([[NSFileManager defaultManager] fileExistsAtPath:path])
+    {
+        listItems = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+    }
 }
 
 @end
