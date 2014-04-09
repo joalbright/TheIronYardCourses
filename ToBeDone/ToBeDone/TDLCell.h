@@ -12,6 +12,10 @@
 
 @property (nonatomic) UILabel * nameLabel;
 @property (nonatomic) UIView * bgView;
+@property (nonatomic) UIView * strikeThrough;
 @property (nonatomic) UIButton * circleButton;
+
+- (void)showCircleButtons;
+- (void)hideCircleButtons;
 
 @end

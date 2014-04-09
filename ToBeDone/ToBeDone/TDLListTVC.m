@@ -10,6 +10,8 @@
 
 #import "TDLCell.h"
 
+#import "MOVE.h"
+
 @implementation TDLListTVC
 {
     NSMutableArray * listItems;
@@ -123,69 +125,91 @@
     
     if(cell == nil) cell = [[TDLCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
     NSDictionary * listItem = listItems[indexPath.row];
     
 //    cell.backgroundColor = priorityColors[[listItem[@"priority"] intValue]];
     
     cell.bgView.backgroundColor = priorityColors[[listItem[@"priority"] intValue]];
     
-    cell.textLabel.text = listItem[@"name"];
+    if([listItem[@"priority"] intValue] == 0)
+    {
+        cell.strikeThrough.alpha = 1;
+        cell.circleButton.alpha = 0;
+    } else {
+        cell.strikeThrough.alpha = 0;
+        cell.circleButton.alpha = 1;
+    }
     
-//    cell.bounds = CGRectMake(10, 10, 300, 40);
+    cell.nameLabel.text = listItem[@"name"];
     
-    // Configure the cell...
+    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeCell:)];
+    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [cell addGestureRecognizer:swipeLeft];
+    
+    
+    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipeCell:)];
+    
+    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+    
+    [cell addGestureRecognizer:swipeRight];
+    
     
     return cell;
 }
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+    // get cell from tableview at row
+    TDLCell *cell = (TDLCell *)[tableView cellForRowAtIndexPath:indexPath];
+    
+    // if( ) return;
+    
+    // set cell background to the done color
+    cell.bgView.backgroundColor = priorityColors[0];
+    cell.strikeThrough.alpha = 1;
+    cell.circleButton.alpha = 0;
+    
+    // create new dictionary with the done priority
+    NSDictionary * updateListItem = @{
+        @"name" : listItems[indexPath.row][@"name"],
+        @"priority" : @0
+    };
+    
+    // remove old dictionary for cell
+    [listItems removeObjectAtIndex:indexPath.row];
+    
+    // add new dictionary for cell
+    [listItems insertObject:updateListItem atIndex:indexPath.row];
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)swipeCell:(UISwipeGestureRecognizer *)gesture
 {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+//    NSLog(@"%lu",gesture.direction);
+    
+    TDLCell * cell = (TDLCell *)gesture.view;
+    
+    NSInteger index = [self.tableView indexPathForCell:cell].row;
+    
+    // cell = dictionary
+    
+    switch (gesture.direction)
+    {
+        case 1: // right
+            [MOVE animateView:cell.bgView properties:@{@"x":@10,@"duration":@0.5}];
+            [cell hideCircleButtons];
+            break;
+            
+        case 2: // left
+            [MOVE animateView:cell.bgView properties:@{@"x":@-140,@"duration":@0.5}];
+            [cell showCircleButtons];
+            break;
+            
+        default:
+            break;
+    }
 }
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (BOOL)prefersStatusBarHidden { return YES; }
 

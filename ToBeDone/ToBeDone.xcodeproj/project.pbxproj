@@ -21,6 +21,7 @@
 		A981453118F44C4B00CDCAB0 /* ToBeDoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A981453018F44C4B00CDCAB0 /* ToBeDoneTests.m */; };
 		A981453C18F44D3000CDCAB0 /* TDLListTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A981453B18F44D3000CDCAB0 /* TDLListTVC.m */; };
 		A981458718F5A39900CDCAB0 /* TDLCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A981458618F5A39900CDCAB0 /* TDLCell.m */; };
+		A981458A18F5D48800CDCAB0 /* MOVE.m in Sources */ = {isa = PBXBuildFile; fileRef = A981458918F5D48800CDCAB0 /* MOVE.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		A981453B18F44D3000CDCAB0 /* TDLListTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDLListTVC.m; path = ToBeDone/TDLListTVC.m; sourceTree = "<group>"; };
 		A981458518F5A39900CDCAB0 /* TDLCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDLCell.h; path = ToBeDone/TDLCell.h; sourceTree = "<group>"; };
 		A981458618F5A39900CDCAB0 /* TDLCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDLCell.m; path = ToBeDone/TDLCell.m; sourceTree = "<group>"; };
+		A981458818F5D48800CDCAB0 /* MOVE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MOVE.h; sourceTree = "<group>"; };
+		A981458918F5D48800CDCAB0 /* MOVE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MOVE.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 		A98144FF18F44C4A00CDCAB0 = {
 			isa = PBXGroup;
 			children = (
+				A981458818F5D48800CDCAB0 /* MOVE.h */,
+				A981458918F5D48800CDCAB0 /* MOVE.m */,
 				A981458518F5A39900CDCAB0 /* TDLCell.h */,
 				A981458618F5A39900CDCAB0 /* TDLCell.m */,
 				A981453A18F44D3000CDCAB0 /* TDLListTVC.h */,
@@ -250,6 +255,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A981458A18F5D48800CDCAB0 /* MOVE.m in Sources */,
 				A981458718F5A39900CDCAB0 /* TDLCell.m in Sources */,
 				A981451818F44C4B00CDCAB0 /* main.m in Sources */,
 				A981451C18F44C4B00CDCAB0 /* TDLAppDelegate.m in Sources */,
