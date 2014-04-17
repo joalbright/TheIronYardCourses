@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TDLListTVC : UITableViewController
+#import "TDLCell.h"
+
+@interface TDLListTVC : UITableViewController <UITextFieldDelegate,TDLCellDelegate>
 
 @end

@@ -49,14 +49,32 @@
     return self;
 }
 
-- (void)showCircleButtons
+- (void)resetLayout
+{
+//    if (self.swiped)
+//    {
+//        [self createButtons];
+//        self.swiped = YES;
+//    } else {
+        self.bgView.frame = CGRectMake(10, 0, self.frame.size.width - 20, 40);
+        [lowButton removeFromSuperview];
+        [medButton removeFromSuperview];
+        [highButton removeFromSuperview];
+        self.swiped = NO;
+//    }
+    
+}
+
+- (void)createButtons
 {
     lowButton = [[UIButton alloc] initWithFrame:CGRectMake(170, 0, 40, 40)];
     lowButton.tag = 1;
     lowButton.alpha = 0;
     lowButton.backgroundColor = YELLOW_COLOR;
     lowButton.layer.cornerRadius = lowButton.frame.size.width / 2.0;
-//    [lowButton addTarget:self action:@selector(addNewListItem:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [lowButton addTarget:self action:@selector(pressPriorityButton:) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.contentView addSubview:lowButton];
     
     medButton = [[UIButton alloc] initWithFrame:CGRectMake(220, 0, 40, 40)];
@@ -64,7 +82,9 @@
     medButton.alpha = 0;
     medButton.backgroundColor = ORANGE_COLOR;
     medButton.layer.cornerRadius = medButton.frame.size.width / 2.0;
-//    [medButton addTarget:self action:@selector(addNewListItem:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [medButton addTarget:self action:@selector(pressPriorityButton:) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.contentView addSubview:medButton];
     
     highButton = [[UIButton alloc] initWithFrame:CGRectMake(270, 0, 40, 40)];
@@ -72,9 +92,23 @@
     highButton.alpha = 0;
     highButton.backgroundColor = RED_COLOR;
     highButton.layer.cornerRadius = highButton.frame.size.width / 2.0;
-//    [highButton addTarget:self action:@selector(addNewListItem:) forControlEvents:UIControlEventTouchUpInside];
-    [self.contentView addSubview:highButton];
     
+    [highButton addTarget:self action:@selector(pressPriorityButton:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.contentView addSubview:highButton];
+}
+
+- (void)pressPriorityButton:(id)sender
+{
+    UIButton * button = (UIButton *)sender;
+    
+    [self.delegate setItemPriority:(int)button.tag withItem:self];
+}
+
+
+- (void)showCircleButtons
+{
+    [self createButtons];
     
     [MOVE animateView:lowButton properties:@{@"alpha":@1,@"duration":@0.2,@"delay":@0.3}];
     [MOVE animateView:medButton properties:@{@"alpha":@1,@"duration":@0.2,@"delay":@0.2}];
@@ -86,6 +120,32 @@
     [MOVE animateView:lowButton properties:@{@"alpha":@0,@"duration":@0.2,@"delay":@0.0,@"remove":@YES}];
     [MOVE animateView:medButton properties:@{@"alpha":@0,@"duration":@0.2,@"delay":@0.1,@"remove":@YES}];
     [MOVE animateView:highButton properties:@{@"alpha":@0,@"duration":@0.2,@"delay":@0.2,@"remove":@YES}];
+}
+
+- (void)showDeleteButton
+{
+    highButton = [[UIButton alloc] initWithFrame:CGRectMake(270, 0, 40, 40)];
+    highButton.alpha = 0;
+    highButton.backgroundColor = RED_COLOR;
+    highButton.layer.cornerRadius = highButton.frame.size.width / 2.0;
+    [highButton setTitle:@"X" forState:UIControlStateNormal];
+    highButton.titleLabel.font = [UIFont fontWithName:@"HelveticaNeue-UltraLight" size:30];
+    
+    [highButton addTarget:self action:@selector(pressDeleteButton) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.contentView addSubview:highButton];
+    
+    [MOVE animateView:highButton properties:@{@"alpha":@1,@"duration":@0.2,@"delay":@0.3}];
+}
+
+- (void)pressDeleteButton
+{
+    [self.delegate deleteItem:self];
+}
+
+- (void)hideDeleteButton
+{
+    [MOVE animateView:highButton properties:@{@"alpha":@0,@"duration":@0.2,@"delay":@0.0,@"remove":@YES}];
 }
 
 - (void)awakeFromNib

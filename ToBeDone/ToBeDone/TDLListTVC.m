@@ -8,8 +8,6 @@
 
 #import "TDLListTVC.h"
 
-#import "TDLCell.h"
-
 #import "MOVE.h"
 
 @implementation TDLListTVC
@@ -34,11 +32,12 @@
         listItems = [@[
                        @{
                            @"name":@"Workshop App",
-                           @"priority" : @3
+                           @"priority" : @3,
+                           @"constant" : @3
                         },
-                       @{@"name":@"Go To Blogging Thing", @"priority" : @2},
-                       @{@"name":@"Learn Objective - C", @"priority" : @1},
-                       @{@"name":@"Finish GitHub App", @"priority" : @0}
+                       @{@"name":@"Go To Blogging Thing", @"priority" : @2, @"constant" : @2},
+                       @{@"name":@"Learn Objective - C", @"priority" : @1, @"constant" : @1},
+                       @{@"name":@"Finish GitHub App", @"priority" : @0, @"constant" : @0}
                        ] mutableCopy];
         
         self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -50,6 +49,8 @@
         listItemField.leftViewMode = UITextFieldViewModeAlways;
         listItemField.leftView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 10, 40)];
         listItemField.layer.cornerRadius = 6;
+        
+        listItemField.delegate = self;
         
         [self.tableView.tableHeaderView addSubview:listItemField];
         
@@ -79,14 +80,61 @@
     return self;
 }
 
+- (void)deleteItem:(TDLCell *)cell
+{
+    NSIndexPath * indexPath = [self.tableView indexPathForCell:cell];
+    
+    [listItems removeObjectAtIndex:indexPath.row];
+    
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+- (void)setItemPriority:(int)priority withItem:(TDLCell *)cell
+{
+    NSIndexPath * indexPath = [self.tableView indexPathForCell:cell];
+    
+    NSDictionary * listItem = listItems[indexPath.row];
+    
+    NSDictionary * updateListItem = @{
+                       @"name" : listItem[@"name"],
+                       @"priority" : @(priority),
+                       @"constant" : @(priority)
+                       };
+
+    // remove old dictionary for cell
+    [listItems removeObjectAtIndex:indexPath.row];
+
+    // add new dictionary for cell
+    [listItems insertObject:updateListItem atIndex:indexPath.row];
+    
+    cell.bgView.backgroundColor = priorityColors[priority];
+    
+    [MOVE animateView:cell.bgView properties:@{@"x":@10,@"duration":@0.5}];
+    [cell hideCircleButtons];
+    cell.swiped = NO;
+    
+    NSLog(@"Priority : %d",priority);
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    NSLog(@"Returned");
+    
+    [textField resignFirstResponder];
+    
+    return YES;
+}
+
 - (void)addNewListItem:(id)sender
 {
     UIButton * button = (UIButton *)sender;
     NSString * name = listItemField.text;
     
+    listItemField.text = @"";
+    
     if(![name isEqualToString:@""])
     {
-        [listItems insertObject:@{@"name" : name, @"priority" : @(button.tag)} atIndex:0];
+        [listItems insertObject:@{@"name" : name, @"priority" : @(button.tag), @"constant" : @(button.tag)} atIndex:0];
         
 //        [listItems insertObject:@{@"name" : name, @"priority" : [NSNumber numberWithInteger:button.tag]} atIndex:0];
     }
@@ -125,7 +173,11 @@
     
     if(cell == nil) cell = [[TDLCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     
+    [cell resetLayout];
+    
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    cell.delegate = self;
     
     NSDictionary * listItem = listItems[indexPath.row];
     
@@ -133,13 +185,13 @@
     
     cell.bgView.backgroundColor = priorityColors[[listItem[@"priority"] intValue]];
     
-    if([listItem[@"priority"] intValue] == 0)
+    if([listItem[@"priority"] intValue])
     {
-        cell.strikeThrough.alpha = 1;
-        cell.circleButton.alpha = 0;
-    } else {
         cell.strikeThrough.alpha = 0;
         cell.circleButton.alpha = 1;
+    } else {
+        cell.strikeThrough.alpha = 1;
+        cell.circleButton.alpha = 0;
     }
     
     cell.nameLabel.text = listItem[@"name"];
@@ -164,18 +216,38 @@
     // get cell from tableview at row
     TDLCell *cell = (TDLCell *)[tableView cellForRowAtIndexPath:indexPath];
     
-    // if( ) return;
+    if(cell.swiped) return;
     
-    // set cell background to the done color
-    cell.bgView.backgroundColor = priorityColors[0];
-    cell.strikeThrough.alpha = 1;
-    cell.circleButton.alpha = 0;
+    NSDictionary * listItem = listItems[indexPath.row];
     
-    // create new dictionary with the done priority
-    NSDictionary * updateListItem = @{
-        @"name" : listItems[indexPath.row][@"name"],
-        @"priority" : @0
-    };
+    NSDictionary * updateListItem;
+    
+    if([listItem[@"priority"] intValue])
+    {
+        // set cell background to the done color
+        cell.bgView.backgroundColor = priorityColors[0];
+        cell.strikeThrough.alpha = 1;
+        cell.circleButton.alpha = 0;
+        
+        // create new dictionary with the done priority
+        updateListItem = @{
+                          @"name" : listItem[@"name"],
+                          @"priority" : @0,
+                          @"constant" : listItem[@"constant"]
+                          };
+    } else {
+        // set cell background to the done color
+        cell.bgView.backgroundColor = priorityColors[[listItem[@"constant"] intValue]];
+        cell.strikeThrough.alpha = 0;
+        cell.circleButton.alpha = 1;
+        
+        // create new dictionary with the done priority
+        updateListItem = @{
+                          @"name" : listItems[indexPath.row][@"name"],
+                          @"priority" : listItem[@"constant"],
+                          @"constant" : listItem[@"constant"]
+                          };
+    }
     
     // remove old dictionary for cell
     [listItems removeObjectAtIndex:indexPath.row];
@@ -192,18 +264,53 @@
     
     NSInteger index = [self.tableView indexPathForCell:cell].row;
     
+    NSDictionary * listItem = listItems[index];
+    
+    
+    // gesture.direction == left : 2
+    // gesture.direction == right : 1
+    // gesture.direction == left && priority == 0 : 12
+    // gesture.direction == right && priority == 0 : 11
+    
+    // swipe left or right
+    
+    int completed;
+    
+//    if([listItem[@"priority"] intValue] == 0)
+//    {
+//        completed = 1;
+//    } else {
+//        completed = 0;
+//    }
+
+    completed = ([listItem[@"priority"] intValue] == 0) ? 10 : 0;
+    
     // cell = dictionary
     
-    switch (gesture.direction)
+    switch (gesture.direction + completed)
     {
         case 1: // right
             [MOVE animateView:cell.bgView properties:@{@"x":@10,@"duration":@0.5}];
             [cell hideCircleButtons];
+            cell.swiped = NO;
             break;
             
         case 2: // left
             [MOVE animateView:cell.bgView properties:@{@"x":@-140,@"duration":@0.5}];
             [cell showCircleButtons];
+            cell.swiped = YES;
+            break;
+            
+        case 11: // right
+            [MOVE animateView:cell.bgView properties:@{@"x":@10,@"duration":@0.5}];
+            [cell hideDeleteButton];
+            cell.swiped = NO;
+            break;
+            
+        case 12: // left
+            [MOVE animateView:cell.bgView properties:@{@"x":@-40,@"duration":@0.5}];
+            [cell showDeleteButton];
+            cell.swiped = YES;
             break;
             
         default:
