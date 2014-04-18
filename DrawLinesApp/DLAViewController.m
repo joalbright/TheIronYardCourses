@@ -50,11 +50,15 @@
     
     [self.view addSubview:scribbleView];
     
-    UISlider * slider = [[UISlider alloc] initWithFrame:CGRectMake(20, SCREEN_HEIGHT - 43, 280, 23)];
+    
+    
+    UISlider * slider = [[UISlider alloc] initWithFrame:CGRectMake(0, 0, 280, 23)];
     
     slider.minimumValue = 2.0;
     slider.maximumValue = 20.0;
     slider.value = lineWidth;
+    slider.transform = CGAffineTransformMakeRotation(-90 * M_PI / 180);
+    slider.frame = CGRectMake(SCREEN_WIDTH - 43, SCREEN_HEIGHT - 300, 23, 280);
     
     [slider addTarget:self action:@selector(changeSize:) forControlEvents:UIControlEventValueChanged];
     
@@ -92,9 +96,9 @@
     ////////////////////////////
     
     
-    UIButton * toggleButton = [[UIButton alloc] initWithFrame:CGRectMake(10, 50, 50, 50)];
+    UISwitch * toggleButton = [[UISwitch alloc] initWithFrame:CGRectMake(10, 50, 50, 50)];
     
-    toggleButton.backgroundColor = [UIColor orangeColor];
+    toggleButton.onTintColor = [UIColor orangeColor];
     [toggleButton addTarget:self action:@selector(toggleStage) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:toggleButton];
