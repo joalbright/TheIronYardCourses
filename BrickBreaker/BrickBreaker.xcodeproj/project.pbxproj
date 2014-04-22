@@ -21,6 +21,10 @@
 		A9EE7F5B190019BC0059B05A /* BrickBreakerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F5A190019BC0059B05A /* BrickBreakerTests.m */; };
 		A9EE7F6619001BC00059B05A /* BBAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F6519001BC00059B05A /* BBAViewController.m */; };
 		A9EE7F6919001D4A0059B05A /* BBALevelController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F6819001D4A0059B05A /* BBALevelController.m */; };
+		A9EE7F6E19022AE30059B05A /* BBAHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F6D19022AE30059B05A /* BBAHeader.m */; };
+		A9EE7F7219022B8B0059B05A /* BBABrick.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F7119022B8B0059B05A /* BBABrick.m */; };
+		A9EE7F761904040B0059B05A /* BBALevelData.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F751904040B0059B05A /* BBALevelData.m */; };
+		A9EE7F79190450510059B05A /* BBAStats.m in Sources */ = {isa = PBXBuildFile; fileRef = A9EE7F78190450510059B05A /* BBAStats.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +58,14 @@
 		A9EE7F6519001BC00059B05A /* BBAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBAViewController.m; path = BrickBreaker/BBAViewController.m; sourceTree = "<group>"; };
 		A9EE7F6719001D4A0059B05A /* BBALevelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBALevelController.h; path = BrickBreaker/BBALevelController.h; sourceTree = "<group>"; };
 		A9EE7F6819001D4A0059B05A /* BBALevelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBALevelController.m; path = BrickBreaker/BBALevelController.m; sourceTree = "<group>"; };
+		A9EE7F6C19022AE30059B05A /* BBAHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBAHeader.h; path = BrickBreaker/BBAHeader.h; sourceTree = "<group>"; };
+		A9EE7F6D19022AE30059B05A /* BBAHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBAHeader.m; path = BrickBreaker/BBAHeader.m; sourceTree = "<group>"; };
+		A9EE7F7019022B8B0059B05A /* BBABrick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBABrick.h; path = BrickBreaker/BBABrick.h; sourceTree = "<group>"; };
+		A9EE7F7119022B8B0059B05A /* BBABrick.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBABrick.m; path = BrickBreaker/BBABrick.m; sourceTree = "<group>"; };
+		A9EE7F741904040B0059B05A /* BBALevelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBALevelData.h; path = BrickBreaker/BBALevelData.h; sourceTree = "<group>"; };
+		A9EE7F751904040B0059B05A /* BBALevelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBALevelData.m; path = BrickBreaker/BBALevelData.m; sourceTree = "<group>"; };
+		A9EE7F77190450510059B05A /* BBAStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BBAStats.h; path = BrickBreaker/BBAStats.h; sourceTree = "<group>"; };
+		A9EE7F78190450510059B05A /* BBAStats.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BBAStats.m; path = BrickBreaker/BBAStats.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,10 +95,8 @@
 		A9EE7F29190019BC0059B05A = {
 			isa = PBXGroup;
 			children = (
-				A9EE7F6719001D4A0059B05A /* BBALevelController.h */,
-				A9EE7F6819001D4A0059B05A /* BBALevelController.m */,
-				A9EE7F6419001BC00059B05A /* BBAViewController.h */,
-				A9EE7F6519001BC00059B05A /* BBAViewController.m */,
+				A9EE7F73190403F10059B05A /* Models */,
+				A9EE7F6A19022A9C0059B05A /* Controllers */,
 				A9EE7F3B190019BC0059B05A /* BrickBreaker */,
 				A9EE7F54190019BC0059B05A /* BrickBreakerTests */,
 				A9EE7F34190019BC0059B05A /* Frameworks */,
@@ -152,6 +162,48 @@
 				A9EE7F57190019BC0059B05A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9EE7F6A19022A9C0059B05A /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9EE7F6419001BC00059B05A /* BBAViewController.h */,
+				A9EE7F6519001BC00059B05A /* BBAViewController.m */,
+				A9EE7F6B19022AC20059B05A /* Main Views */,
+				A9EE7F6719001D4A0059B05A /* BBALevelController.h */,
+				A9EE7F6819001D4A0059B05A /* BBALevelController.m */,
+				A9EE7F6F19022B6A0059B05A /* Level Views */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A9EE7F6B19022AC20059B05A /* Main Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9EE7F6C19022AE30059B05A /* BBAHeader.h */,
+				A9EE7F6D19022AE30059B05A /* BBAHeader.m */,
+				A9EE7F77190450510059B05A /* BBAStats.h */,
+				A9EE7F78190450510059B05A /* BBAStats.m */,
+			);
+			name = "Main Views";
+			sourceTree = "<group>";
+		};
+		A9EE7F6F19022B6A0059B05A /* Level Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9EE7F7019022B8B0059B05A /* BBABrick.h */,
+				A9EE7F7119022B8B0059B05A /* BBABrick.m */,
+			);
+			name = "Level Views";
+			sourceTree = "<group>";
+		};
+		A9EE7F73190403F10059B05A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9EE7F741904040B0059B05A /* BBALevelData.h */,
+				A9EE7F751904040B0059B05A /* BBALevelData.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,9 +303,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9EE7F6919001D4A0059B05A /* BBALevelController.m in Sources */,
+				A9EE7F79190450510059B05A /* BBAStats.m in Sources */,
+				A9EE7F7219022B8B0059B05A /* BBABrick.m in Sources */,
 				A9EE7F6619001BC00059B05A /* BBAViewController.m in Sources */,
 				A9EE7F46190019BC0059B05A /* BBAAppDelegate.m in Sources */,
 				A9EE7F42190019BC0059B05A /* main.m in Sources */,
+				A9EE7F6E19022AE30059B05A /* BBAHeader.m in Sources */,
+				A9EE7F761904040B0059B05A /* BBALevelData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,15 +14,13 @@
 
 @property (nonatomic,assign) id<BBALevelDelegate> delegate;
 
-- (void)resetLevel;
+- (void)runLevel:(int)level;
 
 @end
 
 @protocol BBALevelDelegate <NSObject>
 
-@optional
-
-- (void)addPoints:(int)points;
+- (void)updatePoints:(int)points;
 - (void)gameWon;
 - (int)loseLife; // return life count
 
