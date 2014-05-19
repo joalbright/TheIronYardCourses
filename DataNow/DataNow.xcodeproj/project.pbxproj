@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9F2A6F11919312C0066D68E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F2A6F01919312C0066D68E /* Foundation.framework */; };
+		A9F2A6F31919312C0066D68E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F2A6F21919312C0066D68E /* CoreGraphics.framework */; };
+		A9F2A6F51919312C0066D68E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F2A6F41919312C0066D68E /* UIKit.framework */; };
+		A9F2A6FB1919312C0066D68E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9F2A6F91919312C0066D68E /* InfoPlist.strings */; };
+		A9F2A6FD1919312C0066D68E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A6FC1919312C0066D68E /* main.m */; };
+		A9F2A7011919312C0066D68E /* DNAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7001919312C0066D68E /* DNAAppDelegate.m */; };
+		A9F2A7031919312C0066D68E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F2A7021919312C0066D68E /* Images.xcassets */; };
+		A9F2A70A1919312C0066D68E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F2A7091919312C0066D68E /* XCTest.framework */; };
+		A9F2A70B1919312C0066D68E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F2A6F01919312C0066D68E /* Foundation.framework */; };
+		A9F2A70C1919312C0066D68E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F2A6F41919312C0066D68E /* UIKit.framework */; };
+		A9F2A7141919312C0066D68E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9F2A7121919312C0066D68E /* InfoPlist.strings */; };
+		A9F2A7161919312C0066D68E /* DataNowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7151919312C0066D68E /* DataNowTests.m */; };
+		A9F2A7211919315C0066D68E /* DNATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A7201919315C0066D68E /* DNATableViewController.m */; };
+		A9F2A724191934240066D68E /* DNASingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A723191934240066D68E /* DNASingleton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9F2A70D1919312C0066D68E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9F2A6E51919312C0066D68E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9F2A6EC1919312C0066D68E;
+			remoteInfo = DataNow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9F2A6ED1919312C0066D68E /* DataNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F2A6F01919312C0066D68E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9F2A6F21919312C0066D68E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9F2A6F41919312C0066D68E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9F2A6F81919312C0066D68E /* DataNow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataNow-Info.plist"; sourceTree = "<group>"; };
+		A9F2A6FA1919312C0066D68E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9F2A6FC1919312C0066D68E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9F2A6FE1919312C0066D68E /* DataNow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataNow-Prefix.pch"; sourceTree = "<group>"; };
+		A9F2A6FF1919312C0066D68E /* DNAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DNAAppDelegate.h; sourceTree = "<group>"; };
+		A9F2A7001919312C0066D68E /* DNAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DNAAppDelegate.m; sourceTree = "<group>"; };
+		A9F2A7021919312C0066D68E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9F2A7081919312C0066D68E /* DataNowTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataNowTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9F2A7091919312C0066D68E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A9F2A7111919312C0066D68E /* DataNowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DataNowTests-Info.plist"; sourceTree = "<group>"; };
+		A9F2A7131919312C0066D68E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9F2A7151919312C0066D68E /* DataNowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataNowTests.m; sourceTree = "<group>"; };
+		A9F2A71F1919315C0066D68E /* DNATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNATableViewController.h; path = DataNow/DNATableViewController.h; sourceTree = "<group>"; };
+		A9F2A7201919315C0066D68E /* DNATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNATableViewController.m; path = DataNow/DNATableViewController.m; sourceTree = "<group>"; };
+		A9F2A722191934240066D68E /* DNASingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DNASingleton.h; path = DataNow/DNASingleton.h; sourceTree = "<group>"; };
+		A9F2A723191934240066D68E /* DNASingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DNASingleton.m; path = DataNow/DNASingleton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9F2A6EA1919312C0066D68E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F2A6F31919312C0066D68E /* CoreGraphics.framework in Frameworks */,
+				A9F2A6F51919312C0066D68E /* UIKit.framework in Frameworks */,
+				A9F2A6F11919312C0066D68E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F2A7051919312C0066D68E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F2A70A1919312C0066D68E /* XCTest.framework in Frameworks */,
+				A9F2A70C1919312C0066D68E /* UIKit.framework in Frameworks */,
+				A9F2A70B1919312C0066D68E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9F2A6E41919312C0066D68E = {
+			isa = PBXGroup;
+			children = (
+				A9F2A722191934240066D68E /* DNASingleton.h */,
+				A9F2A723191934240066D68E /* DNASingleton.m */,
+				A9F2A71F1919315C0066D68E /* DNATableViewController.h */,
+				A9F2A7201919315C0066D68E /* DNATableViewController.m */,
+				A9F2A6F61919312C0066D68E /* DataNow */,
+				A9F2A70F1919312C0066D68E /* DataNowTests */,
+				A9F2A6EF1919312C0066D68E /* Frameworks */,
+				A9F2A6EE1919312C0066D68E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9F2A6EE1919312C0066D68E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9F2A6ED1919312C0066D68E /* DataNow.app */,
+				A9F2A7081919312C0066D68E /* DataNowTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9F2A6EF1919312C0066D68E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9F2A6F01919312C0066D68E /* Foundation.framework */,
+				A9F2A6F21919312C0066D68E /* CoreGraphics.framework */,
+				A9F2A6F41919312C0066D68E /* UIKit.framework */,
+				A9F2A7091919312C0066D68E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9F2A6F61919312C0066D68E /* DataNow */ = {
+			isa = PBXGroup;
+			children = (
+				A9F2A6FF1919312C0066D68E /* DNAAppDelegate.h */,
+				A9F2A7001919312C0066D68E /* DNAAppDelegate.m */,
+				A9F2A7021919312C0066D68E /* Images.xcassets */,
+				A9F2A6F71919312C0066D68E /* Supporting Files */,
+			);
+			path = DataNow;
+			sourceTree = "<group>";
+		};
+		A9F2A6F71919312C0066D68E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9F2A6F81919312C0066D68E /* DataNow-Info.plist */,
+				A9F2A6F91919312C0066D68E /* InfoPlist.strings */,
+				A9F2A6FC1919312C0066D68E /* main.m */,
+				A9F2A6FE1919312C0066D68E /* DataNow-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9F2A70F1919312C0066D68E /* DataNowTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9F2A7151919312C0066D68E /* DataNowTests.m */,
+				A9F2A7101919312C0066D68E /* Supporting Files */,
+			);
+			path = DataNowTests;
+			sourceTree = "<group>";
+		};
+		A9F2A7101919312C0066D68E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9F2A7111919312C0066D68E /* DataNowTests-Info.plist */,
+				A9F2A7121919312C0066D68E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9F2A6EC1919312C0066D68E /* DataNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9F2A7191919312D0066D68E /* Build configuration list for PBXNativeTarget "DataNow" */;
+			buildPhases = (
+				A9F2A6E91919312C0066D68E /* Sources */,
+				A9F2A6EA1919312C0066D68E /* Frameworks */,
+				A9F2A6EB1919312C0066D68E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DataNow;
+			productName = DataNow;
+			productReference = A9F2A6ED1919312C0066D68E /* DataNow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9F2A7071919312C0066D68E /* DataNowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9F2A71C1919312D0066D68E /* Build configuration list for PBXNativeTarget "DataNowTests" */;
+			buildPhases = (
+				A9F2A7041919312C0066D68E /* Sources */,
+				A9F2A7051919312C0066D68E /* Frameworks */,
+				A9F2A7061919312C0066D68E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9F2A70E1919312C0066D68E /* PBXTargetDependency */,
+			);
+			name = DataNowTests;
+			productName = DataNowTests;
+			productReference = A9F2A7081919312C0066D68E /* DataNowTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9F2A6E51919312C0066D68E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DNA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jo Albright";
+				TargetAttributes = {
+					A9F2A7071919312C0066D68E = {
+						TestTargetID = A9F2A6EC1919312C0066D68E;
+					};
+				};
+			};
+			buildConfigurationList = A9F2A6E81919312C0066D68E /* Build configuration list for PBXProject "DataNow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9F2A6E41919312C0066D68E;
+			productRefGroup = A9F2A6EE1919312C0066D68E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9F2A6EC1919312C0066D68E /* DataNow */,
+				A9F2A7071919312C0066D68E /* DataNowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9F2A6EB1919312C0066D68E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F2A6FB1919312C0066D68E /* InfoPlist.strings in Resources */,
+				A9F2A7031919312C0066D68E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F2A7061919312C0066D68E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F2A7141919312C0066D68E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9F2A6E91919312C0066D68E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F2A7011919312C0066D68E /* DNAAppDelegate.m in Sources */,
+				A9F2A7211919315C0066D68E /* DNATableViewController.m in Sources */,
+				A9F2A6FD1919312C0066D68E /* main.m in Sources */,
+				A9F2A724191934240066D68E /* DNASingleton.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9F2A7041919312C0066D68E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F2A7161919312C0066D68E /* DataNowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9F2A70E1919312C0066D68E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9F2A6EC1919312C0066D68E /* DataNow */;
+			targetProxy = A9F2A70D1919312C0066D68E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9F2A6F91919312C0066D68E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9F2A6FA1919312C0066D68E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9F2A7121919312C0066D68E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9F2A7131919312C0066D68E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9F2A7171919312D0066D68E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9F2A7181919312D0066D68E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9F2A71A1919312D0066D68E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataNow/DataNow-Prefix.pch";
+				INFOPLIST_FILE = "DataNow/DataNow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9F2A71B1919312D0066D68E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataNow/DataNow-Prefix.pch";
+				INFOPLIST_FILE = "DataNow/DataNow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A9F2A71D1919312D0066D68E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DataNow.app/DataNow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataNow/DataNow-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DataNowTests/DataNowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A9F2A71E1919312D0066D68E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DataNow.app/DataNow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DataNow/DataNow-Prefix.pch";
+				INFOPLIST_FILE = "DataNowTests/DataNowTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9F2A6E81919312C0066D68E /* Build configuration list for PBXProject "DataNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F2A7171919312D0066D68E /* Debug */,
+				A9F2A7181919312D0066D68E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9F2A7191919312D0066D68E /* Build configuration list for PBXNativeTarget "DataNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F2A71A1919312D0066D68E /* Debug */,
+				A9F2A71B1919312D0066D68E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9F2A71C1919312D0066D68E /* Build configuration list for PBXNativeTarget "DataNowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9F2A71D1919312D0066D68E /* Debug */,
+				A9F2A71E1919312D0066D68E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9F2A6E51919312C0066D68E /* Project object */;
+}

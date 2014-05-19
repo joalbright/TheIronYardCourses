@@ -12,9 +12,10 @@
 
 #import "TDLGitHubRequest.h"
 
+#import "TDLSingleton.h"
+
 @implementation TDLTableViewController
 {
-    NSMutableArray * listItems;
     UITextField * nameField;
 }
 
@@ -31,11 +32,6 @@
 //        UIBarButtonItem * editButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemEdit target:self action:@selector(toggleEdit)];
 //        
 //        self.navigationItem.rightBarButtonItem = editButton;
-        
-        listItems = [@[] mutableCopy];
-        
-        [self loadListItems];
-        
         
         self.tableView.contentInset = UIEdgeInsetsMake(50, 0, 0, 0);
         self.tableView.rowHeight = 100;
@@ -96,7 +92,8 @@
     
     if([[userInfo allKeys] count] == 3)
     {
-        [listItems addObject:userInfo];
+        [[TDLSingleton sharedCollection] addListItem:userInfo];
+//        [listItems addObject:userInfo];
     } else {
         NSLog(@"not enough data");
         
@@ -107,10 +104,6 @@
     
     [nameField resignFirstResponder];
     [self.tableView reloadData];
-    
-//    [self.tableView insertRowsAtIndexPaths:<#(NSArray *)#> withRowAnimation:<#(UITableViewRowAnimation)#>]
-    
-    [self saveData];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -131,7 +124,8 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [listItems count];
+//    return [listItems count];
+    return [[[TDLSingleton sharedCollection] allListItems] count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -140,16 +134,14 @@
     
     if (cell == nil) cell = [[TDLTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     
-//    NSDictionary * listItem = [self getListItem:indexPath.row];
-    
-    cell.profileInfo = [self getListItem:indexPath.row];
+    cell.index = indexPath.row;
     
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSDictionary * listItem = [self getListItem:indexPath.row];
+    NSDictionary * listItem = [[TDLSingleton sharedCollection] allListItems][indexPath.row];
     
     NSLog(@"%@",listItem);
     
@@ -175,21 +167,13 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
-//    [listItems removeObjectAtIndex:indexPath.row];
     
-    NSDictionary * listItem = [self getListItem:indexPath.row];
-    
-    [listItems removeObjectIdenticalTo:listItem];
-    
-//    [self.tableView reloadData];
+    [[TDLSingleton sharedCollection] removeListItemAtIndex:indexPath.row];
     
     TDLTableViewCell *cell = (TDLTableViewCell *)[tableView cellForRowAtIndexPath:indexPath];
     cell.alpha = 0;
     
     [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    
-    NSLog(@"%@",listItems);
-    [self saveData];
 }
 
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
@@ -197,51 +181,21 @@
     return YES;
 }
 
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
-{
-    if (sourceIndexPath == destinationIndexPath) return;
-        
-    // we will switch array objects here
-    
-    NSDictionary * sourceItem = [self getListItem:sourceIndexPath.row];
-    
-    NSDictionary * toItem = [self getListItem:destinationIndexPath.row];
-    
-    [listItems removeObjectIdenticalTo:sourceItem];
-//    [listItems removeObjectAtIndex:[listItems indexOfObject:sourceItem]];
-    [listItems insertObject:sourceItem atIndex:[listItems indexOfObject:toItem]];
-    
-    [self saveData];
-}
-
-- (NSDictionary *)getListItem:(NSInteger)row
-{
-    NSArray * reverseArray = [[listItems reverseObjectEnumerator] allObjects];
-    return reverseArray[row];
-}
-
-- (void)saveData
-{
-		NSString *path = [self listArchivePath];
-		NSData *data = [NSKeyedArchiver archivedDataWithRootObject:listItems];
-		[data writeToFile:path options:NSDataWritingAtomic error:nil];
-}
-
-- (NSString *)listArchivePath
-{
-    NSArray *documentDirectories = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentDirectory = documentDirectories[0];
-    return [documentDirectory stringByAppendingPathComponent:@"listdata.data"];
-}
-
-- (void)loadListItems
-{
-    NSString *path = [self listArchivePath];
-    NSLog(@"%@",path);
-    if([[NSFileManager defaultManager] fileExistsAtPath:path])
-    {
-        listItems = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
-    }
-}
+//- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)sourceIndexPath toIndexPath:(NSIndexPath *)destinationIndexPath
+//{
+//    if (sourceIndexPath == destinationIndexPath) return;
+//        
+//    // we will switch array objects here
+//    
+//    NSDictionary * sourceItem = [self getListItem:sourceIndexPath.row];
+//    
+//    NSDictionary * toItem = [self getListItem:destinationIndexPath.row];
+//    
+//    [listItems removeObjectIdenticalTo:sourceItem];
+////    [listItems removeObjectAtIndex:[listItems indexOfObject:sourceItem]];
+//    [listItems insertObject:sourceItem atIndex:[listItems indexOfObject:toItem]];
+//    
+//    [self saveData];
+//}
 
 @end

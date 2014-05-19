@@ -1,0 +1,479 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9991671191AB6BC00CE5F24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9991670191AB6BC00CE5F24 /* Foundation.framework */; };
+		A9991673191AB6BC00CE5F24 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9991672191AB6BC00CE5F24 /* CoreGraphics.framework */; };
+		A9991675191AB6BC00CE5F24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9991674191AB6BC00CE5F24 /* UIKit.framework */; };
+		A999167B191AB6BC00CE5F24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9991679191AB6BC00CE5F24 /* InfoPlist.strings */; };
+		A999167D191AB6BC00CE5F24 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A999167C191AB6BC00CE5F24 /* main.m */; };
+		A9991681191AB6BC00CE5F24 /* RVBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9991680191AB6BC00CE5F24 /* RVBAppDelegate.m */; };
+		A9991683191AB6BC00CE5F24 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9991682191AB6BC00CE5F24 /* Images.xcassets */; };
+		A999168A191AB6BC00CE5F24 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9991689191AB6BC00CE5F24 /* XCTest.framework */; };
+		A999168B191AB6BC00CE5F24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9991670191AB6BC00CE5F24 /* Foundation.framework */; };
+		A999168C191AB6BC00CE5F24 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9991674191AB6BC00CE5F24 /* UIKit.framework */; };
+		A9991694191AB6BC00CE5F24 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9991692191AB6BC00CE5F24 /* InfoPlist.strings */; };
+		A9991696191AB6BC00CE5F24 /* RedvsBlueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9991695191AB6BC00CE5F24 /* RedvsBlueTests.m */; };
+		A99916A1191AB6D000CE5F24 /* RVBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99916A0191AB6D000CE5F24 /* RVBViewController.m */; };
+		A99916A4191AB6DE00CE5F24 /* RVBRedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99916A3191AB6DE00CE5F24 /* RVBRedViewController.m */; };
+		A99916A7191AB6E900CE5F24 /* RVBBlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99916A6191AB6E900CE5F24 /* RVBBlueViewController.m */; };
+		A99916AA191ABB1D00CE5F24 /* RVBData.m in Sources */ = {isa = PBXBuildFile; fileRef = A99916A9191ABB1D00CE5F24 /* RVBData.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A999168D191AB6BC00CE5F24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9991665191AB6BC00CE5F24 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A999166C191AB6BC00CE5F24;
+			remoteInfo = RedvsBlue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A999166D191AB6BC00CE5F24 /* RedvsBlue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedvsBlue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9991670191AB6BC00CE5F24 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9991672191AB6BC00CE5F24 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9991674191AB6BC00CE5F24 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9991678191AB6BC00CE5F24 /* RedvsBlue-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedvsBlue-Info.plist"; sourceTree = "<group>"; };
+		A999167A191AB6BC00CE5F24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A999167C191AB6BC00CE5F24 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A999167E191AB6BC00CE5F24 /* RedvsBlue-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RedvsBlue-Prefix.pch"; sourceTree = "<group>"; };
+		A999167F191AB6BC00CE5F24 /* RVBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RVBAppDelegate.h; sourceTree = "<group>"; };
+		A9991680191AB6BC00CE5F24 /* RVBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RVBAppDelegate.m; sourceTree = "<group>"; };
+		A9991682191AB6BC00CE5F24 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9991688191AB6BC00CE5F24 /* RedvsBlueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RedvsBlueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9991689191AB6BC00CE5F24 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A9991691191AB6BC00CE5F24 /* RedvsBlueTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RedvsBlueTests-Info.plist"; sourceTree = "<group>"; };
+		A9991693191AB6BC00CE5F24 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9991695191AB6BC00CE5F24 /* RedvsBlueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedvsBlueTests.m; sourceTree = "<group>"; };
+		A999169F191AB6D000CE5F24 /* RVBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RVBViewController.h; path = RedvsBlue/RVBViewController.h; sourceTree = "<group>"; };
+		A99916A0191AB6D000CE5F24 /* RVBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RVBViewController.m; path = RedvsBlue/RVBViewController.m; sourceTree = "<group>"; };
+		A99916A2191AB6DE00CE5F24 /* RVBRedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RVBRedViewController.h; path = RedvsBlue/RVBRedViewController.h; sourceTree = "<group>"; };
+		A99916A3191AB6DE00CE5F24 /* RVBRedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RVBRedViewController.m; path = RedvsBlue/RVBRedViewController.m; sourceTree = "<group>"; };
+		A99916A5191AB6E900CE5F24 /* RVBBlueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RVBBlueViewController.h; path = RedvsBlue/RVBBlueViewController.h; sourceTree = "<group>"; };
+		A99916A6191AB6E900CE5F24 /* RVBBlueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RVBBlueViewController.m; path = RedvsBlue/RVBBlueViewController.m; sourceTree = "<group>"; };
+		A99916A8191ABB1D00CE5F24 /* RVBData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RVBData.h; path = RedvsBlue/RVBData.h; sourceTree = "<group>"; };
+		A99916A9191ABB1D00CE5F24 /* RVBData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RVBData.m; path = RedvsBlue/RVBData.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A999166A191AB6BC00CE5F24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9991673191AB6BC00CE5F24 /* CoreGraphics.framework in Frameworks */,
+				A9991675191AB6BC00CE5F24 /* UIKit.framework in Frameworks */,
+				A9991671191AB6BC00CE5F24 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9991685191AB6BC00CE5F24 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A999168A191AB6BC00CE5F24 /* XCTest.framework in Frameworks */,
+				A999168C191AB6BC00CE5F24 /* UIKit.framework in Frameworks */,
+				A999168B191AB6BC00CE5F24 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9991664191AB6BC00CE5F24 = {
+			isa = PBXGroup;
+			children = (
+				A99916A8191ABB1D00CE5F24 /* RVBData.h */,
+				A99916A9191ABB1D00CE5F24 /* RVBData.m */,
+				A999169F191AB6D000CE5F24 /* RVBViewController.h */,
+				A99916A0191AB6D000CE5F24 /* RVBViewController.m */,
+				A99916A2191AB6DE00CE5F24 /* RVBRedViewController.h */,
+				A99916A3191AB6DE00CE5F24 /* RVBRedViewController.m */,
+				A99916A5191AB6E900CE5F24 /* RVBBlueViewController.h */,
+				A99916A6191AB6E900CE5F24 /* RVBBlueViewController.m */,
+				A9991676191AB6BC00CE5F24 /* RedvsBlue */,
+				A999168F191AB6BC00CE5F24 /* RedvsBlueTests */,
+				A999166F191AB6BC00CE5F24 /* Frameworks */,
+				A999166E191AB6BC00CE5F24 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A999166E191AB6BC00CE5F24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A999166D191AB6BC00CE5F24 /* RedvsBlue.app */,
+				A9991688191AB6BC00CE5F24 /* RedvsBlueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A999166F191AB6BC00CE5F24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9991670191AB6BC00CE5F24 /* Foundation.framework */,
+				A9991672191AB6BC00CE5F24 /* CoreGraphics.framework */,
+				A9991674191AB6BC00CE5F24 /* UIKit.framework */,
+				A9991689191AB6BC00CE5F24 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9991676191AB6BC00CE5F24 /* RedvsBlue */ = {
+			isa = PBXGroup;
+			children = (
+				A999167F191AB6BC00CE5F24 /* RVBAppDelegate.h */,
+				A9991680191AB6BC00CE5F24 /* RVBAppDelegate.m */,
+				A9991682191AB6BC00CE5F24 /* Images.xcassets */,
+				A9991677191AB6BC00CE5F24 /* Supporting Files */,
+			);
+			path = RedvsBlue;
+			sourceTree = "<group>";
+		};
+		A9991677191AB6BC00CE5F24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9991678191AB6BC00CE5F24 /* RedvsBlue-Info.plist */,
+				A9991679191AB6BC00CE5F24 /* InfoPlist.strings */,
+				A999167C191AB6BC00CE5F24 /* main.m */,
+				A999167E191AB6BC00CE5F24 /* RedvsBlue-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A999168F191AB6BC00CE5F24 /* RedvsBlueTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9991695191AB6BC00CE5F24 /* RedvsBlueTests.m */,
+				A9991690191AB6BC00CE5F24 /* Supporting Files */,
+			);
+			path = RedvsBlueTests;
+			sourceTree = "<group>";
+		};
+		A9991690191AB6BC00CE5F24 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9991691191AB6BC00CE5F24 /* RedvsBlueTests-Info.plist */,
+				A9991692191AB6BC00CE5F24 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A999166C191AB6BC00CE5F24 /* RedvsBlue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9991699191AB6BC00CE5F24 /* Build configuration list for PBXNativeTarget "RedvsBlue" */;
+			buildPhases = (
+				A9991669191AB6BC00CE5F24 /* Sources */,
+				A999166A191AB6BC00CE5F24 /* Frameworks */,
+				A999166B191AB6BC00CE5F24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedvsBlue;
+			productName = RedvsBlue;
+			productReference = A999166D191AB6BC00CE5F24 /* RedvsBlue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9991687191AB6BC00CE5F24 /* RedvsBlueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A999169C191AB6BC00CE5F24 /* Build configuration list for PBXNativeTarget "RedvsBlueTests" */;
+			buildPhases = (
+				A9991684191AB6BC00CE5F24 /* Sources */,
+				A9991685191AB6BC00CE5F24 /* Frameworks */,
+				A9991686191AB6BC00CE5F24 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A999168E191AB6BC00CE5F24 /* PBXTargetDependency */,
+			);
+			name = RedvsBlueTests;
+			productName = RedvsBlueTests;
+			productReference = A9991688191AB6BC00CE5F24 /* RedvsBlueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9991665191AB6BC00CE5F24 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = RVB;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jo Albright";
+				TargetAttributes = {
+					A9991687191AB6BC00CE5F24 = {
+						TestTargetID = A999166C191AB6BC00CE5F24;
+					};
+				};
+			};
+			buildConfigurationList = A9991668191AB6BC00CE5F24 /* Build configuration list for PBXProject "RedvsBlue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A9991664191AB6BC00CE5F24;
+			productRefGroup = A999166E191AB6BC00CE5F24 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A999166C191AB6BC00CE5F24 /* RedvsBlue */,
+				A9991687191AB6BC00CE5F24 /* RedvsBlueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A999166B191AB6BC00CE5F24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A999167B191AB6BC00CE5F24 /* InfoPlist.strings in Resources */,
+				A9991683191AB6BC00CE5F24 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9991686191AB6BC00CE5F24 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9991694191AB6BC00CE5F24 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9991669191AB6BC00CE5F24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A999167D191AB6BC00CE5F24 /* main.m in Sources */,
+				A99916A4191AB6DE00CE5F24 /* RVBRedViewController.m in Sources */,
+				A99916AA191ABB1D00CE5F24 /* RVBData.m in Sources */,
+				A99916A1191AB6D000CE5F24 /* RVBViewController.m in Sources */,
+				A99916A7191AB6E900CE5F24 /* RVBBlueViewController.m in Sources */,
+				A9991681191AB6BC00CE5F24 /* RVBAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9991684191AB6BC00CE5F24 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9991696191AB6BC00CE5F24 /* RedvsBlueTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A999168E191AB6BC00CE5F24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A999166C191AB6BC00CE5F24 /* RedvsBlue */;
+			targetProxy = A999168D191AB6BC00CE5F24 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9991679191AB6BC00CE5F24 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A999167A191AB6BC00CE5F24 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9991692191AB6BC00CE5F24 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9991693191AB6BC00CE5F24 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9991697191AB6BC00CE5F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9991698191AB6BC00CE5F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A999169A191AB6BC00CE5F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedvsBlue/RedvsBlue-Prefix.pch";
+				INFOPLIST_FILE = "RedvsBlue/RedvsBlue-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A999169B191AB6BC00CE5F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedvsBlue/RedvsBlue-Prefix.pch";
+				INFOPLIST_FILE = "RedvsBlue/RedvsBlue-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A999169D191AB6BC00CE5F24 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RedvsBlue.app/RedvsBlue";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedvsBlue/RedvsBlue-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "RedvsBlueTests/RedvsBlueTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A999169E191AB6BC00CE5F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RedvsBlue.app/RedvsBlue";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RedvsBlue/RedvsBlue-Prefix.pch";
+				INFOPLIST_FILE = "RedvsBlueTests/RedvsBlueTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9991668191AB6BC00CE5F24 /* Build configuration list for PBXProject "RedvsBlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9991697191AB6BC00CE5F24 /* Debug */,
+				A9991698191AB6BC00CE5F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9991699191AB6BC00CE5F24 /* Build configuration list for PBXNativeTarget "RedvsBlue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A999169A191AB6BC00CE5F24 /* Debug */,
+				A999169B191AB6BC00CE5F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A999169C191AB6BC00CE5F24 /* Build configuration list for PBXNativeTarget "RedvsBlueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A999169D191AB6BC00CE5F24 /* Debug */,
+				A999169E191AB6BC00CE5F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9991665191AB6BC00CE5F24 /* Project object */;
+}

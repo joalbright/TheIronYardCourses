@@ -10,7 +10,14 @@
 
 #import "BBALevelData.h"
 
-@interface BBALevelController () <UICollisionBehaviorDelegate>
+#import <AVFoundation/AVFoundation.h>
+
+#import "BBAGameData.h"
+
+@interface BBALevelController () <UICollisionBehaviorDelegate,AVAudioPlayerDelegate>
+
+//@property (nonatomic) AVAudioPlayer * player;
+@property (nonatomic) NSMutableArray * players;
 
 @property (nonatomic) UIView * paddle;
 @property (nonatomic) UIView * paddlePosition;
@@ -44,7 +51,7 @@
 ////////////////////////////////
 
 @implementation BBALevelController
-{
+{    
     float paddleWidth;
     
     int levelPoints;
@@ -69,8 +76,11 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self)
     {
+        
+        
         self.bricks = [@[] mutableCopy];
         self.balls = [@[] mutableCopy];
+        self.players = [@[] mutableCopy];
         
         paddleWidth = 80;
         
@@ -84,6 +94,26 @@
         rightWallHits = 0;
     }
     return self;
+}
+
+- (void)playSoundWithName:(NSString *)soundName
+{
+    NSString * file = [[NSBundle mainBundle] pathForResource:soundName ofType:@"wav"];
+    
+    NSURL * url = [[NSURL alloc] initFileURLWithPath:file];
+    
+    AVAudioPlayer * player = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    
+    player.delegate = self;
+    
+    [self.players addObject:player];
+    
+    [player play];
+}
+
+- (void)audioPlayerDidFinishPlaying:(AVAudioPlayer *)player successfully:(BOOL)flag
+{
+    [self.players removeObjectIdenticalTo:player];
 }
 
 - (void)viewDidLoad
@@ -157,10 +187,9 @@
 
 - (void)collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item1 withItem:(id<UIDynamicItem>)item2 atPoint:(CGPoint)p
 {
-//    NSLog(@"%@ /n %@",item1,item2);
-    
     if([item1 isEqual:self.paddle] || [item2 isEqual:self.paddle])
     {
+        [self playSoundWithName:@"retro_click"];
         paddleHits++;
         levelInfo[@"paddle_hits"] = @(paddleHits);
     }
@@ -190,6 +219,14 @@
                 gamePoints += value;
                 bricksBroken++;
                 
+                
+                
+                NSInteger currentScore = [BBAGameData mainData].currentScore;
+                
+                [BBAGameData mainData].currentScore = currentScore + value;
+                
+                
+                
                 [self.delegate updatePoints:gamePoints];
                 
                 gameInfo[@"score"] = @(gamePoints);
@@ -206,6 +243,7 @@
     
     if(tempBrick != nil)
     {
+        [self playSoundWithName:@"electric_alert"];
         [self.bricks removeObject:tempBrick];
         
         [UIView animateWithDuration:0.3 delay:0.2 options:UIViewAnimationOptionCurveEaseOut animations:^{
@@ -235,6 +273,8 @@
             [self.collider removeItem:ball];
             
             tempBall = ball;
+            
+            
         }
         
         if ([(NSString *)identifier isEqualToString:@"ceiling"] && [item isEqual:ball])
@@ -379,7 +419,7 @@
 //    ball.image = [UIImage imageNamed:@"ball"];
     
     ball.backgroundColor = [UIColor whiteColor];
-    ball.layer.cornerRadius = 5;
+    ball.layer.cornerRadius = 6;
     
     [self.view addSubview:ball];
     
@@ -487,4 +527,17 @@
 
 int direction(double n) { return (n < 0) ? -1 : 1; }
 
+
+
+//NSURL *tapSound   = [[NSBundle mainBundle] URLForResource: @"Engine Bass 001"
+//                                            withExtension: @"wav"];
+//
+//// Store the URL as a CFURLRef instance
+//CFURLRef soundFileURLRef = (CFURLRef) [tapSound retain];
+//SystemSoundID soundFileObject;
+//
+//// Create a system sound object representing the sound file.
+//AudioServicesCreateSystemSoundID( soundFileURLRef, &soundFileObject );
+//
+//AudioServicesPlayAlertSound(soundFileObject);
 @end

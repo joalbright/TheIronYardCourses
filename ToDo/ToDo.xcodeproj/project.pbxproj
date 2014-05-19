@@ -38,6 +38,7 @@
 		A9DCCB6818EDE36F00444AD2 /* jonfox.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5B18EDE36F00444AD2 /* jonfox.png */; };
 		A9DCCB6918EDE36F00444AD2 /* teddyconyers.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5C18EDE36F00444AD2 /* teddyconyers.png */; };
 		A9DCCB6A18EDE36F00444AD2 /* tjmercer.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5D18EDE36F00444AD2 /* tjmercer.png */; };
+		A9F2A72719195A740066D68E /* TDLSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A72619195A740066D68E /* TDLSingleton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,8 @@
 		A9DCCB5B18EDE36F00444AD2 /* jonfox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jonfox.png; sourceTree = "<group>"; };
 		A9DCCB5C18EDE36F00444AD2 /* teddyconyers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teddyconyers.png; sourceTree = "<group>"; };
 		A9DCCB5D18EDE36F00444AD2 /* tjmercer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tjmercer.png; sourceTree = "<group>"; };
+		A9F2A72519195A740066D68E /* TDLSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDLSingleton.h; path = ToDo/TDLSingleton.h; sourceTree = "<group>"; };
+		A9F2A72619195A740066D68E /* TDLSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDLSingleton.m; path = ToDo/TDLSingleton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +238,8 @@
 			children = (
 				A98144FC18F2F44B00CDCAB0 /* TDLGitHubRequest.h */,
 				A98144FD18F2F44B00CDCAB0 /* TDLGitHubRequest.m */,
+				A9F2A72519195A740066D68E /* TDLSingleton.h */,
+				A9F2A72619195A740066D68E /* TDLSingleton.m */,
 			);
 			name = Random;
 			sourceTree = "<group>";
@@ -353,6 +358,7 @@
 			files = (
 				A963D14118EDA78B00E0AADD /* TDLTableViewCell.m in Sources */,
 				A963D13918EC8A1F00E0AADD /* TDLTableViewController.m in Sources */,
+				A9F2A72719195A740066D68E /* TDLSingleton.m in Sources */,
 				A98144FE18F2F44B00CDCAB0 /* TDLGitHubRequest.m in Sources */,
 				A963D11518EC8A0D00E0AADD /* main.m in Sources */,
 				A963D11918EC8A0D00E0AADD /* TDLAppDelegate.m in Sources */,

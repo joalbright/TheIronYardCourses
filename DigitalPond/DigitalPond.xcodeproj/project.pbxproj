@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A94385D51923BE50008BD3B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94385D41923BE50008BD3B8 /* Foundation.framework */; };
+		A94385D71923BE50008BD3B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94385D61923BE50008BD3B8 /* CoreGraphics.framework */; };
+		A94385D91923BE50008BD3B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94385D81923BE50008BD3B8 /* UIKit.framework */; };
+		A94385DF1923BE50008BD3B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94385DD1923BE50008BD3B8 /* InfoPlist.strings */; };
+		A94385E11923BE50008BD3B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A94385E01923BE50008BD3B8 /* main.m */; };
+		A94385E51923BE50008BD3B8 /* DPAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A94385E41923BE50008BD3B8 /* DPAAppDelegate.m */; };
+		A94385E71923BE50008BD3B8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A94385E61923BE50008BD3B8 /* Images.xcassets */; };
+		A94385EE1923BE50008BD3B8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94385ED1923BE50008BD3B8 /* XCTest.framework */; };
+		A94385EF1923BE50008BD3B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94385D41923BE50008BD3B8 /* Foundation.framework */; };
+		A94385F01923BE50008BD3B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A94385D81923BE50008BD3B8 /* UIKit.framework */; };
+		A94385F81923BE50008BD3B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A94385F61923BE50008BD3B8 /* InfoPlist.strings */; };
+		A94385FA1923BE50008BD3B8 /* DigitalPondTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A94385F91923BE50008BD3B8 /* DigitalPondTests.m */; };
+		A94386061923C1DB008BD3B8 /* DPAPondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A94386041923C1DB008BD3B8 /* DPAPondViewController.m */; };
+		A94386071923C1DB008BD3B8 /* DPAPond.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94386051923C1DB008BD3B8 /* DPAPond.xib */; };
+		A94386091923C397008BD3B8 /* DPALava.xib in Resources */ = {isa = PBXBuildFile; fileRef = A94386081923C397008BD3B8 /* DPALava.xib */; };
+		A943860C1923C6E2008BD3B8 /* DPARipple.m in Sources */ = {isa = PBXBuildFile; fileRef = A943860B1923C6E2008BD3B8 /* DPARipple.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A94385F11923BE50008BD3B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A94385C91923BE50008BD3B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A94385D01923BE50008BD3B8;
+			remoteInfo = DigitalPond;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A94385D11923BE50008BD3B8 /* DigitalPond.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DigitalPond.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94385D41923BE50008BD3B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A94385D61923BE50008BD3B8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A94385D81923BE50008BD3B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A94385DC1923BE50008BD3B8 /* DigitalPond-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalPond-Info.plist"; sourceTree = "<group>"; };
+		A94385DE1923BE50008BD3B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A94385E01923BE50008BD3B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A94385E21923BE50008BD3B8 /* DigitalPond-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DigitalPond-Prefix.pch"; sourceTree = "<group>"; };
+		A94385E31923BE50008BD3B8 /* DPAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DPAAppDelegate.h; sourceTree = "<group>"; };
+		A94385E41923BE50008BD3B8 /* DPAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DPAAppDelegate.m; sourceTree = "<group>"; };
+		A94385E61923BE50008BD3B8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A94385EC1923BE50008BD3B8 /* DigitalPondTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DigitalPondTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A94385ED1923BE50008BD3B8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A94385F51923BE50008BD3B8 /* DigitalPondTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DigitalPondTests-Info.plist"; sourceTree = "<group>"; };
+		A94385F71923BE50008BD3B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A94385F91923BE50008BD3B8 /* DigitalPondTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitalPondTests.m; sourceTree = "<group>"; };
+		A94386031923C1DB008BD3B8 /* DPAPondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPAPondViewController.h; path = DigitalPond/DPAPondViewController.h; sourceTree = "<group>"; };
+		A94386041923C1DB008BD3B8 /* DPAPondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPAPondViewController.m; path = DigitalPond/DPAPondViewController.m; sourceTree = "<group>"; };
+		A94386051923C1DB008BD3B8 /* DPAPond.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DPAPond.xib; path = DigitalPond/DPAPond.xib; sourceTree = "<group>"; };
+		A94386081923C397008BD3B8 /* DPALava.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DPALava.xib; path = DigitalPond/DPALava.xib; sourceTree = "<group>"; };
+		A943860A1923C6E2008BD3B8 /* DPARipple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DPARipple.h; path = DigitalPond/DPARipple.h; sourceTree = "<group>"; };
+		A943860B1923C6E2008BD3B8 /* DPARipple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DPARipple.m; path = DigitalPond/DPARipple.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A94385CE1923BE50008BD3B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94385D71923BE50008BD3B8 /* CoreGraphics.framework in Frameworks */,
+				A94385D91923BE50008BD3B8 /* UIKit.framework in Frameworks */,
+				A94385D51923BE50008BD3B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94385E91923BE50008BD3B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94385EE1923BE50008BD3B8 /* XCTest.framework in Frameworks */,
+				A94385F01923BE50008BD3B8 /* UIKit.framework in Frameworks */,
+				A94385EF1923BE50008BD3B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A94385C81923BE50008BD3B8 = {
+			isa = PBXGroup;
+			children = (
+				A943860A1923C6E2008BD3B8 /* DPARipple.h */,
+				A943860B1923C6E2008BD3B8 /* DPARipple.m */,
+				A94386081923C397008BD3B8 /* DPALava.xib */,
+				A94386031923C1DB008BD3B8 /* DPAPondViewController.h */,
+				A94386041923C1DB008BD3B8 /* DPAPondViewController.m */,
+				A94386051923C1DB008BD3B8 /* DPAPond.xib */,
+				A94385DA1923BE50008BD3B8 /* DigitalPond */,
+				A94385F31923BE50008BD3B8 /* DigitalPondTests */,
+				A94385D31923BE50008BD3B8 /* Frameworks */,
+				A94385D21923BE50008BD3B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A94385D21923BE50008BD3B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A94385D11923BE50008BD3B8 /* DigitalPond.app */,
+				A94385EC1923BE50008BD3B8 /* DigitalPondTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A94385D31923BE50008BD3B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A94385D41923BE50008BD3B8 /* Foundation.framework */,
+				A94385D61923BE50008BD3B8 /* CoreGraphics.framework */,
+				A94385D81923BE50008BD3B8 /* UIKit.framework */,
+				A94385ED1923BE50008BD3B8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A94385DA1923BE50008BD3B8 /* DigitalPond */ = {
+			isa = PBXGroup;
+			children = (
+				A94385E31923BE50008BD3B8 /* DPAAppDelegate.h */,
+				A94385E41923BE50008BD3B8 /* DPAAppDelegate.m */,
+				A94385E61923BE50008BD3B8 /* Images.xcassets */,
+				A94385DB1923BE50008BD3B8 /* Supporting Files */,
+			);
+			path = DigitalPond;
+			sourceTree = "<group>";
+		};
+		A94385DB1923BE50008BD3B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94385DC1923BE50008BD3B8 /* DigitalPond-Info.plist */,
+				A94385DD1923BE50008BD3B8 /* InfoPlist.strings */,
+				A94385E01923BE50008BD3B8 /* main.m */,
+				A94385E21923BE50008BD3B8 /* DigitalPond-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A94385F31923BE50008BD3B8 /* DigitalPondTests */ = {
+			isa = PBXGroup;
+			children = (
+				A94385F91923BE50008BD3B8 /* DigitalPondTests.m */,
+				A94385F41923BE50008BD3B8 /* Supporting Files */,
+			);
+			path = DigitalPondTests;
+			sourceTree = "<group>";
+		};
+		A94385F41923BE50008BD3B8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A94385F51923BE50008BD3B8 /* DigitalPondTests-Info.plist */,
+				A94385F61923BE50008BD3B8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A94385D01923BE50008BD3B8 /* DigitalPond */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94385FD1923BE50008BD3B8 /* Build configuration list for PBXNativeTarget "DigitalPond" */;
+			buildPhases = (
+				A94385CD1923BE50008BD3B8 /* Sources */,
+				A94385CE1923BE50008BD3B8 /* Frameworks */,
+				A94385CF1923BE50008BD3B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DigitalPond;
+			productName = DigitalPond;
+			productReference = A94385D11923BE50008BD3B8 /* DigitalPond.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A94385EB1923BE50008BD3B8 /* DigitalPondTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A94386001923BE50008BD3B8 /* Build configuration list for PBXNativeTarget "DigitalPondTests" */;
+			buildPhases = (
+				A94385E81923BE50008BD3B8 /* Sources */,
+				A94385E91923BE50008BD3B8 /* Frameworks */,
+				A94385EA1923BE50008BD3B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A94385F21923BE50008BD3B8 /* PBXTargetDependency */,
+			);
+			name = DigitalPondTests;
+			productName = DigitalPondTests;
+			productReference = A94385EC1923BE50008BD3B8 /* DigitalPondTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A94385C91923BE50008BD3B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DPA;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jo Albright";
+				TargetAttributes = {
+					A94385EB1923BE50008BD3B8 = {
+						TestTargetID = A94385D01923BE50008BD3B8;
+					};
+				};
+			};
+			buildConfigurationList = A94385CC1923BE50008BD3B8 /* Build configuration list for PBXProject "DigitalPond" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A94385C81923BE50008BD3B8;
+			productRefGroup = A94385D21923BE50008BD3B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A94385D01923BE50008BD3B8 /* DigitalPond */,
+				A94385EB1923BE50008BD3B8 /* DigitalPondTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A94385CF1923BE50008BD3B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94385DF1923BE50008BD3B8 /* InfoPlist.strings in Resources */,
+				A94386091923C397008BD3B8 /* DPALava.xib in Resources */,
+				A94386071923C1DB008BD3B8 /* DPAPond.xib in Resources */,
+				A94385E71923BE50008BD3B8 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94385EA1923BE50008BD3B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94385F81923BE50008BD3B8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A94385CD1923BE50008BD3B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94385E51923BE50008BD3B8 /* DPAAppDelegate.m in Sources */,
+				A94385E11923BE50008BD3B8 /* main.m in Sources */,
+				A94386061923C1DB008BD3B8 /* DPAPondViewController.m in Sources */,
+				A943860C1923C6E2008BD3B8 /* DPARipple.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A94385E81923BE50008BD3B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A94385FA1923BE50008BD3B8 /* DigitalPondTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A94385F21923BE50008BD3B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A94385D01923BE50008BD3B8 /* DigitalPond */;
+			targetProxy = A94385F11923BE50008BD3B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A94385DD1923BE50008BD3B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94385DE1923BE50008BD3B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A94385F61923BE50008BD3B8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A94385F71923BE50008BD3B8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A94385FB1923BE50008BD3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A94385FC1923BE50008BD3B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A94385FE1923BE50008BD3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
+				INFOPLIST_FILE = "DigitalPond/DigitalPond-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A94385FF1923BE50008BD3B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
+				INFOPLIST_FILE = "DigitalPond/DigitalPond-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A94386011923BE50008BD3B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigitalPond.app/DigitalPond";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DigitalPondTests/DigitalPondTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A94386021923BE50008BD3B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DigitalPond.app/DigitalPond";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DigitalPond/DigitalPond-Prefix.pch";
+				INFOPLIST_FILE = "DigitalPondTests/DigitalPondTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A94385CC1923BE50008BD3B8 /* Build configuration list for PBXProject "DigitalPond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94385FB1923BE50008BD3B8 /* Debug */,
+				A94385FC1923BE50008BD3B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A94385FD1923BE50008BD3B8 /* Build configuration list for PBXNativeTarget "DigitalPond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94385FE1923BE50008BD3B8 /* Debug */,
+				A94385FF1923BE50008BD3B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A94386001923BE50008BD3B8 /* Build configuration list for PBXNativeTarget "DigitalPondTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A94386011923BE50008BD3B8 /* Debug */,
+				A94386021923BE50008BD3B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A94385C91923BE50008BD3B8 /* Project object */;
+}
