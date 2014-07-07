@@ -117,19 +117,9 @@
     
     [filter setValue:ciImage forKeyPath:kCIInputImageKey];
     
-//    CIImage * ciResult = [filter valueForKeyPath:kCIOutputImageKey];
-    
     CIImage * ciResult = [filter outputImage];
     
     CIContext * ciContext = [CIContext contextWithOptions:nil];
-    
-//    CGRect rect = [ciResult extent];
-//    
-//    CGImageRef cgImageRef = [ciContext createCGImage:ciResult fromRect:rect];
-//    
-//    UIImage * uiImage = [UIImage imageWithCGImage:cgImageRef];
-//    
-//    return uiImage;
     
     return [UIImage imageWithCGImage:[ciContext createCGImage:ciResult fromRect:[ciResult extent]]];
 }

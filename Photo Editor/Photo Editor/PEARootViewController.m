@@ -169,6 +169,7 @@
     filterVC.imageToFilter = originalImage;
     blurVC.imageToFilter = originalImage;
     hsbVC.currentImage = originalImage;
+    
     imageView.image = originalImage;
 }
 

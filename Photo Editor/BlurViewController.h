@@ -14,7 +14,7 @@
 
 @property (nonatomic,assign) id<BlurViewControllerDelegate> delegate;
 
-@property(nonatomic) UIImage * imageToFilter;
+@property(nonatomic,weak) UIImage * imageToFilter;
 
 @end
 

@@ -11,7 +11,7 @@
 
 @interface HSBColorControlVC : UIViewController
 
-@property (nonatomic) UIImage* currentImage;
+@property (nonatomic,weak) UIImage * currentImage;
 
 @property (nonatomic) id <HSBColorControlVCDelegate> delegate;
 
