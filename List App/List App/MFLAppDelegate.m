@@ -7,13 +7,21 @@
 //
 
 #import "MFLAppDelegate.h"
+#import "MFLTableViewController.h"
 
 @implementation MFLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
     // Override point for customization after application launch.
+    
+    MFLTableViewController * tableVC = [[MFLTableViewController alloc] initWithStyle:UITableViewStylePlain];
+    
+    self.window.rootViewController = tableVC;
+
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;

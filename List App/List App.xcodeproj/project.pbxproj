@@ -19,6 +19,7 @@
 		A937D6EF197FFAE900917D61 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A937D6D7197FFAE900917D61 /* UIKit.framework */; };
 		A937D6F7197FFAE900917D61 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A937D6F5197FFAE900917D61 /* InfoPlist.strings */; };
 		A937D6F9197FFAE900917D61 /* List_AppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A937D6F8197FFAE900917D61 /* List_AppTests.m */; };
+		A937D705198005FA00917D61 /* MFLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A937D704198005FA00917D61 /* MFLTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		A937D6F4197FFAE900917D61 /* List AppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "List AppTests-Info.plist"; sourceTree = "<group>"; };
 		A937D6F6197FFAE900917D61 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A937D6F8197FFAE900917D61 /* List_AppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = List_AppTests.m; sourceTree = "<group>"; };
+		A937D703198005FA00917D61 /* MFLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MFLTableViewController.h; path = "List App/MFLTableViewController.h"; sourceTree = "<group>"; };
+		A937D704198005FA00917D61 /* MFLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MFLTableViewController.m; path = "List App/MFLTableViewController.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 		A937D6C7197FFAE800917D61 = {
 			isa = PBXGroup;
 			children = (
+				A937D7021980055100917D61 /* Controllers */,
 				A937D6D9197FFAE900917D61 /* List App */,
 				A937D6F2197FFAE900917D61 /* List AppTests */,
 				A937D6D2197FFAE900917D61 /* Frameworks */,
@@ -142,6 +146,15 @@
 				A937D6F5197FFAE900917D61 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A937D7021980055100917D61 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A937D703198005FA00917D61 /* MFLTableViewController.h */,
+				A937D704198005FA00917D61 /* MFLTableViewController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A937D705198005FA00917D61 /* MFLTableViewController.m in Sources */,
 				A937D6E4197FFAE900917D61 /* MFLAppDelegate.m in Sources */,
 				A937D6E0197FFAE900917D61 /* main.m in Sources */,
 			);
