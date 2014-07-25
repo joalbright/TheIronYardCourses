@@ -1,73 +1,46 @@
 //
-//  MFLTableViewController.m
-//  List App
+//  GFATableViewController.m
+//  Github Friends
 //
-//  Created by Jo Albright on 7/23/14.
+//  Created by Jo Albright on 7/24/14.
 //  Copyright (c) 2014 Jo Albright. All rights reserved.
 //
 
-#import "MFLTableViewController.h"
+#import "GFATableViewController.h"
 
-@interface MFLTableViewController ()
+#import "GFATableViewCell.h"
 
-////////////////
-////////////////
-////////////////
+#import "GFAViewController.h"
 
-@property (nonatomic) NSArray * info;
-
-////////////////
-////////////////
-////////////////
-
-@property (nonatomic) NSArray * listItems;
-
-// create an array for students - NSStrings
-
-// create an array for colors - UIColors
-
-// create an array for sizes - NSNumbers
+@interface GFATableViewController ()
 
 @end
 
-@implementation MFLTableViewController
+@implementation GFATableViewController
+{
+    NSMutableArray * githubFriends;
+}
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
-    if (self) {
-        
+    if (self)
+    {
         // Custom initialization
         
-        self.listItems = @[@"Monday",@"Tuesday",@"Wednesday",@"Thursday"]; // the last 3
-        
-        // set 7 students
-        
-        // set 7 colors
-        
-        // set 7 numbers (20 - 40)
-        
-        ////////////////
-        ////////////////
-        ////////////////
-        
-        self.info = @[
-                      @{
-                          @"day":@"Monday",
-                          @"color":[UIColor redColor],
-                          @"name":@"Matt",
-                          @"size":@20
-                        },
-                      @{
-                          @"day":@"Tuesday",
-                          @"color":[UIColor greenColor]
-                        }
-                      ];
-        
-        ////////////////
-        ////////////////
-        ////////////////
-        
+        githubFriends = [@[
+                           
+                           @{
+                            @"login" : @"joalbright",
+                            @"avatar_url" : @"https://avatars.githubusercontent.com/u/1536630?",
+                            @"html_url" : @"https://github.com/joalbright",
+                            @"name" : @"Jo Albright",
+                            @"blog" : @"jo2.co",
+                            @"location" : @"Atlanta, Ga",
+                            @"email" : @"me@jo2.co"
+                            }
+                           
+                           ] mutableCopy];
     }
     return self;
 }
@@ -75,6 +48,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UIView * headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
+    
+    self.tableView.tableHeaderView = headerView;
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -91,47 +68,54 @@
 
 #pragma mark - Table view data source
 
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+//{
+//#warning Potentially incomplete method implementation.
+//    // Return the number of sections.
+//    return 0;
+//}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return self.listItems.count;
+    return githubFriends.count;
 }
-
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell * cell = [[UITableViewCell alloc] init];
-    
-//    NSString * listItem = [self.listItems objectAtIndex:indexPath.row];
+    GFATableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
     
+    if (cell == nil)
+    {
+        cell = [[GFATableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
     
-    NSDictionary * infoItem = self.info[indexPath.row];
-    
-//    NSString * day = infoItem[@"day"];
-//    
-//    UIColor * color = infoItem[@"color"];
-//    
-    
-    
-//    NSString * listItem = self.listItems[indexPath.row];
-//    
-//    NSLog(@"listItem = %@",listItem);
-    
-    cell.textLabel.text = infoItem[@"day"];
-    // there is a sub text that will be set by student name
-    
-    // set background color to color in array
-    cell.backgroundColor = infoItem[@"color"];
-    
-    // set the textlabel font size to a number from last array
+    cell.friendInfo = githubFriends[indexPath.row];
     
     // Configure the cell...
     
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"Select row at %@",indexPath);
+    
+    GFAViewController * profileView = [[GFAViewController alloc] init];
+    
+    profileView.view.backgroundColor = [UIColor lightGrayColor];
+    
+    profileView.friendInfo = githubFriends[indexPath.row];
+    
+    [self.navigationController pushViewController:profileView animated:YES];
+}
 
 /*
 // Override to support conditional editing of the table view.
