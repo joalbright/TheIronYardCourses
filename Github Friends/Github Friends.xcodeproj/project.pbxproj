@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A93215AA1986A1D300445786 /* GRAGithubRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A93215A91986A1D300445786 /* GRAGithubRequest.m */; };
+		A93215AF1986DB5600445786 /* downArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A93215AB1986DB5600445786 /* downArrow.png */; };
+		A93215B01986DB5600445786 /* profileArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A93215AC1986DB5600445786 /* profileArrow.png */; };
+		A93215B11986DB5600445786 /* searchButton.png in Resources */ = {isa = PBXBuildFile; fileRef = A93215AD1986DB5600445786 /* searchButton.png */; };
+		A93215B21986DB5600445786 /* upArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = A93215AE1986DB5600445786 /* upArrow.png */; };
 		A951335519813EFA00ABF0A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A951335419813EFA00ABF0A5 /* Foundation.framework */; };
 		A951335719813EFA00ABF0A5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A951335619813EFA00ABF0A5 /* CoreGraphics.framework */; };
 		A951335919813EFA00ABF0A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A951335819813EFA00ABF0A5 /* UIKit.framework */; };
@@ -35,7 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A951335119813EFA00ABF0A5 /* Github Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Github Friends.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A93215A81986A1D300445786 /* GRAGithubRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GRAGithubRequest.h; sourceTree = "<group>"; };
+		A93215A91986A1D300445786 /* GRAGithubRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GRAGithubRequest.m; sourceTree = "<group>"; };
+		A93215AB1986DB5600445786 /* downArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = downArrow.png; sourceTree = "<group>"; };
+		A93215AC1986DB5600445786 /* profileArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profileArrow.png; sourceTree = "<group>"; };
+		A93215AD1986DB5600445786 /* searchButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = searchButton.png; sourceTree = "<group>"; };
+		A93215AE1986DB5600445786 /* upArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = upArrow.png; sourceTree = "<group>"; };
+		A951335119813EFA00ABF0A5 /* Github Friends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = "Github Friends.app"; path = friends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A951335419813EFA00ABF0A5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A951335619813EFA00ABF0A5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A951335819813EFA00ABF0A5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -86,6 +97,11 @@
 		A951334819813EFA00ABF0A5 = {
 			isa = PBXGroup;
 			children = (
+				A93215AB1986DB5600445786 /* downArrow.png */,
+				A93215AC1986DB5600445786 /* profileArrow.png */,
+				A93215AD1986DB5600445786 /* searchButton.png */,
+				A93215AE1986DB5600445786 /* upArrow.png */,
+				A99B23091982E0C20075B5B8 /* Random */,
 				A951338319813F8000ABF0A5 /* Controllers */,
 				A951335A19813EFA00ABF0A5 /* Github Friends */,
 				A951337319813EFA00ABF0A5 /* Github FriendsTests */,
@@ -159,20 +175,37 @@
 			children = (
 				A951338419813F9A00ABF0A5 /* GFATableViewController.h */,
 				A951338519813F9A00ABF0A5 /* GFATableViewController.m */,
-				A95133871981481400ABF0A5 /* GFATableViewCell.h */,
-				A95133881981481400ABF0A5 /* GFATableViewCell.m */,
+				A99B23081982E0AE0075B5B8 /* TVC */,
 				A99B23051982A7E60075B5B8 /* GFAViewController.h */,
 				A99B23061982A7E60075B5B8 /* GFAViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		A99B23081982E0AE0075B5B8 /* TVC */ = {
+			isa = PBXGroup;
+			children = (
+				A95133871981481400ABF0A5 /* GFATableViewCell.h */,
+				A95133881981481400ABF0A5 /* GFATableViewCell.m */,
+			);
+			name = TVC;
+			sourceTree = "<group>";
+		};
+		A99B23091982E0C20075B5B8 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				A93215A81986A1D300445786 /* GRAGithubRequest.h */,
+				A93215A91986A1D300445786 /* GRAGithubRequest.m */,
+			);
+			name = Random;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A951335019813EFA00ABF0A5 /* Github Friends */ = {
+		A951335019813EFA00ABF0A5 /* friends */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A951337D19813EFA00ABF0A5 /* Build configuration list for PBXNativeTarget "Github Friends" */;
+			buildConfigurationList = A951337D19813EFA00ABF0A5 /* Build configuration list for PBXNativeTarget "friends" */;
 			buildPhases = (
 				A951334D19813EFA00ABF0A5 /* Sources */,
 				A951334E19813EFA00ABF0A5 /* Frameworks */,
@@ -182,7 +215,7 @@
 			);
 			dependencies = (
 			);
-			name = "Github Friends";
+			name = friends;
 			productName = "Github Friends";
 			productReference = A951335119813EFA00ABF0A5 /* Github Friends.app */;
 			productType = "com.apple.product-type.application";
@@ -232,7 +265,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A951335019813EFA00ABF0A5 /* Github Friends */,
+				A951335019813EFA00ABF0A5 /* friends */,
 				A951336B19813EFA00ABF0A5 /* Github FriendsTests */,
 			);
 		};
@@ -243,8 +276,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93215AF1986DB5600445786 /* downArrow.png in Resources */,
 				A951335F19813EFA00ABF0A5 /* InfoPlist.strings in Resources */,
 				A951336719813EFA00ABF0A5 /* Images.xcassets in Resources */,
+				A93215B01986DB5600445786 /* profileArrow.png in Resources */,
+				A93215B21986DB5600445786 /* upArrow.png in Resources */,
+				A93215B11986DB5600445786 /* searchButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,6 +305,7 @@
 				A951336119813EFA00ABF0A5 /* main.m in Sources */,
 				A95133891981481400ABF0A5 /* GFATableViewCell.m in Sources */,
 				A951336519813EFA00ABF0A5 /* GFAAppDelegate.m in Sources */,
+				A93215AA1986A1D300445786 /* GRAGithubRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +322,7 @@
 /* Begin PBXTargetDependency section */
 		A951337219813EFA00ABF0A5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A951335019813EFA00ABF0A5 /* Github Friends */;
+			target = A951335019813EFA00ABF0A5 /* friends */;
 			targetProxy = A951337119813EFA00ABF0A5 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -457,7 +495,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A951337D19813EFA00ABF0A5 /* Build configuration list for PBXNativeTarget "Github Friends" */ = {
+		A951337D19813EFA00ABF0A5 /* Build configuration list for PBXNativeTarget "friends" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A951337E19813EFA00ABF0A5 /* Debug */,

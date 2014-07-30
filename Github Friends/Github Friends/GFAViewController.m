@@ -8,13 +8,13 @@
 
 #import "GFAViewController.h"
 
-@interface GFAViewController ()
+@interface GFAViewController () <UIWebViewDelegate>
 
 @end
 
 @implementation GFAViewController
 {
-    UIWebView * webView;
+    UIWebView * profileWebView;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -23,12 +23,19 @@
     if (self) {
         // Custom initialization
         
-        webView = [[UIWebView alloc] initWithFrame:self.view.frame];
+        profileWebView = [[UIWebView alloc] initWithFrame:self.view.frame];
         
-        [self.view addSubview:webView];
+        profileWebView.delegate = self;
+        
+        [self.view addSubview:profileWebView];
         
     }
     return self;
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    NSLog(@"website = %@",webView.request.URL.absoluteString);
 }
 
 - (void)viewDidAppear:(BOOL)animated
@@ -47,9 +54,9 @@
     
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
     
-    NSLog(@"%@",webView);
+    NSLog(@"%@",profileWebView);
     
-    [webView loadRequest:request];
+    [profileWebView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning

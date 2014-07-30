@@ -12,4 +12,6 @@
 
 @property (nonatomic) NSDictionary * friendInfo;
 
+@property (nonatomic) UINavigationController * navigationController;
+
 @end

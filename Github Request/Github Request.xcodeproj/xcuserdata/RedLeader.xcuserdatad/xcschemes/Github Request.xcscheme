@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A951335019813EFA00ABF0A5"
-               BuildableName = "friends.app"
-               BlueprintName = "friends"
-               ReferencedContainer = "container:Github Friends.xcodeproj">
+               BlueprintIdentifier = "A9321572198684F500445786"
+               BuildableName = "Github Request.app"
+               BlueprintName = "Github Request"
+               ReferencedContainer = "container:Github Request.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A951336B19813EFA00ABF0A5"
-               BuildableName = "Github FriendsTests.xctest"
-               BlueprintName = "Github FriendsTests"
-               ReferencedContainer = "container:Github Friends.xcodeproj">
+               BlueprintIdentifier = "A932158D198684F500445786"
+               BuildableName = "Github RequestTests.xctest"
+               BlueprintName = "Github RequestTests"
+               ReferencedContainer = "container:Github Request.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A951335019813EFA00ABF0A5"
-            BuildableName = "friends.app"
-            BlueprintName = "friends"
-            ReferencedContainer = "container:Github Friends.xcodeproj">
+            BlueprintIdentifier = "A9321572198684F500445786"
+            BuildableName = "Github Request.app"
+            BlueprintName = "Github Request"
+            ReferencedContainer = "container:Github Request.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A951335019813EFA00ABF0A5"
-            BuildableName = "friends.app"
-            BlueprintName = "friends"
-            ReferencedContainer = "container:Github Friends.xcodeproj">
+            BlueprintIdentifier = "A9321572198684F500445786"
+            BuildableName = "Github Request.app"
+            BlueprintName = "Github Request"
+            ReferencedContainer = "container:Github Request.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A951335019813EFA00ABF0A5"
-            BuildableName = "friends.app"
-            BlueprintName = "friends"
-            ReferencedContainer = "container:Github Friends.xcodeproj">
+            BlueprintIdentifier = "A9321572198684F500445786"
+            BuildableName = "Github Request.app"
+            BlueprintName = "Github Request"
+            ReferencedContainer = "container:Github Request.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
