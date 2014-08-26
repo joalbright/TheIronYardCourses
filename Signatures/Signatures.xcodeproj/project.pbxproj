@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A950C248199CEE6200FD3B32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A950C247199CEE6200FD3B32 /* Foundation.framework */; };
+		A950C24A199CEE6200FD3B32 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A950C249199CEE6200FD3B32 /* CoreGraphics.framework */; };
+		A950C24C199CEE6200FD3B32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A950C24B199CEE6200FD3B32 /* UIKit.framework */; };
+		A950C252199CEE6200FD3B32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A950C250199CEE6200FD3B32 /* InfoPlist.strings */; };
+		A950C254199CEE6200FD3B32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A950C253199CEE6200FD3B32 /* main.m */; };
+		A950C258199CEE6200FD3B32 /* SIGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A950C257199CEE6200FD3B32 /* SIGAppDelegate.m */; };
+		A950C25A199CEE6200FD3B32 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A950C259199CEE6200FD3B32 /* Images.xcassets */; };
+		A950C261199CEE6200FD3B32 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A950C260199CEE6200FD3B32 /* XCTest.framework */; };
+		A950C262199CEE6200FD3B32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A950C247199CEE6200FD3B32 /* Foundation.framework */; };
+		A950C263199CEE6200FD3B32 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A950C24B199CEE6200FD3B32 /* UIKit.framework */; };
+		A950C26B199CEE6200FD3B32 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A950C269199CEE6200FD3B32 /* InfoPlist.strings */; };
+		A950C26D199CEE6200FD3B32 /* SignaturesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A950C26C199CEE6200FD3B32 /* SignaturesTests.m */; };
+		A950C279199CF01100FD3B32 /* SIGRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A950C278199CF01100FD3B32 /* SIGRootViewController.m */; };
+		A950C27C199CF02A00FD3B32 /* SIGListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A950C27B199CF02A00FD3B32 /* SIGListTableViewController.m */; };
+		A950C27F199CF03800FD3B32 /* SIGDrawViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A950C27E199CF03800FD3B32 /* SIGDrawViewController.m */; };
+		A950C283199CF05400FD3B32 /* SIGDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = A950C282199CF05400FD3B32 /* SIGDrawView.m */; };
+		A950C287199CF07600FD3B32 /* SIGListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A950C286199CF07600FD3B32 /* SIGListTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A950C264199CEE6200FD3B32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A950C23C199CEE6200FD3B32 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A950C243199CEE6200FD3B32;
+			remoteInfo = Signatures;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A950C244199CEE6200FD3B32 /* Signatures.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Signatures.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A950C247199CEE6200FD3B32 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A950C249199CEE6200FD3B32 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A950C24B199CEE6200FD3B32 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A950C24F199CEE6200FD3B32 /* Signatures-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Signatures-Info.plist"; sourceTree = "<group>"; };
+		A950C251199CEE6200FD3B32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A950C253199CEE6200FD3B32 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A950C255199CEE6200FD3B32 /* Signatures-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Signatures-Prefix.pch"; sourceTree = "<group>"; };
+		A950C256199CEE6200FD3B32 /* SIGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SIGAppDelegate.h; sourceTree = "<group>"; };
+		A950C257199CEE6200FD3B32 /* SIGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SIGAppDelegate.m; sourceTree = "<group>"; };
+		A950C259199CEE6200FD3B32 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A950C25F199CEE6200FD3B32 /* SignaturesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignaturesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A950C260199CEE6200FD3B32 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A950C268199CEE6200FD3B32 /* SignaturesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SignaturesTests-Info.plist"; sourceTree = "<group>"; };
+		A950C26A199CEE6200FD3B32 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A950C26C199CEE6200FD3B32 /* SignaturesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SignaturesTests.m; sourceTree = "<group>"; };
+		A950C277199CF01100FD3B32 /* SIGRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGRootViewController.h; path = Signatures/SIGRootViewController.h; sourceTree = "<group>"; };
+		A950C278199CF01100FD3B32 /* SIGRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGRootViewController.m; path = Signatures/SIGRootViewController.m; sourceTree = "<group>"; };
+		A950C27A199CF02A00FD3B32 /* SIGListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGListTableViewController.h; path = Signatures/SIGListTableViewController.h; sourceTree = "<group>"; };
+		A950C27B199CF02A00FD3B32 /* SIGListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGListTableViewController.m; path = Signatures/SIGListTableViewController.m; sourceTree = "<group>"; };
+		A950C27D199CF03800FD3B32 /* SIGDrawViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGDrawViewController.h; path = Signatures/SIGDrawViewController.h; sourceTree = "<group>"; };
+		A950C27E199CF03800FD3B32 /* SIGDrawViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGDrawViewController.m; path = Signatures/SIGDrawViewController.m; sourceTree = "<group>"; };
+		A950C281199CF05400FD3B32 /* SIGDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGDrawView.h; path = Signatures/SIGDrawView.h; sourceTree = "<group>"; };
+		A950C282199CF05400FD3B32 /* SIGDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGDrawView.m; path = Signatures/SIGDrawView.m; sourceTree = "<group>"; };
+		A950C285199CF07600FD3B32 /* SIGListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SIGListTableViewCell.h; path = Signatures/SIGListTableViewCell.h; sourceTree = "<group>"; };
+		A950C286199CF07600FD3B32 /* SIGListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SIGListTableViewCell.m; path = Signatures/SIGListTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A950C241199CEE6200FD3B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A950C24A199CEE6200FD3B32 /* CoreGraphics.framework in Frameworks */,
+				A950C24C199CEE6200FD3B32 /* UIKit.framework in Frameworks */,
+				A950C248199CEE6200FD3B32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A950C25C199CEE6200FD3B32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A950C261199CEE6200FD3B32 /* XCTest.framework in Frameworks */,
+				A950C263199CEE6200FD3B32 /* UIKit.framework in Frameworks */,
+				A950C262199CEE6200FD3B32 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A950C23B199CEE6200FD3B32 = {
+			isa = PBXGroup;
+			children = (
+				A950C276199CEFEE00FD3B32 /* Controllers */,
+				A950C24D199CEE6200FD3B32 /* Signatures */,
+				A950C266199CEE6200FD3B32 /* SignaturesTests */,
+				A950C246199CEE6200FD3B32 /* Frameworks */,
+				A950C245199CEE6200FD3B32 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A950C245199CEE6200FD3B32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A950C244199CEE6200FD3B32 /* Signatures.app */,
+				A950C25F199CEE6200FD3B32 /* SignaturesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A950C246199CEE6200FD3B32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A950C247199CEE6200FD3B32 /* Foundation.framework */,
+				A950C249199CEE6200FD3B32 /* CoreGraphics.framework */,
+				A950C24B199CEE6200FD3B32 /* UIKit.framework */,
+				A950C260199CEE6200FD3B32 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A950C24D199CEE6200FD3B32 /* Signatures */ = {
+			isa = PBXGroup;
+			children = (
+				A950C256199CEE6200FD3B32 /* SIGAppDelegate.h */,
+				A950C257199CEE6200FD3B32 /* SIGAppDelegate.m */,
+				A950C259199CEE6200FD3B32 /* Images.xcassets */,
+				A950C24E199CEE6200FD3B32 /* Supporting Files */,
+			);
+			path = Signatures;
+			sourceTree = "<group>";
+		};
+		A950C24E199CEE6200FD3B32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A950C24F199CEE6200FD3B32 /* Signatures-Info.plist */,
+				A950C250199CEE6200FD3B32 /* InfoPlist.strings */,
+				A950C253199CEE6200FD3B32 /* main.m */,
+				A950C255199CEE6200FD3B32 /* Signatures-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A950C266199CEE6200FD3B32 /* SignaturesTests */ = {
+			isa = PBXGroup;
+			children = (
+				A950C26C199CEE6200FD3B32 /* SignaturesTests.m */,
+				A950C267199CEE6200FD3B32 /* Supporting Files */,
+			);
+			path = SignaturesTests;
+			sourceTree = "<group>";
+		};
+		A950C267199CEE6200FD3B32 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A950C268199CEE6200FD3B32 /* SignaturesTests-Info.plist */,
+				A950C269199CEE6200FD3B32 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A950C276199CEFEE00FD3B32 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A950C277199CF01100FD3B32 /* SIGRootViewController.h */,
+				A950C278199CF01100FD3B32 /* SIGRootViewController.m */,
+				A950C27A199CF02A00FD3B32 /* SIGListTableViewController.h */,
+				A950C27B199CF02A00FD3B32 /* SIGListTableViewController.m */,
+				A950C284199CF05900FD3B32 /* ListTVC */,
+				A950C27D199CF03800FD3B32 /* SIGDrawViewController.h */,
+				A950C27E199CF03800FD3B32 /* SIGDrawViewController.m */,
+				A950C280199CF03D00FD3B32 /* DrawVC */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A950C280199CF03D00FD3B32 /* DrawVC */ = {
+			isa = PBXGroup;
+			children = (
+				A950C281199CF05400FD3B32 /* SIGDrawView.h */,
+				A950C282199CF05400FD3B32 /* SIGDrawView.m */,
+			);
+			name = DrawVC;
+			sourceTree = "<group>";
+		};
+		A950C284199CF05900FD3B32 /* ListTVC */ = {
+			isa = PBXGroup;
+			children = (
+				A950C285199CF07600FD3B32 /* SIGListTableViewCell.h */,
+				A950C286199CF07600FD3B32 /* SIGListTableViewCell.m */,
+			);
+			name = ListTVC;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A950C243199CEE6200FD3B32 /* Signatures */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A950C270199CEE6200FD3B32 /* Build configuration list for PBXNativeTarget "Signatures" */;
+			buildPhases = (
+				A950C240199CEE6200FD3B32 /* Sources */,
+				A950C241199CEE6200FD3B32 /* Frameworks */,
+				A950C242199CEE6200FD3B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Signatures;
+			productName = Signatures;
+			productReference = A950C244199CEE6200FD3B32 /* Signatures.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A950C25E199CEE6200FD3B32 /* SignaturesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A950C273199CEE6200FD3B32 /* Build configuration list for PBXNativeTarget "SignaturesTests" */;
+			buildPhases = (
+				A950C25B199CEE6200FD3B32 /* Sources */,
+				A950C25C199CEE6200FD3B32 /* Frameworks */,
+				A950C25D199CEE6200FD3B32 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A950C265199CEE6200FD3B32 /* PBXTargetDependency */,
+			);
+			name = SignaturesTests;
+			productName = SignaturesTests;
+			productReference = A950C25F199CEE6200FD3B32 /* SignaturesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A950C23C199CEE6200FD3B32 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SIG;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jo Albright";
+				TargetAttributes = {
+					A950C25E199CEE6200FD3B32 = {
+						TestTargetID = A950C243199CEE6200FD3B32;
+					};
+				};
+			};
+			buildConfigurationList = A950C23F199CEE6200FD3B32 /* Build configuration list for PBXProject "Signatures" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A950C23B199CEE6200FD3B32;
+			productRefGroup = A950C245199CEE6200FD3B32 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A950C243199CEE6200FD3B32 /* Signatures */,
+				A950C25E199CEE6200FD3B32 /* SignaturesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A950C242199CEE6200FD3B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A950C252199CEE6200FD3B32 /* InfoPlist.strings in Resources */,
+				A950C25A199CEE6200FD3B32 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A950C25D199CEE6200FD3B32 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A950C26B199CEE6200FD3B32 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A950C240199CEE6200FD3B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A950C287199CF07600FD3B32 /* SIGListTableViewCell.m in Sources */,
+				A950C258199CEE6200FD3B32 /* SIGAppDelegate.m in Sources */,
+				A950C27C199CF02A00FD3B32 /* SIGListTableViewController.m in Sources */,
+				A950C27F199CF03800FD3B32 /* SIGDrawViewController.m in Sources */,
+				A950C279199CF01100FD3B32 /* SIGRootViewController.m in Sources */,
+				A950C283199CF05400FD3B32 /* SIGDrawView.m in Sources */,
+				A950C254199CEE6200FD3B32 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A950C25B199CEE6200FD3B32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A950C26D199CEE6200FD3B32 /* SignaturesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A950C265199CEE6200FD3B32 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A950C243199CEE6200FD3B32 /* Signatures */;
+			targetProxy = A950C264199CEE6200FD3B32 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A950C250199CEE6200FD3B32 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A950C251199CEE6200FD3B32 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A950C269199CEE6200FD3B32 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A950C26A199CEE6200FD3B32 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A950C26E199CEE6200FD3B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A950C26F199CEE6200FD3B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A950C271199CEE6200FD3B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Signatures/Signatures-Prefix.pch";
+				INFOPLIST_FILE = "Signatures/Signatures-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A950C272199CEE6200FD3B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Signatures/Signatures-Prefix.pch";
+				INFOPLIST_FILE = "Signatures/Signatures-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A950C274199CEE6200FD3B32 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Signatures.app/Signatures";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Signatures/Signatures-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SignaturesTests/SignaturesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A950C275199CEE6200FD3B32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Signatures.app/Signatures";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Signatures/Signatures-Prefix.pch";
+				INFOPLIST_FILE = "SignaturesTests/SignaturesTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A950C23F199CEE6200FD3B32 /* Build configuration list for PBXProject "Signatures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A950C26E199CEE6200FD3B32 /* Debug */,
+				A950C26F199CEE6200FD3B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A950C270199CEE6200FD3B32 /* Build configuration list for PBXNativeTarget "Signatures" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A950C271199CEE6200FD3B32 /* Debug */,
+				A950C272199CEE6200FD3B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A950C273199CEE6200FD3B32 /* Build configuration list for PBXNativeTarget "SignaturesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A950C274199CEE6200FD3B32 /* Debug */,
+				A950C275199CEE6200FD3B32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A950C23C199CEE6200FD3B32 /* Project object */;
+}

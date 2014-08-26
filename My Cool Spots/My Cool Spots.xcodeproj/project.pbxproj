@@ -1,0 +1,518 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9DCBD5319A23330005913C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DCBD5219A23330005913C3 /* Foundation.framework */; };
+		A9DCBD5519A23330005913C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DCBD5419A23330005913C3 /* CoreGraphics.framework */; };
+		A9DCBD5719A23330005913C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DCBD5619A23330005913C3 /* UIKit.framework */; };
+		A9DCBD5D19A23330005913C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9DCBD5B19A23330005913C3 /* InfoPlist.strings */; };
+		A9DCBD5F19A23330005913C3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DCBD5E19A23330005913C3 /* main.m */; };
+		A9DCBD6319A23330005913C3 /* MCSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DCBD6219A23330005913C3 /* MCSAppDelegate.m */; };
+		A9DCBD6619A23330005913C3 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DCBD6419A23330005913C3 /* Main_iPhone.storyboard */; };
+		A9DCBD6919A23330005913C3 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9DCBD6719A23330005913C3 /* Main_iPad.storyboard */; };
+		A9DCBD6C19A23330005913C3 /* MCSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DCBD6B19A23330005913C3 /* MCSViewController.m */; };
+		A9DCBD6E19A23330005913C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9DCBD6D19A23330005913C3 /* Images.xcassets */; };
+		A9DCBD7519A23330005913C3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DCBD7419A23330005913C3 /* XCTest.framework */; };
+		A9DCBD7619A23330005913C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DCBD5219A23330005913C3 /* Foundation.framework */; };
+		A9DCBD7719A23330005913C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DCBD5619A23330005913C3 /* UIKit.framework */; };
+		A9DCBD7F19A23330005913C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A9DCBD7D19A23330005913C3 /* InfoPlist.strings */; };
+		A9DCBD8119A23330005913C3 /* My_Cool_SpotsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DCBD8019A23330005913C3 /* My_Cool_SpotsTests.m */; };
+		A9DCBD8C19A23D78005913C3 /* MCSAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DCBD8B19A23D78005913C3 /* MCSAnnotation.m */; };
+		A9DCBD9019A248A6005913C3 /* blue.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCBD8D19A248A6005913C3 /* blue.png */; };
+		A9DCBD9119A248A6005913C3 /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCBD8E19A248A6005913C3 /* green.png */; };
+		A9DCBD9219A248A6005913C3 /* magenta.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCBD8F19A248A6005913C3 /* magenta.png */; };
+		A9DCBD9619A27E8C005913C3 /* MCSFourSquareRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DCBD9519A27E8C005913C3 /* MCSFourSquareRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9DCBD7819A23330005913C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9DCBD4719A23330005913C3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9DCBD4E19A23330005913C3;
+			remoteInfo = "My Cool Spots";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A9DCBD4F19A23330005913C3 /* My Cool Spots.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Cool Spots.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DCBD5219A23330005913C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A9DCBD5419A23330005913C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A9DCBD5619A23330005913C3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A9DCBD5A19A23330005913C3 /* My Cool Spots-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "My Cool Spots-Info.plist"; sourceTree = "<group>"; };
+		A9DCBD5C19A23330005913C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9DCBD5E19A23330005913C3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A9DCBD6019A23330005913C3 /* My Cool Spots-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "My Cool Spots-Prefix.pch"; sourceTree = "<group>"; };
+		A9DCBD6119A23330005913C3 /* MCSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCSAppDelegate.h; sourceTree = "<group>"; };
+		A9DCBD6219A23330005913C3 /* MCSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCSAppDelegate.m; sourceTree = "<group>"; };
+		A9DCBD6519A23330005913C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		A9DCBD6819A23330005913C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		A9DCBD6A19A23330005913C3 /* MCSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCSViewController.h; sourceTree = "<group>"; };
+		A9DCBD6B19A23330005913C3 /* MCSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCSViewController.m; sourceTree = "<group>"; };
+		A9DCBD6D19A23330005913C3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A9DCBD7319A23330005913C3 /* My Cool SpotsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "My Cool SpotsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9DCBD7419A23330005913C3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A9DCBD7C19A23330005913C3 /* My Cool SpotsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "My Cool SpotsTests-Info.plist"; sourceTree = "<group>"; };
+		A9DCBD7E19A23330005913C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A9DCBD8019A23330005913C3 /* My_Cool_SpotsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = My_Cool_SpotsTests.m; sourceTree = "<group>"; };
+		A9DCBD8A19A23D78005913C3 /* MCSAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSAnnotation.h; sourceTree = "<group>"; };
+		A9DCBD8B19A23D78005913C3 /* MCSAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSAnnotation.m; sourceTree = "<group>"; };
+		A9DCBD8D19A248A6005913C3 /* blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blue.png; path = "../../../Downloads/Map Location Pins/PNG/blue.png"; sourceTree = "<group>"; };
+		A9DCBD8E19A248A6005913C3 /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = green.png; path = "../../../Downloads/Map Location Pins/PNG/green.png"; sourceTree = "<group>"; };
+		A9DCBD8F19A248A6005913C3 /* magenta.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = magenta.png; path = "../../../Downloads/Map Location Pins/PNG/magenta.png"; sourceTree = "<group>"; };
+		A9DCBD9419A27E8C005913C3 /* MCSFourSquareRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCSFourSquareRequest.h; sourceTree = "<group>"; };
+		A9DCBD9519A27E8C005913C3 /* MCSFourSquareRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCSFourSquareRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9DCBD4C19A23330005913C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DCBD5519A23330005913C3 /* CoreGraphics.framework in Frameworks */,
+				A9DCBD5719A23330005913C3 /* UIKit.framework in Frameworks */,
+				A9DCBD5319A23330005913C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DCBD7019A23330005913C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DCBD7519A23330005913C3 /* XCTest.framework in Frameworks */,
+				A9DCBD7719A23330005913C3 /* UIKit.framework in Frameworks */,
+				A9DCBD7619A23330005913C3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9DCBD4619A23330005913C3 = {
+			isa = PBXGroup;
+			children = (
+				A9DCBD5819A23330005913C3 /* My Cool Spots */,
+				A9DCBD7A19A23330005913C3 /* My Cool SpotsTests */,
+				A9DCBD5119A23330005913C3 /* Frameworks */,
+				A9DCBD5019A23330005913C3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A9DCBD5019A23330005913C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9DCBD4F19A23330005913C3 /* My Cool Spots.app */,
+				A9DCBD7319A23330005913C3 /* My Cool SpotsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9DCBD5119A23330005913C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9DCBD5219A23330005913C3 /* Foundation.framework */,
+				A9DCBD5419A23330005913C3 /* CoreGraphics.framework */,
+				A9DCBD5619A23330005913C3 /* UIKit.framework */,
+				A9DCBD7419A23330005913C3 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9DCBD5819A23330005913C3 /* My Cool Spots */ = {
+			isa = PBXGroup;
+			children = (
+				A9DCBD9319A248C3005913C3 /* images */,
+				A9DCBD6119A23330005913C3 /* MCSAppDelegate.h */,
+				A9DCBD6219A23330005913C3 /* MCSAppDelegate.m */,
+				A9DCBD6419A23330005913C3 /* Main_iPhone.storyboard */,
+				A9DCBD6719A23330005913C3 /* Main_iPad.storyboard */,
+				A9DCBD6A19A23330005913C3 /* MCSViewController.h */,
+				A9DCBD6B19A23330005913C3 /* MCSViewController.m */,
+				A9DCBD6D19A23330005913C3 /* Images.xcassets */,
+				A9DCBD5919A23330005913C3 /* Supporting Files */,
+				A9DCBD8A19A23D78005913C3 /* MCSAnnotation.h */,
+				A9DCBD8B19A23D78005913C3 /* MCSAnnotation.m */,
+				A9DCBD9419A27E8C005913C3 /* MCSFourSquareRequest.h */,
+				A9DCBD9519A27E8C005913C3 /* MCSFourSquareRequest.m */,
+			);
+			path = "My Cool Spots";
+			sourceTree = "<group>";
+		};
+		A9DCBD5919A23330005913C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9DCBD5A19A23330005913C3 /* My Cool Spots-Info.plist */,
+				A9DCBD5B19A23330005913C3 /* InfoPlist.strings */,
+				A9DCBD5E19A23330005913C3 /* main.m */,
+				A9DCBD6019A23330005913C3 /* My Cool Spots-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9DCBD7A19A23330005913C3 /* My Cool SpotsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9DCBD8019A23330005913C3 /* My_Cool_SpotsTests.m */,
+				A9DCBD7B19A23330005913C3 /* Supporting Files */,
+			);
+			path = "My Cool SpotsTests";
+			sourceTree = "<group>";
+		};
+		A9DCBD7B19A23330005913C3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A9DCBD7C19A23330005913C3 /* My Cool SpotsTests-Info.plist */,
+				A9DCBD7D19A23330005913C3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9DCBD9319A248C3005913C3 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				A9DCBD8D19A248A6005913C3 /* blue.png */,
+				A9DCBD8E19A248A6005913C3 /* green.png */,
+				A9DCBD8F19A248A6005913C3 /* magenta.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9DCBD4E19A23330005913C3 /* My Cool Spots */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DCBD8419A23330005913C3 /* Build configuration list for PBXNativeTarget "My Cool Spots" */;
+			buildPhases = (
+				A9DCBD4B19A23330005913C3 /* Sources */,
+				A9DCBD4C19A23330005913C3 /* Frameworks */,
+				A9DCBD4D19A23330005913C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "My Cool Spots";
+			productName = "My Cool Spots";
+			productReference = A9DCBD4F19A23330005913C3 /* My Cool Spots.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A9DCBD7219A23330005913C3 /* My Cool SpotsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9DCBD8719A23330005913C3 /* Build configuration list for PBXNativeTarget "My Cool SpotsTests" */;
+			buildPhases = (
+				A9DCBD6F19A23330005913C3 /* Sources */,
+				A9DCBD7019A23330005913C3 /* Frameworks */,
+				A9DCBD7119A23330005913C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9DCBD7919A23330005913C3 /* PBXTargetDependency */,
+			);
+			name = "My Cool SpotsTests";
+			productName = "My Cool SpotsTests";
+			productReference = A9DCBD7319A23330005913C3 /* My Cool SpotsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9DCBD4719A23330005913C3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MCS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jo Albright";
+				TargetAttributes = {
+					A9DCBD7219A23330005913C3 = {
+						TestTargetID = A9DCBD4E19A23330005913C3;
+					};
+				};
+			};
+			buildConfigurationList = A9DCBD4A19A23330005913C3 /* Build configuration list for PBXProject "My Cool Spots" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9DCBD4619A23330005913C3;
+			productRefGroup = A9DCBD5019A23330005913C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9DCBD4E19A23330005913C3 /* My Cool Spots */,
+				A9DCBD7219A23330005913C3 /* My Cool SpotsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9DCBD4D19A23330005913C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DCBD6919A23330005913C3 /* Main_iPad.storyboard in Resources */,
+				A9DCBD6E19A23330005913C3 /* Images.xcassets in Resources */,
+				A9DCBD9219A248A6005913C3 /* magenta.png in Resources */,
+				A9DCBD6619A23330005913C3 /* Main_iPhone.storyboard in Resources */,
+				A9DCBD9119A248A6005913C3 /* green.png in Resources */,
+				A9DCBD5D19A23330005913C3 /* InfoPlist.strings in Resources */,
+				A9DCBD9019A248A6005913C3 /* blue.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DCBD7119A23330005913C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DCBD7F19A23330005913C3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9DCBD4B19A23330005913C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DCBD8C19A23D78005913C3 /* MCSAnnotation.m in Sources */,
+				A9DCBD6C19A23330005913C3 /* MCSViewController.m in Sources */,
+				A9DCBD6319A23330005913C3 /* MCSAppDelegate.m in Sources */,
+				A9DCBD9619A27E8C005913C3 /* MCSFourSquareRequest.m in Sources */,
+				A9DCBD5F19A23330005913C3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A9DCBD6F19A23330005913C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DCBD8119A23330005913C3 /* My_Cool_SpotsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9DCBD7919A23330005913C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9DCBD4E19A23330005913C3 /* My Cool Spots */;
+			targetProxy = A9DCBD7819A23330005913C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A9DCBD5B19A23330005913C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DCBD5C19A23330005913C3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A9DCBD6419A23330005913C3 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DCBD6519A23330005913C3 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A9DCBD6719A23330005913C3 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DCBD6819A23330005913C3 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		A9DCBD7D19A23330005913C3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9DCBD7E19A23330005913C3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9DCBD8219A23330005913C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A9DCBD8319A23330005913C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9DCBD8519A23330005913C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "My Cool Spots/My Cool Spots-Prefix.pch";
+				INFOPLIST_FILE = "My Cool Spots/My Cool Spots-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A9DCBD8619A23330005913C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "My Cool Spots/My Cool Spots-Prefix.pch";
+				INFOPLIST_FILE = "My Cool Spots/My Cool Spots-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A9DCBD8819A23330005913C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/My Cool Spots.app/My Cool Spots";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "My Cool Spots/My Cool Spots-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "My Cool SpotsTests/My Cool SpotsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A9DCBD8919A23330005913C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/My Cool Spots.app/My Cool Spots";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "My Cool Spots/My Cool Spots-Prefix.pch";
+				INFOPLIST_FILE = "My Cool SpotsTests/My Cool SpotsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9DCBD4A19A23330005913C3 /* Build configuration list for PBXProject "My Cool Spots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DCBD8219A23330005913C3 /* Debug */,
+				A9DCBD8319A23330005913C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9DCBD8419A23330005913C3 /* Build configuration list for PBXNativeTarget "My Cool Spots" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DCBD8519A23330005913C3 /* Debug */,
+				A9DCBD8619A23330005913C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A9DCBD8719A23330005913C3 /* Build configuration list for PBXNativeTarget "My Cool SpotsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9DCBD8819A23330005913C3 /* Debug */,
+				A9DCBD8919A23330005913C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9DCBD4719A23330005913C3 /* Project object */;
+}
