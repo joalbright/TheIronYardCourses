@@ -30,6 +30,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
     photos = [@[] mutableCopy];
     
     imagePicker = [[UIImagePickerController alloc] init];
@@ -45,7 +47,7 @@
     
     [self addChildViewController:imagePicker];
     
-    imagePicker.view.frame = CGRectMake(0, 0, 320, 320);
+    imagePicker.view.frame = CGRectMake(10, 10, 300, 300);
     
     
     UIButton * takePictureButton = [[UIButton alloc] initWithFrame:CGRectMake(50, 370, 100, 100)];
@@ -57,12 +59,13 @@
     
     UICollectionViewFlowLayout * layout = [[UICollectionViewFlowLayout alloc] init];
     
-    layout.itemSize = CGSizeMake(100, 100);
+    layout.itemSize = CGSizeMake(90, 90);
     
-    UICollectionView * photoCollection = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 320, 320, [UIScreen mainScreen].bounds.size.height - 320) collectionViewLayout:layout];
+    UICollectionView * photoCollection = [[UICollectionView alloc] initWithFrame:CGRectMake(10, 320, 300, [UIScreen mainScreen].bounds.size.height - 330) collectionViewLayout:layout];
     
     photoCollection.dataSource = self;
     photoCollection.delegate = self;
+    photoCollection.backgroundColor = [UIColor whiteColor];
     
     [photoCollection registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"cell"];
     
@@ -85,6 +88,17 @@
     } failureBlock:^(NSError *error) {
         
     }];
+    
+    UIButton * cameraButton = [[UIButton alloc] initWithFrame:CGRectMake(110, 260, 100, 100)];
+    
+    cameraButton.layer.cornerRadius = 50;
+    cameraButton.backgroundColor = [UIColor orangeColor];
+    cameraButton.layer.borderWidth = 10;
+    cameraButton.layer.borderColor = [UIColor whiteColor].CGColor;
+    
+    [cameraButton addTarget:self action:@selector(takePicture) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:cameraButton];
 }
 
 - (void)takePicture

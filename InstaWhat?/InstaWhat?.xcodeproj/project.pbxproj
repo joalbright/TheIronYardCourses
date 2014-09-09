@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92690F719AD1390006F7B92 /* IWAChosenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A92690F619AD1390006F7B92 /* IWAChosenViewController.m */; };
 		A99DBDCD19AB7AC200D293A1 /* IWAFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A99DBDCC19AB7AC200D293A1 /* IWAFilterViewController.m */; };
 		A9DCBDEE19A628EE005913C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DCBDED19A628EE005913C3 /* Foundation.framework */; };
 		A9DCBDF019A628EE005913C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9DCBDEF19A628EE005913C3 /* CoreGraphics.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A92690F519AD1390006F7B92 /* IWAChosenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWAChosenViewController.h; sourceTree = "<group>"; };
+		A92690F619AD1390006F7B92 /* IWAChosenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWAChosenViewController.m; sourceTree = "<group>"; };
 		A99DBDCB19AB7AC200D293A1 /* IWAFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IWAFilterViewController.h; sourceTree = "<group>"; };
 		A99DBDCC19AB7AC200D293A1 /* IWAFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IWAFilterViewController.m; sourceTree = "<group>"; };
 		A9DCBDEA19A628EE005913C3 /* InstaWhat?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InstaWhat?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +125,8 @@
 				A9DCBE0319A628EE005913C3 /* IWAViewController.m */,
 				A99DBDCB19AB7AC200D293A1 /* IWAFilterViewController.h */,
 				A99DBDCC19AB7AC200D293A1 /* IWAFilterViewController.m */,
+				A92690F519AD1390006F7B92 /* IWAChosenViewController.h */,
+				A92690F619AD1390006F7B92 /* IWAChosenViewController.m */,
 				A9DCBE0519A628EE005913C3 /* Images.xcassets */,
 				A9DCBDF419A628EE005913C3 /* Supporting Files */,
 			);
@@ -258,6 +263,7 @@
 				A9DCBE0419A628EE005913C3 /* IWAViewController.m in Sources */,
 				A9DCBDFE19A628EE005913C3 /* IWAAppDelegate.m in Sources */,
 				A99DBDCD19AB7AC200D293A1 /* IWAFilterViewController.m in Sources */,
+				A92690F719AD1390006F7B92 /* IWAChosenViewController.m in Sources */,
 				A9DCBDFA19A628EE005913C3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
