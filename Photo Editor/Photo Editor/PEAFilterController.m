@@ -36,7 +36,6 @@
         
         filterButtons = [@[] mutableCopy];
         filterNames = @[
-                        @"SuperFilter",
                         @"CIColorInvert",
                         @"CIColorMonochrome",
                         @"CIColorPosterize",
