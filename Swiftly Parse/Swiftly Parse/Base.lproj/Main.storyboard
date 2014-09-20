@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zk2-hv-mjZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <scenes>
+        <!--Face Kicks-->
+        <scene sceneID="lEC-XR-cVj">
+            <objects>
+                <tableViewController id="p3s-Zc-UJy" customClass="FacesTVC" customModule="Swiftly_Parse" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="397" sectionHeaderHeight="22" sectionFooterHeight="22" id="mQC-N9-s7z">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="400" id="BZZ-Hp-8f2" customClass="FaceCell" customModule="Swiftly_Parse" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BZZ-Hp-8f2" id="Vdu-HQ-FmX">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hnk-BH-Qkt">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                            <variation key="widthClass=compact" fixedFrame="YES">
+                                                <rect key="frame" x="20" y="20" width="360" height="360"/>
+                                            </variation>
+                                        </imageView>
+                                    </subviews>
+                                    <variation key="default">
+                                        <mask key="subviews">
+                                            <exclude reference="hnk-BH-Qkt"/>
+                                        </mask>
+                                    </variation>
+                                    <variation key="widthClass=compact">
+                                        <mask key="subviews">
+                                            <include reference="hnk-BH-Qkt"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="faceView" destination="hnk-BH-Qkt" id="a7T-xb-weC"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="p3s-Zc-UJy" id="UUO-U9-zAx"/>
+                            <outlet property="delegate" destination="p3s-Zc-UJy" id="1Be-zQ-Npq"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="Sdn-8m-2Ay"/>
+                        <barButtonItem systemItem="camera" id="ew6-fG-QNA">
+                            <connections>
+                                <action selector="newFace:" destination="p3s-Zc-UJy" id="aF1-ib-nDS"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="H6l-ai-jrV"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Face Kicks" id="gRP-pr-Iia"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SGc-h7-Bkh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="898.5" y="374"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ji2-ad-fBy">
+            <objects>
+                <navigationController toolbarHidden="NO" id="zk2-hv-mjZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="G3a-n5-vyB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Gj8-3z-BWk">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="p3s-Zc-UJy" kind="relationship" relationship="rootViewController" id="ouL-MI-ebL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oGo-aX-jb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.5" y="374"/>
+        </scene>
+    </scenes>
+</document>

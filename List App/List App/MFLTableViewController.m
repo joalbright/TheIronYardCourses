@@ -10,7 +10,23 @@
 
 @interface MFLTableViewController ()
 
+////////////////
+////////////////
+////////////////
+
+@property (nonatomic) NSArray * info;
+
+////////////////
+////////////////
+////////////////
+
 @property (nonatomic) NSArray * listItems;
+
+// create an array for students - NSStrings
+
+// create an array for colors - UIColors
+
+// create an array for sizes - NSNumbers
 
 @end
 
@@ -23,7 +39,34 @@
         
         // Custom initialization
         
-        self.listItems = @[@"Monday",@"Tuesday",@"Wednesday",@"Thursday"];
+        self.listItems = @[@"Monday",@"Tuesday",@"Wednesday",@"Thursday"]; // the last 3
+        
+        // set 7 students
+        
+        // set 7 colors
+        
+        // set 7 numbers (20 - 40)
+        
+        ////////////////
+        ////////////////
+        ////////////////
+        
+        self.info = @[
+                      @{
+                          @"day":@"Monday",
+                          @"color":[UIColor redColor],
+                          @"name":@"Matt",
+                          @"size":@20
+                        },
+                      @{
+                          @"day":@"Tuesday",
+                          @"color":[UIColor greenColor]
+                        }
+                      ];
+        
+        ////////////////
+        ////////////////
+        ////////////////
         
     }
     return self;
@@ -62,11 +105,27 @@
     
 //    NSString * listItem = [self.listItems objectAtIndex:indexPath.row];
     
-    NSString * listItem = self.listItems[indexPath.row];
     
-    NSLog(@"listItem = %@",listItem);
     
-    cell.textLabel.text = listItem;
+    NSDictionary * infoItem = self.info[indexPath.row];
+    
+//    NSString * day = infoItem[@"day"];
+//    
+//    UIColor * color = infoItem[@"color"];
+//    
+    
+    
+//    NSString * listItem = self.listItems[indexPath.row];
+//    
+//    NSLog(@"listItem = %@",listItem);
+    
+    cell.textLabel.text = infoItem[@"day"];
+    // there is a sub text that will be set by student name
+    
+    // set background color to color in array
+    cell.backgroundColor = infoItem[@"color"];
+    
+    // set the textlabel font size to a number from last array
     
     // Configure the cell...
     

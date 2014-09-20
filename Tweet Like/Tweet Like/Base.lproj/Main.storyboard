@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="lgm-cE-nxv">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--New TweetVC-->
+        <scene sceneID="ClI-sm-apx">
+            <objects>
+                <viewController id="6zy-WI-lU8" customClass="TLANewTweetVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ukf-9s-WrH"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fk2-pQ-u32"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9QD-BA-MVh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="irX-op-fNt">
+                                <rect key="frame" x="24" y="28" width="273" height="419"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                            </textView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="342-sO-Fgq">
+                                <rect key="frame" x="221" y="467" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.93725496530532837" green="0.32549020648002625" blue="0.17647059261798859" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7St-vF-aVI">
+                                <rect key="frame" x="-98" y="467" width="200" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.44313728809356689" green="0.89411771297454834" blue="0.59215688705444336" alpha="1" colorSpace="deviceRGB"/>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="swipe_button.png" translatesAutoresizingMaskIntoConstraints="NO" id="fQP-77-ciu">
+                                <rect key="frame" x="130" y="477" width="60" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21568629145622253" green="0.53333336114883423" blue="0.98431378602981567" alpha="1" colorSpace="deviceRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="greenCircle" destination="7St-vF-aVI" id="2Z1-CV-ZIl"/>
+                        <outlet property="redCircle" destination="342-sO-Fgq" id="Ogf-lq-GAX"/>
+                        <outlet property="swipeButton" destination="fQP-77-ciu" id="RQ3-Tu-VE0"/>
+                        <outlet property="tweetTextView" destination="irX-op-fNt" id="GZa-SG-4RP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="60U-H9-pyX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533" y="783"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aq2-0G-8rQ">
+            <objects>
+                <viewController id="RUG-g8-drG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VWA-tP-691"/>
+                        <viewControllerLayoutGuide type="bottom" id="JYv-IU-aXf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tb9-O3-zaT">
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="q2Q-Gs-BHA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a1n-qB-aAr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="58"/>
+        </scene>
+        <!--TweetsTVC-->
+        <scene sceneID="Iol-Ss-5t3">
+            <objects>
+                <tableViewController id="rCb-U8-3yC" customClass="TLATweetsTVC" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="63" sectionHeaderHeight="22" sectionFooterHeight="22" id="tUJ-5K-KUx">
+                        <rect key="frame" x="0.0" y="44" width="320" height="524"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="63" id="L4D-vi-xtu" customClass="TLATweetCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="63"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L4D-vi-xtu" id="ePS-UV-JI9">
+                                    <rect key="frame" x="0.0" y="0.0" width="287" height="62"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="13" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RpU-jK-ckt">
+                                            <rect key="frame" x="44" y="16" width="41" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Tweet goes here" translatesAutoresizingMaskIntoConstraints="NO" id="Lfw-gI-boA">
+                                            <rect key="frame" x="87" y="13" width="200" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        </textView>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="heart.png" translatesAutoresizingMaskIntoConstraints="NO" id="xuL-jN-95b">
+                                            <rect key="frame" x="20" y="23" width="18" height="16"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HAe-iI-ZZ2">
+                                            <rect key="frame" x="8" y="11" width="40" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal">
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="heartTapped:" destination="L4D-vi-xtu" eventType="touchUpInside" id="c5a-yr-RKK"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="heartCountLabel" destination="RpU-jK-ckt" id="aeD-Lb-6N3"/>
+                                    <outlet property="tweetTextView" destination="Lfw-gI-boA" id="wT5-zI-ltA"/>
+                                    <segue destination="RUG-g8-drG" kind="push" id="eor-96-YDn"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="rCb-U8-3yC" id="5fC-de-SPn"/>
+                            <outlet property="delegate" destination="rCb-U8-3yC" id="1dk-yc-YaC"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="SIR-n8-4bu">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="IdU-BG-Agx">
+                            <connections>
+                                <segue destination="6zy-WI-lU8" kind="modal" identifier="showNewTweetVC" id="FzN-zt-mEL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="al8-Nv-7dQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="533" y="58"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="SEF-hA-Sgu">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="lgm-cE-nxv" sceneMemberID="viewController">
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Zj3-EN-H5C">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.21568629149999999" green="0.53333336109999996" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rCb-U8-3yC" kind="relationship" relationship="rootViewController" id="6ef-4T-jvS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tmf-pJ-77r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="58"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.png" width="37" height="32"/>
+        <image name="swipe_button.png" width="161" height="161"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D523C6BF-1C02-4512-8ED8-8AAD939F624C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Tweet Like</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D86DABB6-34D5-4131-A8C1-D1DE487BF5EB</key>
+		<string>https://github.com/joalbright/iOS-Q3-2014.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Tweet Like/Tweet Like.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D86DABB6-34D5-4131-A8C1-D1DE487BF5EB</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/joalbright/iOS-Q3-2014.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D86DABB6-34D5-4131-A8C1-D1DE487BF5EB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D86DABB6-34D5-4131-A8C1-D1DE487BF5EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Q3-2014</string>
+		</dict>
+	</array>
+</dict>
+</plist>
