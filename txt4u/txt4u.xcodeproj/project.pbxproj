@@ -23,6 +23,7 @@
 		A98CADD419C097F400A32989 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98CADD319C097F400A32989 /* MobileCoreServices.framework */; };
 		A98CADD619C0981300A32989 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98CADD519C0981300A32989 /* SystemConfiguration.framework */; };
 		A98CADD819C0981900A32989 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A98CADD719C0981900A32989 /* Security.framework */; };
+		A9B95ECD19C32CBA00706DA2 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B95ECC19C32CBA00706DA2 /* MessageCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A98CAD9819C0866500A32989 /* txt4u.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = txt4u.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98CAD9819C0866500A32989 /* Messages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messages.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98CAD9C19C0866500A32989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A98CAD9D19C0866500A32989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A98CAD9F19C0866500A32989 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		A98CADD519C0981300A32989 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A98CADD719C0981900A32989 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A98CADD919C0ABD100A32989 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
+		A9B95ECC19C32CBA00706DA2 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +104,7 @@
 		A98CAD9919C0866500A32989 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A98CAD9819C0866500A32989 /* txt4u.app */,
+				A98CAD9819C0866500A32989 /* Messages.app */,
 				A98CADAD19C0866500A32989 /* txt4uTests.xctest */,
 			);
 			name = Products;
@@ -111,6 +113,7 @@
 		A98CAD9A19C0866500A32989 /* txt4u */ = {
 			isa = PBXGroup;
 			children = (
+				A9B95ECC19C32CBA00706DA2 /* MessageCell.swift */,
 				A98CADBF19C08C2500A32989 /* ChooseTableViewController.swift */,
 				A98CADBD19C08B6700A32989 /* FriendsTableViewController.swift */,
 				A98CAD9F19C0866500A32989 /* MessageViewController.swift */,
@@ -171,9 +174,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A98CAD9719C0866500A32989 /* txt4u */ = {
+		A98CAD9719C0866500A32989 /* Messages */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A98CADB719C0866500A32989 /* Build configuration list for PBXNativeTarget "txt4u" */;
+			buildConfigurationList = A98CADB719C0866500A32989 /* Build configuration list for PBXNativeTarget "Messages" */;
 			buildPhases = (
 				A98CAD9419C0866500A32989 /* Sources */,
 				A98CAD9519C0866500A32989 /* Frameworks */,
@@ -183,9 +186,9 @@
 			);
 			dependencies = (
 			);
-			name = txt4u;
+			name = Messages;
 			productName = txt4u;
-			productReference = A98CAD9819C0866500A32989 /* txt4u.app */;
+			productReference = A98CAD9819C0866500A32989 /* Messages.app */;
 			productType = "com.apple.product-type.application";
 		};
 		A98CADAC19C0866500A32989 /* txt4uTests */ = {
@@ -237,7 +240,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A98CAD9719C0866500A32989 /* txt4u */,
+				A98CAD9719C0866500A32989 /* Messages */,
 				A98CADAC19C0866500A32989 /* txt4uTests */,
 			);
 		};
@@ -269,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A98CADA019C0866500A32989 /* MessageViewController.swift in Sources */,
+				A9B95ECD19C32CBA00706DA2 /* MessageCell.swift in Sources */,
 				A98CAD9E19C0866500A32989 /* AppDelegate.swift in Sources */,
 				A98CADC019C08C2500A32989 /* ChooseTableViewController.swift in Sources */,
 				A98CADBE19C08B6700A32989 /* FriendsTableViewController.swift in Sources */,
@@ -288,7 +292,7 @@
 /* Begin PBXTargetDependency section */
 		A98CADAF19C0866500A32989 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A98CAD9719C0866500A32989 /* txt4u */;
+			target = A98CAD9719C0866500A32989 /* Messages */;
 			targetProxy = A98CADAE19C0866500A32989 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -466,13 +470,14 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A98CADB719C0866500A32989 /* Build configuration list for PBXNativeTarget "txt4u" */ = {
+		A98CADB719C0866500A32989 /* Build configuration list for PBXNativeTarget "Messages" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A98CADB819C0866500A32989 /* Debug */,
 				A98CADB919C0866500A32989 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A98CADBA19C0866500A32989 /* Build configuration list for PBXNativeTarget "txt4uTests" */ = {
 			isa = XCConfigurationList;
@@ -481,6 +486,7 @@
 				A98CADBC19C0866500A32989 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

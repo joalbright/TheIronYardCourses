@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="XpP-BV-wRs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A238x" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="XpP-BV-wRs">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
@@ -7,20 +7,17 @@
         <!--Message View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="MessageViewController" customModule="txt4u" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
+                <viewController id="vXZ-lx-hvc" customClass="MessageViewController" customModule="Messages" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="bCF-5g-lpx">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="bCF-5g-lpx">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" id="PDt-VQ-P7p">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" id="PDt-VQ-P7p" customClass="MessageCell" customModule="Messages" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PDt-VQ-P7p" id="Tgg-98-O03">
@@ -28,92 +25,35 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="400" height="535"/>
-                                </variation>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="32h-Mf-rKh">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r4x-3a-4TZ">
-                                        <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="14" y="18" width="297" height="30"/>
-                                        </variation>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UfC-T9-U6p">
-                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                        <color key="backgroundColor" red="0.23626557494447081" green="0.76441399308014579" blue="0.8900669642857143" alpha="1" colorSpace="calibratedRGB"/>
-                                        <color key="tintColor" red="0.96941679690000004" green="0.96647360049999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <state key="normal" title="Send">
-                                            <color key="titleColor" red="0.96941679690000004" green="0.96647360049999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <variation key="widthClass=compact" fixedFrame="YES">
-                                            <rect key="frame" x="321" y="18" width="64" height="30"/>
-                                        </variation>
-                                        <connections>
-                                            <action selector="sendMessage:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="SEF-zY-byY"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <variation key="default">
-                                    <mask key="subviews">
-                                        <exclude reference="r4x-3a-4TZ"/>
-                                        <exclude reference="UfC-T9-U6p"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="535" width="400" height="65"/>
-                                    <mask key="subviews">
-                                        <include reference="r4x-3a-4TZ"/>
-                                        <include reference="UfC-T9-U6p"/>
-                                    </mask>
-                                </variation>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="bCF-5g-lpx"/>
-                                <exclude reference="32h-Mf-rKh"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=compact">
-                            <mask key="subviews">
-                                <include reference="bCF-5g-lpx"/>
-                                <include reference="32h-Mf-rKh"/>
-                            </mask>
-                        </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="hu7-Zl-rO0"/>
                     <connections>
-                        <outlet property="formHolder" destination="32h-Mf-rKh" id="PiK-ex-Jry"/>
-                        <outlet property="messageField" destination="r4x-3a-4TZ" id="R3j-jy-E5c"/>
-                        <outlet property="sendButton" destination="UfC-T9-U6p" id="wql-1Y-3p4"/>
+                        <outlet property="tableView" destination="bCF-5g-lpx" id="GU0-01-41E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="274"/>
+            <point key="canvasLocation" x="428" y="259"/>
         </scene>
         <!--Friends-->
         <scene sceneID="bt0-uU-lf8">
             <objects>
-                <tableViewController id="65j-TX-EBU" customClass="FriendsTableViewController" customModule="txt4u" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="65j-TX-EBU" customClass="FriendsTableViewController" customModule="Messages" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8eD-Xf-4Ua">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="friendCell" id="ak3-rK-VEJ">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="friendCell" id="ak3-rK-VEJ">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ak3-rK-VEJ" id="Mmt-rX-R1i">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="show" id="uPc-cm-v7D"/>
+                                    <segue destination="vXZ-lx-hvc" kind="push" identifier="showConversation" id="uPc-cm-v7D"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -126,20 +66,21 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="G3A-ed-62q">
                             <color key="tintColor" red="0.2362655749" green="0.76441399310000002" blue="0.89006696429999999" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
-                                <segue destination="80f-fM-V0N" kind="presentation" id="cMu-e5-YIG"/>
+                                <segue destination="80f-fM-V0N" kind="modal" identifier="showChoices" id="cMu-e5-YIG"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oCz-FF-bhE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="274"/>
+            <point key="canvasLocation" x="6.4000000000000004" y="259.38666666666666"/>
         </scene>
         <!--Choose a Friend-->
         <scene sceneID="TMn-4q-fmJ">
             <objects>
-                <tableViewController id="dkT-KT-yhh" customClass="ChooseTableViewController" customModule="txt4u" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="dkT-KT-yhh" customClass="ChooseTableViewController" customModule="Messages" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Ye0-hK-hD4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -165,7 +106,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mja-5N-1fg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="1006"/>
+            <point key="canvasLocation" x="428.80000000000001" y="952.34666666666669"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EtN-6c-pnU">
@@ -181,7 +122,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ECa-T5-iZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-780" y="274"/>
+            <point key="canvasLocation" x="-416" y="259.38666666666666"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="LNd-lr-K5c">
@@ -199,7 +140,12 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sJN-gx-pNM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="12" y="1006"/>
+            <point key="canvasLocation" x="6.4000000000000004" y="952.34666666666669"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>

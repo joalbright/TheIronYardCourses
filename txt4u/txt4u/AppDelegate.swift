@@ -24,9 +24,78 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         installation["user"] = PFUser.currentUser()
         installation.saveInBackground()
         
+        var types = UIUserNotificationType.Sound | UIUserNotificationType.Badge | UIUserNotificationType.Alert
+        
+        var notificationSettings = UIUserNotificationSettings(forTypes: types, categories: nil)
+        
+        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+        
+        UIApplication.sharedApplication().registerForRemoteNotifications()
+        
+//        UIApplication.sharedApplication().unregisterForRemoteNotifications()
+        
+        
         // Override point for customization after application launch.
         return true
     }
+    
+    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
+        
+//        println("register")
+        
+        var currentInstallation = PFInstallation.currentInstallation()
+        currentInstallation.setDeviceTokenFromData(deviceToken)
+        currentInstallation.saveInBackground()
+        
+    }
+    
+    func application(application: UIApplication, didReceiveRemoteNotification userInfo: [NSObject : AnyObject]) {
+        
+//        println(userInfo)
+        
+        var notification = userInfo["aps"] as NSDictionary
+//        println(notification)
+        var alert = notification["alert"] as String
+//        println(alert)
+        var sender = userInfo["sender"] as NSDictionary
+//        println(sender)
+        var senderName = sender["objectId"] as String
+//        println(senderName)
+        
+//        UIApplication.sharedApplication().applicationIconBadgeNumber++
+        // badge goes up here
+        
+        println(UIApplication.sharedApplication().applicationIconBadgeNumber)
+        
+        // when messageVC shows unread messages change badge count
+        
+        if UIApplication.sharedApplication().applicationState == UIApplicationState.Background {
+            
+            var localNotification = UILocalNotification()
+            localNotification.alertBody = "\(senderName) : " + alert
+            localNotification.alertAction = "Reply"
+            
+            UIApplication.sharedApplication().scheduleLocalNotification(localNotification)
+            
+        } else {
+            
+            var nc = NSNotificationCenter.defaultCenter()
+            nc.postNotificationName("newMessage", object: nil, userInfo: userInfo)
+            
+        }
+        
+//        println(userInfo)
+        
+    }
+    
+//    - (void)application:(UIApplication *)application
+//    didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken
+//    {
+//    // Store the deviceToken in the current Installation and save it to Parse.
+//    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+//    [currentInstallation setDeviceTokenFromData:deviceToken];
+//    [currentInstallation saveInBackground];
+//    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

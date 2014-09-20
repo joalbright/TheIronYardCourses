@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A98CAD9719C0866500A32989"
-               BuildableName = "txt4u.app"
-               BlueprintName = "txt4u"
+               BuildableName = "Messages.app"
+               BlueprintName = "Messages"
                ReferencedContainer = "container:txt4u.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -57,8 +57,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A98CAD9719C0866500A32989"
-            BuildableName = "txt4u.app"
-            BlueprintName = "txt4u"
+            BuildableName = "Messages.app"
+            BlueprintName = "Messages"
             ReferencedContainer = "container:txt4u.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -76,8 +76,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A98CAD9719C0866500A32989"
-            BuildableName = "txt4u.app"
-            BlueprintName = "txt4u"
+            BuildableName = "Messages.app"
+            BlueprintName = "Messages"
             ReferencedContainer = "container:txt4u.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -94,8 +94,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A98CAD9719C0866500A32989"
-            BuildableName = "txt4u.app"
-            BlueprintName = "txt4u"
+            BuildableName = "Messages.app"
+            BlueprintName = "Messages"
             ReferencedContainer = "container:txt4u.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

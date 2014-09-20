@@ -9,12 +9,51 @@
 import UIKit
 
 class FriendsTableViewController: UITableViewController {
-
+    
     var friends: [PFUser] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//        println(NSStringFromClass(self.classForCoder))
+        
+//        NSStringFromClass(self.classForCoder)
+//        reflect(self).summary
+        
+//        println(reflect(self).summary)
+//        println(__FILE__.lastPathComponent)
+        
+        if reflect(self).summary == "Messages.FriendsTableViewController" {
+            
+//            println(PFUser.currentUser())
+            
+            if PFUser.currentUser()["friends"] != nil {
+                
+                var queryMe = PFUser.query()
+                queryMe.whereKey("username", equalTo: PFUser.currentUser().username)
+                queryMe.includeKey("friends")
+                
+                queryMe.findObjectsInBackgroundWithBlock { (objects: [AnyObject]!, error: NSError!) -> Void in
+                    
+//                    println(objects)
+                    self.friends = objects[0]["friends"] as [PFUser]
+                    self.tableView.reloadData()
+                    
+                }
+                
+            }
+            
+            var nc = NSNotificationCenter.defaultCenter()
+            nc.addObserverForName("newMessage", object: nil, queue: NSOperationQueue.mainQueue(), usingBlock: { (notification: NSNotification!) -> Void in
+                
+                // make friend have a different color if with unread message
+                
+            })
+            
+        }
+        
+        
+                
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -26,7 +65,7 @@ class FriendsTableViewController: UITableViewController {
         
         super.viewWillAppear(animated)
         
-        println(self.friends)
+//        println(self.friends)
         
         self.tableView.reloadData()
         
@@ -93,14 +132,19 @@ class FriendsTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        
+        if segue.identifier == "showConversation" {
+            
+            var messageVC = segue.destinationViewController as MessageViewController
+            
+            messageVC.friend = friends[self.tableView.indexPathForCell(sender as UITableViewCell)!.row]
+            
+        }
+        
     }
-    */
 
 }

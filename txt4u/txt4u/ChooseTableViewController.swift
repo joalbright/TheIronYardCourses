@@ -9,7 +9,7 @@
 import UIKit
 
 class ChooseTableViewController: FriendsTableViewController {
-
+        
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -47,8 +47,12 @@ class ChooseTableViewController: FriendsTableViewController {
         var presentingNavC = self.navigationController?.presentingViewController as UINavigationController
         
         var friendsTVC = presentingNavC.viewControllers[0] as FriendsTableViewController
-                
+        
         friendsTVC.friends += [friends[indexPath.row]]
+        
+        var user = PFUser.currentUser()
+        user["friends"] = friendsTVC.friends
+        user.saveInBackground()
         
         self.navigationController?.dismissViewControllerAnimated(true, completion: nil)
         
