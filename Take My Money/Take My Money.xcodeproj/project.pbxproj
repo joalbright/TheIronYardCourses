@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A933AC5519D4518E00150142 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933AC5419D4518E00150142 /* AppDelegate.swift */; };
+		A933AC5A19D4518E00150142 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A933AC5819D4518E00150142 /* Main.storyboard */; };
+		A933AC5C19D4518E00150142 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A933AC5B19D4518E00150142 /* Images.xcassets */; };
+		A933AC5F19D4518E00150142 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A933AC5D19D4518E00150142 /* LaunchScreen.xib */; };
+		A933AC6B19D4518E00150142 /* Take_My_MoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933AC6A19D4518E00150142 /* Take_My_MoneyTests.swift */; };
+		A933AC7519D4527500150142 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933AC7419D4527500150142 /* TableViewController.swift */; };
+		A933AC7719D452CC00150142 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A933AC7619D452CC00150142 /* TableViewCell.swift */; };
+		A933AC7919D45EDC00150142 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A933AC7819D45EDC00150142 /* StoreKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A933AC6519D4518E00150142 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A933AC4719D4518E00150142 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A933AC4E19D4518E00150142;
+			remoteInfo = "Take My Money";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A933AC4F19D4518E00150142 /* Take My Money.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Take My Money.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A933AC5319D4518E00150142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A933AC5419D4518E00150142 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A933AC5919D4518E00150142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A933AC5B19D4518E00150142 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A933AC5E19D4518E00150142 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A933AC6419D4518E00150142 /* Take My MoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Take My MoneyTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A933AC6919D4518E00150142 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A933AC6A19D4518E00150142 /* Take_My_MoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Take_My_MoneyTests.swift; sourceTree = "<group>"; };
+		A933AC7419D4527500150142 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		A933AC7619D452CC00150142 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		A933AC7819D45EDC00150142 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A933AC4C19D4518E00150142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A933AC7919D45EDC00150142 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A933AC6119D4518E00150142 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A933AC4619D4518E00150142 = {
+			isa = PBXGroup;
+			children = (
+				A933AC7819D45EDC00150142 /* StoreKit.framework */,
+				A933AC5119D4518E00150142 /* Take My Money */,
+				A933AC6719D4518E00150142 /* Take My MoneyTests */,
+				A933AC5019D4518E00150142 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A933AC5019D4518E00150142 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A933AC4F19D4518E00150142 /* Take My Money.app */,
+				A933AC6419D4518E00150142 /* Take My MoneyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A933AC5119D4518E00150142 /* Take My Money */ = {
+			isa = PBXGroup;
+			children = (
+				A933AC5419D4518E00150142 /* AppDelegate.swift */,
+				A933AC5819D4518E00150142 /* Main.storyboard */,
+				A933AC5B19D4518E00150142 /* Images.xcassets */,
+				A933AC5D19D4518E00150142 /* LaunchScreen.xib */,
+				A933AC5219D4518E00150142 /* Supporting Files */,
+				A933AC7419D4527500150142 /* TableViewController.swift */,
+				A933AC7619D452CC00150142 /* TableViewCell.swift */,
+			);
+			path = "Take My Money";
+			sourceTree = "<group>";
+		};
+		A933AC5219D4518E00150142 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A933AC5319D4518E00150142 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A933AC6719D4518E00150142 /* Take My MoneyTests */ = {
+			isa = PBXGroup;
+			children = (
+				A933AC6A19D4518E00150142 /* Take_My_MoneyTests.swift */,
+				A933AC6819D4518E00150142 /* Supporting Files */,
+			);
+			path = "Take My MoneyTests";
+			sourceTree = "<group>";
+		};
+		A933AC6819D4518E00150142 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A933AC6919D4518E00150142 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A933AC4E19D4518E00150142 /* Take My Money */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A933AC6E19D4518F00150142 /* Build configuration list for PBXNativeTarget "Take My Money" */;
+			buildPhases = (
+				A933AC4B19D4518E00150142 /* Sources */,
+				A933AC4C19D4518E00150142 /* Frameworks */,
+				A933AC4D19D4518E00150142 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Take My Money";
+			productName = "Take My Money";
+			productReference = A933AC4F19D4518E00150142 /* Take My Money.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A933AC6319D4518E00150142 /* Take My MoneyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A933AC7119D4518F00150142 /* Build configuration list for PBXNativeTarget "Take My MoneyTests" */;
+			buildPhases = (
+				A933AC6019D4518E00150142 /* Sources */,
+				A933AC6119D4518E00150142 /* Frameworks */,
+				A933AC6219D4518E00150142 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A933AC6619D4518E00150142 /* PBXTargetDependency */,
+			);
+			name = "Take My MoneyTests";
+			productName = "Take My MoneyTests";
+			productReference = A933AC6419D4518E00150142 /* Take My MoneyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A933AC4719D4518E00150142 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Jo Albright";
+				TargetAttributes = {
+					A933AC4E19D4518E00150142 = {
+						CreatedOnToolsVersion = 6.0.1;
+						DevelopmentTeam = 965FHW76SM;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					A933AC6319D4518E00150142 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = A933AC4E19D4518E00150142;
+					};
+				};
+			};
+			buildConfigurationList = A933AC4A19D4518E00150142 /* Build configuration list for PBXProject "Take My Money" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A933AC4619D4518E00150142;
+			productRefGroup = A933AC5019D4518E00150142 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A933AC4E19D4518E00150142 /* Take My Money */,
+				A933AC6319D4518E00150142 /* Take My MoneyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A933AC4D19D4518E00150142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A933AC5A19D4518E00150142 /* Main.storyboard in Resources */,
+				A933AC5F19D4518E00150142 /* LaunchScreen.xib in Resources */,
+				A933AC5C19D4518E00150142 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A933AC6219D4518E00150142 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A933AC4B19D4518E00150142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A933AC7719D452CC00150142 /* TableViewCell.swift in Sources */,
+				A933AC5519D4518E00150142 /* AppDelegate.swift in Sources */,
+				A933AC7519D4527500150142 /* TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A933AC6019D4518E00150142 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A933AC6B19D4518E00150142 /* Take_My_MoneyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A933AC6619D4518E00150142 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A933AC4E19D4518E00150142 /* Take My Money */;
+			targetProxy = A933AC6519D4518E00150142 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A933AC5819D4518E00150142 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A933AC5919D4518E00150142 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A933AC5D19D4518E00150142 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A933AC5E19D4518E00150142 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A933AC6C19D4518E00150142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A933AC6D19D4518E00150142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A933AC6F19D4518F00150142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Take My Money/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A933AC7019D4518F00150142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Take My Money/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		A933AC7219D4518F00150142 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Take My MoneyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Take My Money.app/Take My Money";
+			};
+			name = Debug;
+		};
+		A933AC7319D4518F00150142 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Take My MoneyTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Take My Money.app/Take My Money";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A933AC4A19D4518E00150142 /* Build configuration list for PBXProject "Take My Money" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A933AC6C19D4518E00150142 /* Debug */,
+				A933AC6D19D4518E00150142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A933AC6E19D4518F00150142 /* Build configuration list for PBXNativeTarget "Take My Money" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A933AC6F19D4518F00150142 /* Debug */,
+				A933AC7019D4518F00150142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A933AC7119D4518F00150142 /* Build configuration list for PBXNativeTarget "Take My MoneyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A933AC7219D4518F00150142 /* Debug */,
+				A933AC7319D4518F00150142 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A933AC4719D4518E00150142 /* Project object */;
+}
