@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A379a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Directions" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="qA4-9E-muP">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3423 Piedmont Rd Atlanta 30305" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dBd-IS-wqv">
+                                <rect key="frame" x="16" y="20" width="568" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0RE-XP-WbY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qu-2j-vGn">
+                                <rect key="frame" x="511" y="28" width="63" height="34"/>
+                                <color key="backgroundColor" red="0.17452313680000001" green="0.81871205570000005" blue="0.72661551749999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="4AB-64-RDS"/>
+                                    <constraint firstAttribute="height" constant="34" id="dX0-9m-AaR"/>
+                                </constraints>
+                                <state key="normal" title="Route">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="route:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FPK-D9-9iF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="qA4-9E-muP" secondAttribute="trailing" constant="-16" id="6Av-wS-1zT"/>
+                            <constraint firstItem="dBd-IS-wqv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="6UT-ut-cVc"/>
+                            <constraint firstItem="dBd-IS-wqv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Fcx-bF-nbs"/>
+                            <constraint firstItem="qA4-9E-muP" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="MeU-lb-HJi"/>
+                            <constraint firstItem="dBd-IS-wqv" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="MhQ-7J-8YA"/>
+                            <constraint firstItem="dBd-IS-wqv" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="O8B-Rc-vqb"/>
+                            <constraint firstItem="dBd-IS-wqv" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="WpR-yP-YeM"/>
+                            <constraint firstItem="qA4-9E-muP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="YZB-cb-62P"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qA4-9E-muP" secondAttribute="bottom" id="hhb-Wm-vWB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1qu-2j-vGn" secondAttribute="trailing" constant="10" id="ndf-sY-2x3"/>
+                            <constraint firstItem="1qu-2j-vGn" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="tNE-NM-9Jb"/>
+                            <constraint firstItem="dBd-IS-wqv" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="xq2-WP-fOn"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="6UT-ut-cVc"/>
+                                <exclude reference="Fcx-bF-nbs"/>
+                                <exclude reference="MhQ-7J-8YA"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="addressField" destination="dBd-IS-wqv" id="Pbe-4r-Dj3"/>
+                        <outlet property="routingMap" destination="qA4-9E-muP" id="lE8-GC-1DI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

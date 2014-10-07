@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A361c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--First-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController storyboardIdentifier="firstVC" id="9pv-A4-QxB" customClass="FirstViewController" customModule="Tokens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
+                        <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wwe-kL-66d">
+                                <rect key="frame" x="16" y="123" width="568" height="62"/>
+                                <color key="backgroundColor" red="0.21568629149999999" green="0.53333336109999996" blue="0.98431378599999997" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="AKN-yl-nLO"/>
+                                </constraints>
+                                <state key="normal" title="FourSquare Connect">
+                                    <color key="titleColor" red="0.96941679690000004" green="0.96647360049999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="foursquareConnect:" destination="9pv-A4-QxB" eventType="touchUpInside" id="O9G-Pz-eoX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePp-nO-50d">
+                                <rect key="frame" x="16" y="240" width="568" height="62"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="ZR1-fu-tBB"/>
+                                </constraints>
+                                <state key="normal" title="Locations Near Me">
+                                    <color key="titleColor" red="0.96941679690000004" green="0.96647360049999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findLocations:" destination="9pv-A4-QxB" eventType="touchUpInside" id="HxV-eL-DKg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c53-ED-Cmb">
+                                <rect key="frame" x="16" y="359" width="568" height="62"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.0" blue="0.1960784314" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="zYh-sk-sPt"/>
+                                </constraints>
+                                <state key="normal" title="Where's Waldo">
+                                    <color key="titleColor" red="0.96941679690000004" green="0.96647360049999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findWaldo:" destination="9pv-A4-QxB" eventType="touchUpInside" id="w90-ol-lW7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="c53-ED-Cmb" firstAttribute="top" secondItem="ePp-nO-50d" secondAttribute="bottom" constant="57" id="4XZ-Hr-eGV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="c53-ED-Cmb" secondAttribute="trailing" constant="123" id="5TB-vf-J0m"/>
+                            <constraint firstItem="ePp-nO-50d" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="124" id="5rs-gY-5Wd"/>
+                            <constraint firstItem="ePp-nO-50d" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="C6G-sH-9pp"/>
+                            <constraint firstItem="Wwe-kL-66d" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="124" id="Gfj-vH-xMo"/>
+                            <constraint firstItem="ePp-nO-50d" firstAttribute="top" secondItem="Wwe-kL-66d" secondAttribute="bottom" constant="55" id="Hhe-Or-nL3"/>
+                            <constraint firstItem="Wwe-kL-66d" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="103" id="Tj3-4V-DGO"/>
+                            <constraint firstItem="c53-ED-Cmb" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="ULI-zQ-ic6"/>
+                            <constraint firstItem="ePp-nO-50d" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="VV9-Ne-gt7"/>
+                            <constraint firstItem="Wwe-kL-66d" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="cV3-oU-Rr4"/>
+                            <constraint firstItem="Wwe-kL-66d" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailingMargin" id="eoW-6Z-jDA"/>
+                            <constraint firstItem="c53-ED-Cmb" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="124" id="nDG-8e-LEl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Wwe-kL-66d" secondAttribute="trailing" constant="123" id="o9S-uS-pti"/>
+                            <constraint firstItem="c53-ED-Cmb" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="x5m-ss-iwU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ePp-nO-50d" secondAttribute="trailing" constant="123" id="zY5-CO-hXf"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Gfj-vH-xMo"/>
+                                <exclude reference="o9S-uS-pti"/>
+                                <exclude reference="5rs-gY-5Wd"/>
+                                <exclude reference="zY5-CO-hXf"/>
+                                <exclude reference="5TB-vf-J0m"/>
+                                <exclude reference="nDG-8e-LEl"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="fsConnect" destination="Wwe-kL-66d" id="SWO-48-noz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="-320"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="ev3-a9-apo">
+            <objects>
+                <tableViewController storyboardIdentifier="foursquareTVC" id="UqV-Eo-WM7" customClass="FSTableViewController" customModule="Tokens" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="22" sectionFooterHeight="22" id="Qg9-D2-6yw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="locationCell" rowHeight="70" id="9kF-jw-V0e">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9kF-jw-V0e" id="jyU-Ol-gOH">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UqV-Eo-WM7" id="EzS-y7-TzZ"/>
+                            <outlet property="delegate" destination="UqV-Eo-WM7" id="Esz-ml-OlW"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KTT-5a-cec" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1434" y="-320"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="DXn-q2-zp0">
+            <objects>
+                <tableViewController storyboardIdentifier="instaTVC" id="ZDA-V1-Udt" customClass="IGTableViewController" customModule="Tokens" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="492" sectionHeaderHeight="22" sectionFooterHeight="22" id="mMy-cw-ZTn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="instaCell" rowHeight="492" id="REh-5I-UtU" customClass="InstaTableViewCell" customModule="Tokens" customModuleProvider="target">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="REh-5I-UtU" id="Mu3-dN-pAN">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2A3-gs-C3x">
+                                            <rect key="frame" x="22" y="30" width="556" height="430.5"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="430.5" id="xHc-3k-cUi"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="2A3-gs-C3x" firstAttribute="top" secondItem="Mu3-dN-pAN" secondAttribute="topMargin" constant="22" id="2jD-R4-NRC"/>
+                                        <constraint firstItem="2A3-gs-C3x" firstAttribute="leading" secondItem="Mu3-dN-pAN" secondAttribute="leadingMargin" constant="14" id="TNE-BT-vit"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="2A3-gs-C3x" secondAttribute="trailing" constant="14" id="ZMx-UZ-SR2"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="2A3-gs-C3x" secondAttribute="bottom" constant="23.5" id="guE-x1-SEW"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="guE-x1-SEW"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="instaView" destination="2A3-gs-C3x" id="m13-dj-ToJ"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZDA-V1-Udt" id="epX-7e-vvu"/>
+                            <outlet property="delegate" destination="ZDA-V1-Udt" id="hga-ep-Ohb"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Us2-yb-JHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1434" y="360"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="Tokens" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IsY-2w-0M4">
+                                <rect key="frame" x="16" y="70" width="568" height="69"/>
+                                <color key="backgroundColor" red="0.0011231521999999999" green="0.80820528309999995" blue="0.48501588099999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="S2E-I6-pM3"/>
+                                </constraints>
+                                <state key="normal" title="Instagram Connect">
+                                    <color key="titleColor" red="0.96941679690000004" green="0.96647360049999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="instaConnect:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="H9g-yb-q38"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ltL-f9-NaF">
+                                <rect key="frame" x="16" y="357" width="568" height="69"/>
+                                <color key="backgroundColor" red="0.82352941180000006" green="0.0" blue="0.1960784314" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="1hH-jh-Hqd"/>
+                                </constraints>
+                                <state key="normal" title="Where's Waldo">
+                                    <color key="titleColor" red="0.96941679690000004" green="0.96647360049999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="findWaldo:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="8BB-ou-D0K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATj-ws-EPJ">
+                                <rect key="frame" x="16" y="204" width="568" height="69"/>
+                                <color key="backgroundColor" red="0.2362655749" green="0.76441399310000002" blue="0.89006696429999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="Iki-iN-gty"/>
+                                </constraints>
+                                <state key="normal" title="My Feed">
+                                    <color key="titleColor" red="0.96941679690000004" green="0.96647360049999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getMyFeed:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="w7U-4c-h7E"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ATj-ws-EPJ" firstAttribute="top" secondItem="IsY-2w-0M4" secondAttribute="bottom" constant="65" id="6oh-lX-lMx"/>
+                            <constraint firstItem="ltL-f9-NaF" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="8nl-di-0uF"/>
+                            <constraint firstItem="IsY-2w-0M4" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="CmN-J2-eMG"/>
+                            <constraint firstItem="ATj-ws-EPJ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="MHE-yZ-phz"/>
+                            <constraint firstItem="IsY-2w-0M4" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="50" id="NqQ-b1-iNk"/>
+                            <constraint firstItem="ATj-ws-EPJ" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="Ya9-ok-V9b"/>
+                            <constraint firstItem="ltL-f9-NaF" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="Z0f-Rm-zft"/>
+                            <constraint firstItem="ltL-f9-NaF" firstAttribute="top" secondItem="ATj-ws-EPJ" secondAttribute="bottom" constant="84" id="jPU-cS-RRk"/>
+                            <constraint firstItem="IsY-2w-0M4" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="rsC-HY-xsh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="750" y="360"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="first" width="30" height="30"/>
+        <image name="second" width="30" height="30"/>
+    </resources>
+</document>
