@@ -50,19 +50,37 @@
     
 }
 
-+ (void)findVenuesWithLocation:(CLLocation *)location completion:(void(^)(NSArray * venues))completion
++ (void)findMayorshipsWithLocation:(CLLocation *)location completion:(void (^)(NSArray * mayors))completion
 {
-    NSDictionary * parameters = @{
-                                  @"ll" : [NSString stringWithFormat:@"%f,%f",location.coordinate.latitude,location.coordinate.longitude]
-                                 };
+    //    NSArray * venues = [MSARequest findVenuesWithLocation:location];
     
-    [MSARequest foursquareRequestWithEndpoint:@"venues/search" andParameters:parameters completion:^(NSDictionary *responseInfo) {
+    [MSARequest findVenuesWithLocation:location completion:^(NSArray *venues) {
         
-        if(completion) completion(responseInfo[@"response"][@"venues"]);
+        NSMutableArray * mayors = [@[] mutableCopy];
+        
+        for (NSDictionary * venue in venues)
+        {
+            NSString * endpoint = [NSString stringWithFormat:@"venues/%@",venue[@"id"]];
+            
+            //        NSDictionary * venueInfo = [MSARequest foursquareRequestWithEndpoint:endpoint andParameters:@{}];
+            
+            [MSARequest foursquareRequestWithEndpoint:endpoint andParameters:@{} completion:^(NSDictionary *responseInfo) {
+                
+                NSDictionary * mayor = responseInfo[@"response"][@"venue"][@"mayor"];
+                
+                if(mayor) [mayors addObject:mayor];
+                
+                if(completion) completion(mayors);
+                
+            }];
+            
+            // https://api.foursquare.com/v2/venues/VENUE_ID
+        }
+        
+        //    return mayors;
         
     }];
     
-//    return [MSARequest foursquareRequestWithEndpoint:@"venues/search" andParameters:parameters][@"response"][@"venues"];
 }
 
 + (void)foursquareRequestWithEndpoint:(NSString *)endpoint andParameters:(NSDictionary *)parameters completion:(void(^)(NSDictionary * responseInfo))completion

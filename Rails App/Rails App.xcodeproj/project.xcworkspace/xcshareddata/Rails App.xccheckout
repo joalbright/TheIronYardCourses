@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7E9ADA2C-EFA9-479F-8C0B-6E8BF36D81C7</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Rails App</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>F24697072966DADD74E24B5D27C4C52098990EC0</key>
+		<string>https://github.com/joalbright/iOS-Q3-2014.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Rails App/Rails App.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>F24697072966DADD74E24B5D27C4C52098990EC0</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/joalbright/iOS-Q3-2014.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>F24697072966DADD74E24B5D27C4C52098990EC0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F24697072966DADD74E24B5D27C4C52098990EC0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-Q3-2014</string>
+		</dict>
+	</array>
+</dict>
+</plist>
