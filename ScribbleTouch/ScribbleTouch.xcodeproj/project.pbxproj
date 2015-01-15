@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9569B1C1A68197E00FF2394 /* ChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9569B1B1A68197E00FF2394 /* ChoiceViewController.m */; };
 		A9F572C41A66C7BB007B1EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572C31A66C7BB007B1EEA /* main.m */; };
 		A9F572C71A66C7BB007B1EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572C61A66C7BB007B1EEA /* AppDelegate.m */; };
 		A9F572CA1A66C7BB007B1EEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572C91A66C7BB007B1EEA /* ViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9569B1A1A68197E00FF2394 /* ChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceViewController.h; sourceTree = "<group>"; };
+		A9569B1B1A68197E00FF2394 /* ChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceViewController.m; sourceTree = "<group>"; };
 		A9F572BE1A66C7BB007B1EEA /* ScribbleTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScribbleTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F572C21A66C7BB007B1EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9F572C31A66C7BB007B1EEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 		A9F572C01A66C7BB007B1EEA /* ScribbleTouch */ = {
 			isa = PBXGroup;
 			children = (
+				A9569B1A1A68197E00FF2394 /* ChoiceViewController.h */,
+				A9569B1B1A68197E00FF2394 /* ChoiceViewController.m */,
 				A9F572E71A66C81E007B1EEA /* ScribbleView.h */,
 				A9F572E81A66C81E007B1EEA /* ScribbleView.m */,
 				A9F572C81A66C7BB007B1EEA /* ViewController.h */,
@@ -227,6 +232,7 @@
 				A9F572CA1A66C7BB007B1EEA /* ViewController.m in Sources */,
 				A9F572C71A66C7BB007B1EEA /* AppDelegate.m in Sources */,
 				A9F572E91A66C81E007B1EEA /* ScribbleView.m in Sources */,
+				A9569B1C1A68197E00FF2394 /* ChoiceViewController.m in Sources */,
 				A9F572C41A66C7BB007B1EEA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +424,7 @@
 				A9F572E31A66C7BB007B1EEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9F572E41A66C7BB007B1EEA /* Build configuration list for PBXNativeTarget "ScribbleTouchTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				A9F572E61A66C7BB007B1EEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

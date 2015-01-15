@@ -8,29 +8,49 @@
 
 #import "ViewController.h"
 #import "ScribbleView.h"
+#import "ChoiceViewController.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UIButton *blendModeButton;
+@property (weak, nonatomic) IBOutlet UIButton *shapeTypeButton;
+@property (weak, nonatomic) IBOutlet UIButton *toggleButton;
 
 @end
 
 @implementation ViewController
 {
     NSMutableDictionary * currentScribble;
-    UIColor * selectedColor;
+    
+    UIColor * selectedStrokeColor;
     int selectedStrokeWidth;
+    
+    UIColor * selectedFillColor;
+    
+    float shapeAlpha;
+    
+    NSString * selectedBlendMode;
+    NSString * selectedShapeType;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    selectedColor = [UIColor blackColor];
+    selectedStrokeColor = [UIColor blackColor];
     selectedStrokeWidth = 1;
 
 }
 
-- (IBAction)changeColor:(UIButton *)sender {
+- (IBAction)changeFillColor:(UIButton *)sender {
     
-    selectedColor = sender.backgroundColor;
+    selectedFillColor = sender.backgroundColor;
+    
+}
+
+
+- (IBAction)changeStrokeColor:(UIButton *)sender {
+    
+    selectedStrokeColor = sender.backgroundColor;
     
 }
 
@@ -39,6 +59,44 @@
     selectedStrokeWidth = sender.value;
     
 }
+
+- (IBAction)changeBlendMode:(id)sender {
+
+    ChoiceViewController * choiceVC = [self.storyboard instantiateViewControllerWithIdentifier:@"choiceVC"];
+    
+    choiceVC.choices = @[
+                         @"Normal",
+                         @"Multiply",
+                         @"Overlay",
+                         @"Screen",
+                         @"Clear"
+                         ];
+    
+    [self presentViewController:choiceVC animated:NO completion:nil];
+    
+}
+
+- (IBAction)changeShapeType:(id)sender {
+    
+    ChoiceViewController * choiceVC = [self.storyboard instantiateViewControllerWithIdentifier:@"choiceVC"];
+    
+    choiceVC.choices = @[
+                         @"Scribble",
+                         @"Line",
+                         @"Rectangle",
+                         @"Ellipse",
+                         @"Triangle"
+                         ];
+    
+    [self presentViewController:choiceVC animated:NO completion:nil];
+}
+
+- (IBAction)showHideDrawer:(id)sender {
+
+    
+    
+}
+
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     
@@ -51,7 +109,7 @@
                          
                          @"type":@"path",
                          @"fillColor":[UIColor clearColor],
-                         @"strokeColor":selectedColor,
+                         @"strokeColor":selectedStrokeColor,
                          @"strokeWidth":@(selectedStrokeWidth),
                          @"points":[@[[NSValue valueWithCGPoint:location]] mutableCopy]
                          
