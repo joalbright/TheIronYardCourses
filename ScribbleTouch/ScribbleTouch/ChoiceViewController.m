@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UIPickerView *pickerView;
 
+@property (weak, nonatomic) IBOutlet UIView *backgroundView;
 
 @end
 
@@ -23,6 +24,18 @@
     
     self.pickerView.delegate = self;
     self.pickerView.dataSource = self;
+    
+    self.backgroundView.alpha = 0;
+    
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        
+        self.backgroundView.alpha = 0.8;
+        
+    }];
     
 }
 
@@ -47,7 +60,19 @@
 
 - (IBAction)dismiss:(id)sender {
     
-    [self dismissViewControllerAnimated:NO completion:nil];
+    NSString * choice = self.choices[[self.pickerView selectedRowInComponent:0]];
+    
+    [self.delegate choice:choice forGroup:self.group];
+    
+    [UIView animateWithDuration:0.4 animations:^{
+        
+        self.backgroundView.alpha = 0;
+        
+    } completion:^(BOOL finished) {
+        
+        [self dismissViewControllerAnimated:NO completion:nil];
+        
+    }];
     
 }
 

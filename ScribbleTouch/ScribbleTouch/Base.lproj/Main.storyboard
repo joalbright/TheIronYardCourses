@@ -313,6 +313,7 @@
                     </view>
                     <connections>
                         <outlet property="blendModeButton" destination="lcH-zd-lE9" id="jbv-nq-Hou"/>
+                        <outlet property="drawerLeftConstraint" destination="Ydg-Do-sK2" id="tup-nc-gOh"/>
                         <outlet property="shapeTypeButton" destination="ar1-Mb-g0n" id="wJY-iC-GeI"/>
                         <outlet property="toggleButton" destination="T3S-d2-oto" id="lGi-LU-gmX"/>
                     </connections>
@@ -324,7 +325,7 @@
         <!--Choice View Controller-->
         <scene sceneID="uik-MP-qMF">
             <objects>
-                <viewController storyboardIdentifier="choiceVC" id="K5Q-h8-tP7" customClass="ChoiceViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="choiceVC" modalPresentationStyle="overCurrentContext" id="K5Q-h8-tP7" customClass="ChoiceViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e3V-g7-t9H"/>
                         <viewControllerLayoutGuide type="bottom" id="Sb5-fz-sfd"/>
@@ -333,14 +334,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EMN-vB-97O" userLabel="BackgroundView">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IUV-AW-CPD">
+                                <rect key="frame" x="0.0" y="361" width="600" height="239"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="agJ-ec-WEz">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="239"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="239" id="ACX-YR-tVv"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oor-Ej-yiI">
-                                <rect key="frame" x="0.0" y="376" width="600" height="162"/>
+                                <rect key="frame" x="0.0" y="370" width="600" height="162"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="162" id="fcE-gq-BBP"/>
                                 </constraints>
                             </pickerView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mNf-kh-YcO">
-                                <rect key="frame" x="16" y="548" width="568" height="42"/>
+                                <rect key="frame" x="16" y="542" width="568" height="42"/>
                                 <color key="backgroundColor" red="0.80000000000000004" green="0.0" blue="0.2666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="EF6-HL-zuL"/>
@@ -354,17 +370,25 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Sb5-fz-sfd" firstAttribute="top" secondItem="IUV-AW-CPD" secondAttribute="bottom" id="4kH-jv-uq2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="oor-Ej-yiI" secondAttribute="trailing" constant="-16" id="7uY-xf-Nol"/>
                             <constraint firstItem="mNf-kh-YcO" firstAttribute="trailing" secondItem="8UD-ai-Br3" secondAttribute="trailingMargin" id="FaB-of-FQj"/>
-                            <constraint firstItem="Sb5-fz-sfd" firstAttribute="top" secondItem="mNf-kh-YcO" secondAttribute="bottom" constant="10" id="b1k-Li-xBi"/>
+                            <constraint firstItem="Sb5-fz-sfd" firstAttribute="top" secondItem="EMN-vB-97O" secondAttribute="bottom" id="MVl-Fs-bbu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="EMN-vB-97O" secondAttribute="trailing" constant="-16" id="P8b-I7-qgs"/>
+                            <constraint firstItem="EMN-vB-97O" firstAttribute="leading" secondItem="8UD-ai-Br3" secondAttribute="leadingMargin" constant="-16" id="SIB-yM-feu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="IUV-AW-CPD" secondAttribute="trailing" constant="-16" id="Toq-kJ-ABJ"/>
+                            <constraint firstItem="Sb5-fz-sfd" firstAttribute="top" secondItem="mNf-kh-YcO" secondAttribute="bottom" constant="16" id="b1k-Li-xBi"/>
                             <constraint firstItem="oor-Ej-yiI" firstAttribute="leading" secondItem="8UD-ai-Br3" secondAttribute="leadingMargin" constant="-16" id="bhj-r3-6eg"/>
+                            <constraint firstItem="IUV-AW-CPD" firstAttribute="leading" secondItem="8UD-ai-Br3" secondAttribute="leadingMargin" constant="-16" id="fxX-qY-aGx"/>
                             <constraint firstItem="mNf-kh-YcO" firstAttribute="leading" secondItem="8UD-ai-Br3" secondAttribute="leadingMargin" id="gXk-pt-Tr4"/>
                             <constraint firstItem="mNf-kh-YcO" firstAttribute="top" secondItem="oor-Ej-yiI" secondAttribute="bottom" constant="10" id="mb8-TG-YHP"/>
+                            <constraint firstItem="EMN-vB-97O" firstAttribute="top" secondItem="8UD-ai-Br3" secondAttribute="topMargin" id="qFA-pK-pye"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="backgroundView" destination="EMN-vB-97O" id="A43-K4-xyM"/>
                         <outlet property="pickerView" destination="oor-Ej-yiI" id="9FN-rF-avH"/>
                     </connections>
                 </viewController>

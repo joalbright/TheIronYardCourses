@@ -8,8 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol ChoiceViewControllerDelegate;
+
 @interface ChoiceViewController : UIViewController
 
 @property (nonatomic) NSArray * choices;
+@property (nonatomic) NSString * group;
+
+@property (nonatomic,assign) id <ChoiceViewControllerDelegate> delegate;
+
+@end
+
+@protocol ChoiceViewControllerDelegate <NSObject>
+
+- (void)choice:(NSString *)choice forGroup:(NSString *)group;
 
 @end

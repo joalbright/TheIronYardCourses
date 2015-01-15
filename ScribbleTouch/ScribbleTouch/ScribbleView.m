@@ -49,22 +49,50 @@
     
     for (NSDictionary * scribble in self.scribbles) {
         
+        ///////// STROKE COLOR & WIDTH
+        
         CGContextSetLineWidth(context, [scribble[@"strokeWidth"] floatValue]);
         
         UIColor * strokeColor = scribble[@"strokeColor"];
         [strokeColor set];
         
-        CGPoint firstPoint = [scribble[@"points"][0] CGPointValue];
-        CGContextMoveToPoint(context, firstPoint.x, firstPoint.y);
         
-        for (NSValue * pointValue in scribble[@"points"]) {
+        ///////// BUILD STROKE PATH
+        
+        BOOL typeIsScribble = [scribble[@"type"] isEqualToString:@"Scribble"];
+        BOOL typeIsLine = [scribble[@"type"] isEqualToString:@"Line"];
+        
+        if (typeIsScribble || typeIsLine) {
             
-            CGPoint point = [pointValue CGPointValue];
-            CGContextAddLineToPoint(context, point.x, point.y);
+            CGPoint firstPoint = [scribble[@"points"][0] CGPointValue];
+            CGContextMoveToPoint(context, firstPoint.x, firstPoint.y);
+            
+            for (NSValue * pointValue in scribble[@"points"]) {
+                
+                CGPoint point = [pointValue CGPointValue];
+                CGContextAddLineToPoint(context, point.x, point.y);
+                
+            }
             
         }
         
+        if ([scribble[@"type"] isEqualToString:@"Rectangle"]) {
+            
+            CGPoint firstPoint = [scribble[@"points"][0] CGPointValue];
+            CGPoint secondPoint = [scribble[@"points"][1] CGPointValue];
+            
+            CGFloat width = secondPoint.x - firstPoint.x;
+            CGFloat height = secondPoint.y - firstPoint.y;
+            
+            CGRect rect = CGRectMake(firstPoint.x, firstPoint.y, width, height);
+            
+            CGContextAddRect(context, rect);
+            
+        }
+        
+        
         CGContextStrokePath(context);
+
         
     }
     
