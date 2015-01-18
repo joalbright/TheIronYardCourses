@@ -1,15 +1,15 @@
 //
-//  Rectangle.m
+//  Triangle.m
 //  Shapes
 //
-//  Created by Jo Albright on 1/13/15.
+//  Created by Jo Albright on 1/14/15.
 //  Copyright (c) 2015 Jo Albright. All rights reserved.
 //
 
-#import "Rectangle.h"
+#import "Triangle.h"
 
-@implementation Rectangle
-
+IB_DESIGNABLE
+@implementation Triangle
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
@@ -19,20 +19,16 @@
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    [[UIColor purpleColor] set];
+    [[UIColor blueColor] set];
     
-//    CGContextFillRect(context, rect);
+    CGContextMoveToPoint(context, rect.size.width / 2, 0);
     
-    CGContextMoveToPoint(context, 0, 0);
-    
-    CGContextAddLineToPoint(context, rect.size.width, 0);
     CGContextAddLineToPoint(context, rect.size.width, rect.size.height);
     CGContextAddLineToPoint(context, 0, rect.size.height);
-    CGContextAddLineToPoint(context, 0, 0);
+    CGContextAddLineToPoint(context, rect.size.width / 2, 0);
     
     CGContextFillPath(context);
     
 }
-
 
 @end

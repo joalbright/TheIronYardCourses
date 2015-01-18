@@ -15,6 +15,8 @@
 		A9CF073D1A65C122005C509E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CF073B1A65C122005C509E /* LaunchScreen.xib */; };
 		A9CF07491A65C122005C509E /* ShapesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CF07481A65C122005C509E /* ShapesTests.m */; };
 		A9CF07541A65C230005C509E /* Rectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = A9CF07531A65C230005C509E /* Rectangle.m */; };
+		A9F572B01A66B018007B1EEA /* Triangle.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572AF1A66B018007B1EEA /* Triangle.m */; };
+		A9F572B31A66B025007B1EEA /* Ellipse.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572B21A66B025007B1EEA /* Ellipse.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		A9CF07481A65C122005C509E /* ShapesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShapesTests.m; sourceTree = "<group>"; };
 		A9CF07521A65C230005C509E /* Rectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rectangle.h; sourceTree = "<group>"; };
 		A9CF07531A65C230005C509E /* Rectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Rectangle.m; sourceTree = "<group>"; };
+		A9F572AE1A66B018007B1EEA /* Triangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Triangle.h; sourceTree = "<group>"; };
+		A9F572AF1A66B018007B1EEA /* Triangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Triangle.m; sourceTree = "<group>"; };
+		A9F572B11A66B025007B1EEA /* Ellipse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ellipse.h; sourceTree = "<group>"; };
+		A9F572B21A66B025007B1EEA /* Ellipse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ellipse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,16 +90,11 @@
 		A9CF072B1A65C122005C509E /* Shapes */ = {
 			isa = PBXGroup;
 			children = (
-				A9CF07301A65C122005C509E /* AppDelegate.h */,
-				A9CF07311A65C122005C509E /* AppDelegate.m */,
 				A9CF07331A65C122005C509E /* ViewController.h */,
 				A9CF07341A65C122005C509E /* ViewController.m */,
 				A9CF07361A65C122005C509E /* Main.storyboard */,
-				A9CF07391A65C122005C509E /* Images.xcassets */,
-				A9CF073B1A65C122005C509E /* LaunchScreen.xib */,
+				A9F572B41A66B056007B1EEA /* Shapes */,
 				A9CF072C1A65C122005C509E /* Supporting Files */,
-				A9CF07521A65C230005C509E /* Rectangle.h */,
-				A9CF07531A65C230005C509E /* Rectangle.m */,
 			);
 			path = Shapes;
 			sourceTree = "<group>";
@@ -101,6 +102,10 @@
 		A9CF072C1A65C122005C509E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A9CF07301A65C122005C509E /* AppDelegate.h */,
+				A9CF07311A65C122005C509E /* AppDelegate.m */,
+				A9CF07391A65C122005C509E /* Images.xcassets */,
+				A9CF073B1A65C122005C509E /* LaunchScreen.xib */,
 				A9CF072D1A65C122005C509E /* Info.plist */,
 				A9CF072E1A65C122005C509E /* main.m */,
 			);
@@ -122,6 +127,19 @@
 				A9CF07471A65C122005C509E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A9F572B41A66B056007B1EEA /* Shapes */ = {
+			isa = PBXGroup;
+			children = (
+				A9CF07521A65C230005C509E /* Rectangle.h */,
+				A9CF07531A65C230005C509E /* Rectangle.m */,
+				A9F572AE1A66B018007B1EEA /* Triangle.h */,
+				A9F572AF1A66B018007B1EEA /* Triangle.m */,
+				A9F572B11A66B025007B1EEA /* Ellipse.h */,
+				A9F572B21A66B025007B1EEA /* Ellipse.m */,
+			);
+			name = Shapes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,6 +242,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9F572B31A66B025007B1EEA /* Ellipse.m in Sources */,
+				A9F572B01A66B018007B1EEA /* Triangle.m in Sources */,
 				A9CF07351A65C122005C509E /* ViewController.m in Sources */,
 				A9CF07321A65C122005C509E /* AppDelegate.m in Sources */,
 				A9CF072F1A65C122005C509E /* main.m in Sources */,
@@ -418,6 +438,7 @@
 				A9CF074E1A65C122005C509E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9CF074F1A65C122005C509E /* Build configuration list for PBXNativeTarget "ShapesTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +447,7 @@
 				A9CF07511A65C122005C509E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
