@@ -121,8 +121,13 @@
 }
 
 - (IBAction)showHideDrawer:(id)sender {
-
+    
+    int direction = (self.drawerLeftConstraint.constant == -16) ? -1 : 1;
+    
+    self.toggleButton.transform = CGAffineTransformMakeScale(direction, 1);
+    
     self.drawerLeftConstraint.constant = (self.drawerLeftConstraint.constant == -16) ? -266 : -16;
+    
     
 }
 
