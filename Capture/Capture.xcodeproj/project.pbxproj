@@ -15,6 +15,8 @@
 		A934504C1A6E985800663CB3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A934504A1A6E985800663CB3 /* LaunchScreen.xib */; };
 		A93450581A6E985800663CB3 /* CaptureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A93450571A6E985800663CB3 /* CaptureTests.m */; };
 		A93450631A6EAD9700663CB3 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A93450621A6EAD9700663CB3 /* FilterViewController.m */; };
+		A93450661A700F1B00663CB3 /* FilterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A93450651A700F1B00663CB3 /* FilterCell.m */; };
+		A93450691A70382B00663CB3 /* SlickSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = A93450681A70382B00663CB3 /* SlickSlider.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		A93450571A6E985800663CB3 /* CaptureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CaptureTests.m; sourceTree = "<group>"; };
 		A93450611A6EAD9700663CB3 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
 		A93450621A6EAD9700663CB3 /* FilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterViewController.m; sourceTree = "<group>"; };
+		A93450641A700F1B00663CB3 /* FilterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCell.h; sourceTree = "<group>"; };
+		A93450651A700F1B00663CB3 /* FilterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCell.m; sourceTree = "<group>"; };
+		A93450671A70382B00663CB3 /* SlickSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlickSlider.h; sourceTree = "<group>"; };
+		A93450681A70382B00663CB3 /* SlickSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlickSlider.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				A93450611A6EAD9700663CB3 /* FilterViewController.h */,
 				A93450621A6EAD9700663CB3 /* FilterViewController.m */,
 				A93450451A6E985800663CB3 /* Main.storyboard */,
+				A93450671A70382B00663CB3 /* SlickSlider.h */,
+				A93450681A70382B00663CB3 /* SlickSlider.m */,
+				A93450641A700F1B00663CB3 /* FilterCell.h */,
+				A93450651A700F1B00663CB3 /* FilterCell.m */,
 				A934503B1A6E985800663CB3 /* Supporting Files */,
 			);
 			path = Capture;
@@ -225,6 +235,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A93450441A6E985800663CB3 /* ViewController.m in Sources */,
+				A93450691A70382B00663CB3 /* SlickSlider.m in Sources */,
+				A93450661A700F1B00663CB3 /* FilterCell.m in Sources */,
 				A93450411A6E985800663CB3 /* AppDelegate.m in Sources */,
 				A93450631A6EAD9700663CB3 /* FilterViewController.m in Sources */,
 				A934503E1A6E985800663CB3 /* main.m in Sources */,
