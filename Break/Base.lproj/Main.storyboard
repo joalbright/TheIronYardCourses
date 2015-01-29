@@ -6,6 +6,8 @@
     <customFonts key="customFonts">
         <mutableArray key="Cubano-Regular.otf">
             <string>Cubano-Regular</string>
+            <string>Cubano-Regular</string>
+            <string>Cubano-Regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -74,22 +76,80 @@
                                             </mask>
                                         </variation>
                                     </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BREAK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8eo-Or-TBm">
+                                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="109" id="gRr-i4-1zA"/>
+                                            <constraint firstAttribute="width" constant="271" id="iJf-sj-X9G"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cubano-Regular" family="Cubano" pointSize="80"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="gRr-i4-1zA"/>
+                                                <exclude reference="iJf-sj-X9G"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="gRr-i4-1zA"/>
+                                                <include reference="iJf-sj-X9G"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVJ-hP-Say">
+                                        <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="6dD-qO-2if"/>
+                                            <constraint firstAttribute="width" constant="115" id="F14-pR-tHx"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cubano-Regular" family="Cubano" pointSize="30"/>
+                                        <state key="normal" title="PLAY">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6dD-qO-2if"/>
+                                                <exclude reference="F14-pR-tHx"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="heightClass=compact-widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="6dD-qO-2if"/>
+                                                <include reference="F14-pR-tHx"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="playGame" destination="vXZ-lx-hvc" eventType="touchUpInside" id="l7W-sf-K5e"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="sk9-WX-yFG" secondAttribute="trailing" constant="15" id="8bF-0u-7d6"/>
                                     <constraint firstItem="MEb-tz-ncS" firstAttribute="top" secondItem="QVq-UF-6ir" secondAttribute="top" id="IEE-Mx-c6d"/>
+                                    <constraint firstAttribute="centerX" secondItem="eVJ-hP-Say" secondAttribute="centerX" id="OrK-yq-Xuz"/>
                                     <constraint firstAttribute="centerX" secondItem="MEb-tz-ncS" secondAttribute="centerX" id="c6k-fm-dcJ"/>
+                                    <constraint firstAttribute="centerX" secondItem="8eo-Or-TBm" secondAttribute="centerX" id="lGC-am-1d4"/>
+                                    <constraint firstAttribute="bottom" secondItem="eVJ-hP-Say" secondAttribute="bottom" constant="63" id="qPN-Og-dof"/>
                                     <constraint firstItem="sk9-WX-yFG" firstAttribute="top" secondItem="QVq-UF-6ir" secondAttribute="top" id="ts7-KR-GEa"/>
+                                    <constraint firstAttribute="centerY" secondItem="8eo-Or-TBm" secondAttribute="centerY" constant="7.5" id="wdP-zu-Jjg"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="subviews">
                                         <exclude reference="MEb-tz-ncS"/>
                                         <exclude reference="sk9-WX-yFG"/>
+                                        <exclude reference="8eo-Or-TBm"/>
+                                        <exclude reference="eVJ-hP-Say"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <exclude reference="lGC-am-1d4"/>
+                                        <exclude reference="wdP-zu-Jjg"/>
                                         <exclude reference="IEE-Mx-c6d"/>
                                         <exclude reference="c6k-fm-dcJ"/>
+                                        <exclude reference="OrK-yq-Xuz"/>
+                                        <exclude reference="qPN-Og-dof"/>
                                         <exclude reference="8bF-0u-7d6"/>
                                         <exclude reference="ts7-KR-GEa"/>
                                     </mask>
@@ -98,10 +158,16 @@
                                     <mask key="subviews">
                                         <include reference="MEb-tz-ncS"/>
                                         <include reference="sk9-WX-yFG"/>
+                                        <include reference="8eo-Or-TBm"/>
+                                        <include reference="eVJ-hP-Say"/>
                                     </mask>
                                     <mask key="constraints">
+                                        <include reference="lGC-am-1d4"/>
+                                        <include reference="wdP-zu-Jjg"/>
                                         <include reference="IEE-Mx-c6d"/>
                                         <include reference="c6k-fm-dcJ"/>
+                                        <include reference="OrK-yq-Xuz"/>
+                                        <include reference="qPN-Og-dof"/>
                                         <include reference="8bF-0u-7d6"/>
                                         <include reference="ts7-KR-GEa"/>
                                     </mask>
@@ -155,7 +221,9 @@
                     <connections>
                         <outlet property="gameView" destination="QVq-UF-6ir" id="I22-Bh-VFq"/>
                         <outlet property="livesView" destination="MEb-tz-ncS" id="Jme-rt-3bp"/>
+                        <outlet property="playButton" destination="eVJ-hP-Say" id="uWC-oo-6l4"/>
                         <outlet property="scoreLabel" destination="sk9-WX-yFG" id="zVc-Zn-XKg"/>
+                        <outlet property="titleLabel" destination="8eo-Or-TBm" id="N99-TO-Rre"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
