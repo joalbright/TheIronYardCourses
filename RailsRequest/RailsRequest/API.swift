@@ -10,11 +10,31 @@ import Foundation
 
 let API_URL = "https://pure-anchorage-3070.herokuapp.com/"
 
+typealias ResponseBlock = (responseInfo: [String:AnyObject]) -> ()
+
 class APIRequest {
     
     // (responseInfo: [String:AnyObject]) -> ()
     
-    class func requestWithOptions(options: [String: AnyObject], andCompletion completion: (responseInfo: [String:AnyObject]) -> ()) {
+    class func requestWithEnpoint(endpoint: String, method: String, completion: ResponseBlock) {
+        
+        var options = [
+        
+            "endpoint" : endpoint,
+            "method" : method,
+            "body" : [
+            
+                "user" : [ "authentication_token" : User.currentUser().token! ]
+                
+            ]
+            
+        ] as [String: AnyObject]
+        
+        requestWithOptions(options, andCompletion: completion)
+        
+    }
+    
+    class func requestWithOptions(options: [String: AnyObject], andCompletion completion: ResponseBlock) {
         
         var url = NSURL(string: API_URL + (options["endpoint"] as String))
         
@@ -88,17 +108,43 @@ class User {
     
     class func currentUser() -> User { return _currentUser }
     
-    func register(email: String, password: String) {
+    func register(username: String, email: String, password: String) {
         
         let options: [String:AnyObject] = [
             "endpoint" : "users",
             "method" : "POST",
             "body" : [
                 
-                "user" : [ "email" : "test25@jo2.co", "password" : "password" ]
+                "user" : [ "username" : username, "email" : email, "password" : password ]
             
             ]
         
+        ]
+        
+        APIRequest.requestWithOptions(options, andCompletion: { (responseInfo) -> () in
+            
+            println(responseInfo)
+            
+            let dataInfo = responseInfo["data"] as [String:String]
+            
+            self.token = dataInfo["auth_token"]
+            // do something here after request is done
+            
+        })
+        
+    }
+    
+    func login(email: String, password: String) {
+        
+        let options: [String:AnyObject] = [
+            "endpoint" : "users/sign_in",
+            "method" : "POST",
+            "body" : [
+                
+                "user" : [ "email" : email, "password" : password ]
+                
+            ]
+            
         ]
         
         APIRequest.requestWithOptions(options, andCompletion: { (responseInfo) -> () in
