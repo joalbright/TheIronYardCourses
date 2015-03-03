@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A9ABDCB41AA4A98A00959477 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ABDCB31AA4A98A00959477 /* AppDelegate.swift */; };
 		A9ABDCB61AA4A98A00959477 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ABDCB51AA4A98A00959477 /* MasterViewController.swift */; };
-		A9ABDCB81AA4A98A00959477 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ABDCB71AA4A98A00959477 /* DetailViewController.swift */; };
+		A9ABDCB81AA4A98A00959477 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ABDCB71AA4A98A00959477 /* DetailTableViewController.swift */; };
 		A9ABDCBB1AA4A98A00959477 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9ABDCB91AA4A98A00959477 /* Main.storyboard */; };
 		A9ABDCBD1AA4A98A00959477 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9ABDCBC1AA4A98A00959477 /* Images.xcassets */; };
 		A9ABDCC01AA4A98A00959477 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9ABDCBE1AA4A98A00959477 /* LaunchScreen.xib */; };
@@ -45,7 +45,7 @@
 		A9ABDCB21AA4A98A00959477 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9ABDCB31AA4A98A00959477 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9ABDCB51AA4A98A00959477 /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
-		A9ABDCB71AA4A98A00959477 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A9ABDCB71AA4A98A00959477 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
 		A9ABDCBA1AA4A98A00959477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9ABDCBC1AA4A98A00959477 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9ABDCBF1AA4A98A00959477 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 				A9ABDCF31AA4C1EE00959477 /* ViewController.swift */,
 				A9ABDCB31AA4A98A00959477 /* AppDelegate.swift */,
 				A9ABDCB51AA4A98A00959477 /* MasterViewController.swift */,
-				A9ABDCB71AA4A98A00959477 /* DetailViewController.swift */,
+				A9ABDCB71AA4A98A00959477 /* DetailTableViewController.swift */,
 				A9ABDCB91AA4A98A00959477 /* Main.storyboard */,
 				A9ABDCBC1AA4A98A00959477 /* Images.xcassets */,
 				A9ABDCBE1AA4A98A00959477 /* LaunchScreen.xib */,
@@ -281,7 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9ABDCB81AA4A98A00959477 /* DetailViewController.swift in Sources */,
+				A9ABDCB81AA4A98A00959477 /* DetailTableViewController.swift in Sources */,
 				A9ABDCB61AA4A98A00959477 /* MasterViewController.swift in Sources */,
 				A9ABDCF41AA4C1EE00959477 /* ViewController.swift in Sources */,
 				A9ABDCB41AA4A98A00959477 /* AppDelegate.swift in Sources */,
@@ -497,6 +497,7 @@
 				A9ABDCD11AA4A98A00959477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9ABDCD21AA4A98A00959477 /* Build configuration list for PBXNativeTarget "PushItTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +506,7 @@
 				A9ABDCD41AA4A98A00959477 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
