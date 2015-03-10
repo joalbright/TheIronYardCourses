@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Leaderboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Attacks : 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UUO-Lf-gbk">
+                                <rect key="frame" x="16" y="28" width="568" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="s0e-VG-gax"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOd-DO-Elh">
+                                <rect key="frame" x="16" y="109" width="568" height="45"/>
+                                <color key="backgroundColor" red="0.89411771299999998" green="0.13333334029999999" blue="0.1764705926" alpha="1" colorSpace="deviceRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1Gp-Xl-Foj"/>
+                                </constraints>
+                                <state key="normal" title="Attack">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="attack:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fix-AB-whR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eDn-uo-Ggo">
+                                <rect key="frame" x="16" y="189" width="568" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="xFG-CQ-CXC"/>
+                                </constraints>
+                                <state key="normal" title="Leaderboard">
+                                    <color key="titleColor" red="0.019607843140000001" green="0.87843137250000003" blue="0.54901960780000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="leaderboard:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="stg-fB-NSM"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cOd-DO-Elh" firstAttribute="top" secondItem="UUO-Lf-gbk" secondAttribute="bottom" constant="38" id="Aqt-H5-Jg2"/>
+                            <constraint firstItem="UUO-Lf-gbk" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="W3N-Og-qPn"/>
+                            <constraint firstItem="cOd-DO-Elh" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="YXi-hJ-1br"/>
+                            <constraint firstItem="eDn-uo-Ggo" firstAttribute="top" secondItem="cOd-DO-Elh" secondAttribute="bottom" constant="35" id="hvn-hI-dlJ"/>
+                            <constraint firstItem="eDn-uo-Ggo" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="jpJ-yQ-Mzf"/>
+                            <constraint firstItem="UUO-Lf-gbk" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="jqM-ss-Bvb"/>
+                            <constraint firstItem="cOd-DO-Elh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="l57-cF-d9C"/>
+                            <constraint firstItem="UUO-Lf-gbk" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="ozr-es-ObT"/>
+                            <constraint firstItem="eDn-uo-Ggo" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="rkd-aQ-NtI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="attackLabel" destination="UUO-Lf-gbk" id="MKD-jA-HjB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
