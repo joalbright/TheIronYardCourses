@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		439263FBAD401B62A77F06E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DAA2D34D0EE669D2383DF84F /* libPods.a */; };
+		A93063611AB08D5F00E29759 /* FoursquareModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93063601AB08D5F00E29759 /* FoursquareModel.swift */; };
 		A9BB236F1AA8A2E80002C383 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB236E1AA8A2E80002C383 /* AppDelegate.swift */; };
 		A9BB23711AA8A2E80002C383 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9BB23701AA8A2E80002C383 /* ViewController.swift */; };
 		A9BB23741AA8A2E80002C383 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9BB23721AA8A2E80002C383 /* Main.storyboard */; };
@@ -32,6 +33,7 @@
 /* Begin PBXFileReference section */
 		7EC24556DBE6FCAA404897D9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		8FFE832D42DCC89525A5211D /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A93063601AB08D5F00E29759 /* FoursquareModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquareModel.swift; sourceTree = "<group>"; };
 		A9BB23691AA8A2E80002C383 /* Mayors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mayors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9BB236D1AA8A2E80002C383 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9BB236E1AA8A2E80002C383 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -44,7 +46,7 @@
 		A9BB23841AA8A2E80002C383 /* MayorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MayorsTests.swift; sourceTree = "<group>"; };
 		A9BB23901AA8A4BC0002C383 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		A9BB23911AA8A4BC0002C383 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
-		A9BB23941AA8B1E50002C383 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		A9BB23941AA8B1E50002C383 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A9BB23981AA8BBF90002C383 /* Mayors-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Mayors-Bridging-Header.h"; sourceTree = "<group>"; };
 		DAA2D34D0EE669D2383DF84F /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				A9BB23941AA8B1E50002C383 /* Podfile */,
+				A93063601AB08D5F00E29759 /* FoursquareModel.swift */,
 				A9BB236E1AA8A2E80002C383 /* AppDelegate.swift */,
 				A9BB23701AA8A2E80002C383 /* ViewController.swift */,
 				A9BB23721AA8A2E80002C383 /* Main.storyboard */,
@@ -299,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A93063611AB08D5F00E29759 /* FoursquareModel.swift in Sources */,
 				A9BB23711AA8A2E80002C383 /* ViewController.swift in Sources */,
 				A9BB236F1AA8A2E80002C383 /* AppDelegate.swift in Sources */,
 			);
