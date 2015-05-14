@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>F9D4E752-DB0A-45B9-9D19-55F54D19669E</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0B13AA732D539FF92FA5A5AA4C438F5D9653AA40</key>
+		<string>https://github.com/joalbright/ScratchDraw.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ScratchDraw/ScratchDraw.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0B13AA732D539FF92FA5A5AA4C438F5D9653AA40</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/joalbright/ScratchDraw.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0B13AA732D539FF92FA5A5AA4C438F5D9653AA40</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0B13AA732D539FF92FA5A5AA4C438F5D9653AA40</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ScratchDraw</string>
+		</dict>
+	</array>
+</dict>
+</plist>

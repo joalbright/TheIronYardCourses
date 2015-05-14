@@ -13,6 +13,7 @@
 		A9CCAFFB1B04D6FB00249BEC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CCAFFA1B04D6FB00249BEC /* Images.xcassets */; };
 		A9CCAFFE1B04D6FB00249BEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CCAFFC1B04D6FB00249BEC /* LaunchScreen.xib */; };
 		A9CCB00A1B04D6FC00249BEC /* ScratchDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCB0091B04D6FC00249BEC /* ScratchDrawTests.swift */; };
+		A9CCB0141B04D9F300249BEC /* ScratchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCB0131B04D9F300249BEC /* ScratchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		A9CCB0031B04D6FC00249BEC /* ScratchDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScratchDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CCB0081B04D6FC00249BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CCB0091B04D6FC00249BEC /* ScratchDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchDrawTests.swift; sourceTree = "<group>"; };
+		A9CCB0131B04D9F300249BEC /* ScratchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +79,9 @@
 		A9CCAFF01B04D6FB00249BEC /* ScratchDraw */ = {
 			isa = PBXGroup;
 			children = (
-				A9CCAFF31B04D6FB00249BEC /* AppDelegate.swift */,
 				A9CCAFF51B04D6FB00249BEC /* ViewController.swift */,
+				A9CCB0131B04D9F300249BEC /* ScratchView.swift */,
 				A9CCAFF71B04D6FB00249BEC /* Main.storyboard */,
-				A9CCAFFA1B04D6FB00249BEC /* Images.xcassets */,
-				A9CCAFFC1B04D6FB00249BEC /* LaunchScreen.xib */,
 				A9CCAFF11B04D6FB00249BEC /* Supporting Files */,
 			);
 			path = ScratchDraw;
@@ -90,6 +90,9 @@
 		A9CCAFF11B04D6FB00249BEC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A9CCAFF31B04D6FB00249BEC /* AppDelegate.swift */,
+				A9CCAFFA1B04D6FB00249BEC /* Images.xcassets */,
+				A9CCAFFC1B04D6FB00249BEC /* LaunchScreen.xib */,
 				A9CCAFF21B04D6FB00249BEC /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -214,6 +217,7 @@
 			files = (
 				A9CCAFF61B04D6FB00249BEC /* ViewController.swift in Sources */,
 				A9CCAFF41B04D6FB00249BEC /* AppDelegate.swift in Sources */,
+				A9CCB0141B04D9F300249BEC /* ScratchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
