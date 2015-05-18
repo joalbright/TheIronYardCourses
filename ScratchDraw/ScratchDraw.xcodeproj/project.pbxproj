@@ -14,6 +14,7 @@
 		A9CCAFFE1B04D6FB00249BEC /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CCAFFC1B04D6FB00249BEC /* LaunchScreen.xib */; };
 		A9CCB00A1B04D6FC00249BEC /* ScratchDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCB0091B04D6FC00249BEC /* ScratchDrawTests.swift */; };
 		A9CCB0141B04D9F300249BEC /* ScratchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CCB0131B04D9F300249BEC /* ScratchView.swift */; };
+		A9CF724B1B062AA000F6EA93 /* ColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF724A1B062AA000F6EA93 /* ColorCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		A9CCB0081B04D6FC00249BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CCB0091B04D6FC00249BEC /* ScratchDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScratchDrawTests.swift; sourceTree = "<group>"; };
 		A9CCB0131B04D9F300249BEC /* ScratchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchView.swift; sourceTree = "<group>"; };
+		A9CF724A1B062AA000F6EA93 /* ColorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				A9CCAFF51B04D6FB00249BEC /* ViewController.swift */,
 				A9CCB0131B04D9F300249BEC /* ScratchView.swift */,
+				A9CF724A1B062AA000F6EA93 /* ColorCell.swift */,
 				A9CCAFF71B04D6FB00249BEC /* Main.storyboard */,
 				A9CCAFF11B04D6FB00249BEC /* Supporting Files */,
 			);
@@ -216,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9CCAFF61B04D6FB00249BEC /* ViewController.swift in Sources */,
+				A9CF724B1B062AA000F6EA93 /* ColorCell.swift in Sources */,
 				A9CCAFF41B04D6FB00249BEC /* AppDelegate.swift in Sources */,
 				A9CCB0141B04D9F300249BEC /* ScratchView.swift in Sources */,
 			);
@@ -415,6 +419,7 @@
 				A9CCB00F1B04D6FC00249BEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9CCB0101B04D6FC00249BEC /* Build configuration list for PBXNativeTarget "ScratchDrawTests" */ = {
 			isa = XCConfigurationList;
@@ -423,6 +428,7 @@
 				A9CCB0121B04D6FC00249BEC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

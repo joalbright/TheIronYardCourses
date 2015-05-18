@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>F9D4E752-DB0A-45B9-9D19-55F54D19669E</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>ScratchDraw</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>0B13AA732D539FF92FA5A5AA4C438F5D9653AA40</key>
 		<string>https://github.com/joalbright/ScratchDraw.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ScratchDraw/ScratchDraw.xcodeproj/project.xcworkspace</string>
+	<string>ScratchDraw/ScratchDraw.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>0B13AA732D539FF92FA5A5AA4C438F5D9653AA40</key>
