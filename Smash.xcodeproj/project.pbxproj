@@ -17,6 +17,7 @@
 		A9DBFA931B0BBEE500B88C2D /* BallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFA921B0BBEE500B88C2D /* BallView.swift */; };
 		A9DBFA951B0BBEF500B88C2D /* BrickView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFA941B0BBEF500B88C2D /* BrickView.swift */; };
 		A9DBFA971B0BBF0500B88C2D /* PaddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFA961B0BBF0500B88C2D /* PaddleView.swift */; };
+		A9DBFA991B0CCF4300B88C2D /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9DBFA981B0CCF4300B88C2D /* GameData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A9DBFA921B0BBEE500B88C2D /* BallView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BallView.swift; sourceTree = "<group>"; };
 		A9DBFA941B0BBEF500B88C2D /* BrickView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrickView.swift; sourceTree = "<group>"; };
 		A9DBFA961B0BBF0500B88C2D /* PaddleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaddleView.swift; sourceTree = "<group>"; };
+		A9DBFA981B0CCF4300B88C2D /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				A9DBFA941B0BBEF500B88C2D /* BrickView.swift */,
 				A9DBFA961B0BBF0500B88C2D /* PaddleView.swift */,
 				A9DAD68D1B0B6CE80075E4FE /* Supporting Files */,
+				A9DBFA981B0CCF4300B88C2D /* GameData.swift */,
 			);
 			path = Smash;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				A9DBFA911B0BBED500B88C2D /* BallCountView.swift in Sources */,
 				A9DBFA951B0BBEF500B88C2D /* BrickView.swift in Sources */,
 				A9DAD6901B0B6CE80075E4FE /* AppDelegate.swift in Sources */,
+				A9DBFA991B0CCF4300B88C2D /* GameData.swift in Sources */,
 				A9DBFA971B0BBF0500B88C2D /* PaddleView.swift in Sources */,
 				A9DBFA931B0BBEE500B88C2D /* BallView.swift in Sources */,
 			);

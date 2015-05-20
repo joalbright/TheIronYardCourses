@@ -22,9 +22,53 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lcv-Uc-Kyq">
                                 <rect key="frame" x="0.0" y="0.0" width="700" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="efQ-0G-nRa" customClass="BallCountView" customModule="Smash" customModuleProvider="target">
+                                        <rect key="frame" x="12" y="12" width="120" height="16"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="Irh-kP-AgW"/>
+                                            <constraint firstAttribute="height" constant="16" id="bvm-es-yld"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="ballsLeft">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="padding">
+                                                <real key="value" value="9"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score: 0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZrN-Y6-2P5">
+                                        <rect key="frame" x="530" y="10" width="160" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="nxH-EZ-YXM"/>
+                                            <constraint firstAttribute="width" constant="160" id="uhe-t6-RLb"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlZ-Fe-R0L">
+                                        <rect key="frame" x="270" y="10" width="160" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="160" id="KU8-A5-7IM"/>
+                                            <constraint firstAttribute="height" constant="20" id="oDM-wV-eS2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstItem="ZrN-Y6-2P5" firstAttribute="top" secondItem="lcv-Uc-Kyq" secondAttribute="top" constant="10" id="2bF-6w-M6C"/>
                                     <constraint firstAttribute="height" constant="40" id="B8e-rb-R2S"/>
+                                    <constraint firstItem="efQ-0G-nRa" firstAttribute="top" secondItem="lcv-Uc-Kyq" secondAttribute="top" constant="12" id="EfQ-dz-OAi"/>
+                                    <constraint firstAttribute="centerX" secondItem="IlZ-Fe-R0L" secondAttribute="centerX" id="SSy-Ff-dUd"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZrN-Y6-2P5" secondAttribute="trailing" constant="10" id="TGB-a3-D8b"/>
+                                    <constraint firstItem="efQ-0G-nRa" firstAttribute="leading" secondItem="lcv-Uc-Kyq" secondAttribute="leading" constant="12" id="U0q-pe-jRa"/>
+                                    <constraint firstItem="IlZ-Fe-R0L" firstAttribute="top" secondItem="lcv-Uc-Kyq" secondAttribute="top" constant="10" id="i85-Uj-Umf"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -42,8 +86,11 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="700" height="400"/>
                     <connections>
+                        <outlet property="currentScoreLabel" destination="ZrN-Y6-2P5" id="27O-Th-9tc"/>
                         <outlet property="gameView" destination="cD8-pa-8l5" id="uaQ-tE-bp0"/>
                         <outlet property="headerView" destination="lcv-Uc-Kyq" id="y1u-Bv-oLD"/>
+                        <outlet property="livesView" destination="efQ-0G-nRa" id="SLD-kN-Kyo"/>
+                        <outlet property="topScoreLabel" destination="IlZ-Fe-R0L" id="fht-D3-mN2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
