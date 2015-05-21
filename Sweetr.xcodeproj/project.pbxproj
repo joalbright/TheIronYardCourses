@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		A9CF725B1B0A2BFD00F6EA93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF725A1B0A2BFD00F6EA93 /* AppDelegate.swift */; };
-		A9CF725D1B0A2BFD00F6EA93 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF725C1B0A2BFD00F6EA93 /* FirstViewController.swift */; };
-		A9CF725F1B0A2BFD00F6EA93 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF725E1B0A2BFD00F6EA93 /* SecondViewController.swift */; };
 		A9CF72621B0A2BFD00F6EA93 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9CF72601B0A2BFD00F6EA93 /* Main.storyboard */; };
 		A9CF72641B0A2BFD00F6EA93 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9CF72631B0A2BFD00F6EA93 /* Images.xcassets */; };
 		A9CF72671B0A2BFD00F6EA93 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9CF72651B0A2BFD00F6EA93 /* LaunchScreen.xib */; };
 		A9CF72731B0A2BFE00F6EA93 /* SweetrTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF72721B0A2BFE00F6EA93 /* SweetrTests.swift */; };
+		A9CF727D1B0A374E00F6EA93 /* TweetsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF727C1B0A374E00F6EA93 /* TweetsTableViewController.swift */; };
+		A9CF727F1B0A375A00F6EA93 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF727E1B0A375A00F6EA93 /* VenuesTableViewController.swift */; };
+		A9CF72811B0A37E600F6EA93 /* SocialData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF72801B0A37E600F6EA93 /* SocialData.swift */; };
+		A9CF72831B0A381900F6EA93 /* Requests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF72821B0A381900F6EA93 /* Requests.swift */; };
+		A9CF72851B0A383100F6EA93 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9CF72841B0A383100F6EA93 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,14 +33,17 @@
 		A9CF72551B0A2BFD00F6EA93 /* Sweetr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sweetr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CF72591B0A2BFD00F6EA93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CF725A1B0A2BFD00F6EA93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A9CF725C1B0A2BFD00F6EA93 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		A9CF725E1B0A2BFD00F6EA93 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		A9CF72611B0A2BFD00F6EA93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A9CF72631B0A2BFD00F6EA93 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9CF72661B0A2BFD00F6EA93 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A9CF726C1B0A2BFE00F6EA93 /* SweetrTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SweetrTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9CF72711B0A2BFE00F6EA93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9CF72721B0A2BFE00F6EA93 /* SweetrTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SweetrTests.swift; sourceTree = "<group>"; };
+		A9CF727C1B0A374E00F6EA93 /* TweetsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TweetsTableViewController.swift; sourceTree = "<group>"; };
+		A9CF727E1B0A375A00F6EA93 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
+		A9CF72801B0A37E600F6EA93 /* SocialData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SocialData.swift; sourceTree = "<group>"; };
+		A9CF72821B0A381900F6EA93 /* Requests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requests.swift; sourceTree = "<group>"; };
+		A9CF72841B0A383100F6EA93 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +85,12 @@
 		A9CF72571B0A2BFD00F6EA93 /* Sweetr */ = {
 			isa = PBXGroup;
 			children = (
-				A9CF725A1B0A2BFD00F6EA93 /* AppDelegate.swift */,
-				A9CF725C1B0A2BFD00F6EA93 /* FirstViewController.swift */,
-				A9CF725E1B0A2BFD00F6EA93 /* SecondViewController.swift */,
+				A9CF72801B0A37E600F6EA93 /* SocialData.swift */,
+				A9CF72821B0A381900F6EA93 /* Requests.swift */,
+				A9CF72841B0A383100F6EA93 /* Constants.swift */,
+				A9CF727C1B0A374E00F6EA93 /* TweetsTableViewController.swift */,
+				A9CF727E1B0A375A00F6EA93 /* VenuesTableViewController.swift */,
 				A9CF72601B0A2BFD00F6EA93 /* Main.storyboard */,
-				A9CF72631B0A2BFD00F6EA93 /* Images.xcassets */,
-				A9CF72651B0A2BFD00F6EA93 /* LaunchScreen.xib */,
 				A9CF72581B0A2BFD00F6EA93 /* Supporting Files */,
 			);
 			path = Sweetr;
@@ -93,6 +99,9 @@
 		A9CF72581B0A2BFD00F6EA93 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A9CF725A1B0A2BFD00F6EA93 /* AppDelegate.swift */,
+				A9CF72631B0A2BFD00F6EA93 /* Images.xcassets */,
+				A9CF72651B0A2BFD00F6EA93 /* LaunchScreen.xib */,
 				A9CF72591B0A2BFD00F6EA93 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -215,9 +224,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9CF725F1B0A2BFD00F6EA93 /* SecondViewController.swift in Sources */,
+				A9CF72811B0A37E600F6EA93 /* SocialData.swift in Sources */,
 				A9CF725B1B0A2BFD00F6EA93 /* AppDelegate.swift in Sources */,
-				A9CF725D1B0A2BFD00F6EA93 /* FirstViewController.swift in Sources */,
+				A9CF727D1B0A374E00F6EA93 /* TweetsTableViewController.swift in Sources */,
+				A9CF72831B0A381900F6EA93 /* Requests.swift in Sources */,
+				A9CF727F1B0A375A00F6EA93 /* VenuesTableViewController.swift in Sources */,
+				A9CF72851B0A383100F6EA93 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -413,6 +425,7 @@
 				A9CF72781B0A2BFE00F6EA93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9CF72791B0A2BFE00F6EA93 /* Build configuration list for PBXNativeTarget "SweetrTests" */ = {
 			isa = XCConfigurationList;
@@ -421,6 +434,7 @@
 				A9CF727B1B0A2BFE00F6EA93 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
