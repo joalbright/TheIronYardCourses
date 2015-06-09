@@ -15,7 +15,39 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // create window
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        
+        // figure out device type
+        let deviceType = UIDevice.currentDevice().model
+    
+        // pick storyboard
+        switch deviceType {
+            
+        case "iPhone", "iPod Touch", "iPhone Simulator" :
+            
+//            print("controller")
+            let storyboard = UIStoryboard(name: "iPhoneMain", bundle: nil)
+            window?.rootViewController = storyboard.instantiateInitialViewController() as? UIViewController
+            
+        case "iPad", "iPad Simulator" :
+            
+//            print("game view")
+            let storyboard = UIStoryboard(name: "iPadMain", bundle: nil)
+            window?.rootViewController = storyboard.instantiateInitialViewController() as? UIViewController
+            
+        default :
+            
+            print("why are you even using \(deviceType)?")
+            
+        }
+        
+        // set window's rootviewcontroller (storyboard intialviewcontroller)
+        
+        // make window key and visible
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
