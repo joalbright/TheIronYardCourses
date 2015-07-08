@@ -9,37 +9,82 @@
 import SpriteKit
 
 class GameScene: SKScene {
+    
+    let playerCount: CGFloat = 8
+    let statsPadding: CGFloat = 20
+    
+    var playerStatsWidth: CGFloat!
+    
     override func didMoveToView(view: SKView) {
-        /* Setup your scene here */
-        let myLabel = SKLabelNode(fontNamed:"Chalkduster")
-        myLabel.text = "Hello, World!";
-        myLabel.fontSize = 65;
-        myLabel.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
+                
+        playerStatsWidth = (view.bounds.width - (statsPadding * (playerCount + 1))) / playerCount
         
-        self.addChild(myLabel)
+        Connector.sharedConnector().gameScene = self
+        
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
-        /* Called when a touch begins */
+    func playerJoined(name: String) {
         
-        for touch in (touches as! Set<UITouch>) {
-            let location = touch.locationInNode(self)
+        var playerNode = PlayerNode(color: UIColor.blackColor(), size: CGSizeMake(40, 40))
+        
+        playerNode.name = name
+        playerNode.position = CGPointMake(500, 500)
+        playerNode.physicsBody = SKPhysicsBody(rectangleOfSize: playerNode.size)
+        
+        if let info = Connector.sharedConnector().playersInfo[name] as? [String: AnyObject] {
             
-            let sprite = SKSpriteNode(imageNamed:"Spaceship")
+            if let color = info["color"] as? UIColor {
+                
+                playerNode.color = color
+                
+            }
             
-            sprite.xScale = 0.5
-            sprite.yScale = 0.5
-            sprite.position = location
-            
-            let action = SKAction.rotateByAngle(CGFloat(M_PI), duration:1)
-            
-            sprite.runAction(SKAction.repeatActionForever(action))
-            
-            self.addChild(sprite)
         }
+        
+        addChild(playerNode)
+        
     }
+    
+    func playerLeft(name: String) {
+        println(childNodeWithName(name))
+        
+        if let playerNode = childNodeWithName(name) {
+            
+            playerNode.removeFromParent()
+            
+        }
+        
+    }
+    
+    func playerJump(name: String) {
+        
+        if let playerNode = childNodeWithName(name) {
+            
+            playerNode.physicsBody?.applyImpulse(CGVectorMake(0.0, 20.0))
+            
+        }
+        
+    }
+    
+    func playerMove(name: String, withDirection direction: Int) {
+        
+    }
+    
+    func playerStop(name: String) {
+        
+        
+    }
+    
+    var sunRotation: Double = 0
    
     override func update(currentTime: CFTimeInterval) {
-        /* Called before each frame is rendered */
+        
     }
+    
+}
+
+class PlayerNode: SKSpriteNode {
+    
+//    var name: String!
+    
 }

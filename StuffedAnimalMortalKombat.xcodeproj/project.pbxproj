@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9B314581B29EC3A00890CB8 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B314571B29EC3A00890CB8 /* Functions.swift */; };
+		A9B3145C1B2A66B000890CB8 /* mensch-thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9B3145B1B2A66AB00890CB8 /* mensch-thin.ttf */; };
+		A9B3145F1B2A670E00890CB8 /* mensch-bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9B3145D1B2A670E00890CB8 /* mensch-bold.ttf */; };
+		A9B314601B2A670E00890CB8 /* mensch.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9B3145E1B2A670E00890CB8 /* mensch.ttf */; };
+		A9B314621B2A682400890CB8 /* StatsBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B314611B2A682400890CB8 /* StatsBar.swift */; };
+		A9B314641B2A683100890CB8 /* StatsLives.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B314631B2A683100890CB8 /* StatsLives.swift */; };
+		A9B314661B2A683C00890CB8 /* StatsKills.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B314651B2A683C00890CB8 /* StatsKills.swift */; };
+		A9B314681B2A684800890CB8 /* PlayerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B314671B2A684800890CB8 /* PlayerStats.swift */; };
+		A9C992811B29C3370039B54B /* MoveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C992801B29C3370039B54B /* MoveButton.swift */; };
+		A9C992831B29D13A0039B54B /* PawButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C992821B29D13A0039B54B /* PawButton.swift */; };
 		A9D60C221B2729BF003D7DFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D60C211B2729BF003D7DFB /* AppDelegate.swift */; };
 		A9D60C241B2729BF003D7DFB /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = A9D60C231B2729BF003D7DFB /* GameScene.sks */; };
 		A9D60C261B2729BF003D7DFB /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9D60C251B2729BF003D7DFB /* GameScene.swift */; };
@@ -18,6 +28,7 @@
 		A9D60C471B272C43003D7DFB /* iPhoneMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9D60C451B272C43003D7DFB /* iPhoneMain.storyboard */; };
 		A9ECB8CA1B273B7E003B0998 /* ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ECB8C91B273B7E003B0998 /* ControllerViewController.swift */; };
 		A9ECB8CC1B273C68003B0998 /* Connector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ECB8CB1B273C68003B0998 /* Connector.swift */; };
+		A9ECB8D01B2873AA003B0998 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ECB8CF1B2873AA003B0998 /* Avatar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +42,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A9B314571B29EC3A00890CB8 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		A9B3145B1B2A66AB00890CB8 /* mensch-thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mensch-thin.ttf"; sourceTree = "<group>"; };
+		A9B3145D1B2A670E00890CB8 /* mensch-bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mensch-bold.ttf"; sourceTree = "<group>"; };
+		A9B3145E1B2A670E00890CB8 /* mensch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mensch.ttf; sourceTree = "<group>"; };
+		A9B314611B2A682400890CB8 /* StatsBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsBar.swift; sourceTree = "<group>"; };
+		A9B314631B2A683100890CB8 /* StatsLives.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsLives.swift; sourceTree = "<group>"; };
+		A9B314651B2A683C00890CB8 /* StatsKills.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatsKills.swift; sourceTree = "<group>"; };
+		A9B314671B2A684800890CB8 /* PlayerStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
+		A9B314691B2B240600890CB8 /* Math.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Math.playground; sourceTree = "<group>"; };
+		A9C992801B29C3370039B54B /* MoveButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoveButton.swift; sourceTree = "<group>"; };
+		A9C992821B29D13A0039B54B /* PawButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PawButton.swift; sourceTree = "<group>"; };
 		A9D60C1C1B2729BF003D7DFB /* StuffedAnimalMortalKombat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StuffedAnimalMortalKombat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9D60C201B2729BF003D7DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9D60C211B2729BF003D7DFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +68,7 @@
 		A9D60C461B272C43003D7DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/iPhoneMain.storyboard; sourceTree = "<group>"; };
 		A9ECB8C91B273B7E003B0998 /* ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerViewController.swift; sourceTree = "<group>"; };
 		A9ECB8CB1B273C68003B0998 /* Connector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Connector.swift; sourceTree = "<group>"; };
+		A9ECB8CF1B2873AA003B0998 /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +116,7 @@
 				A9ECB8C81B273B2B003B0998 /* Game */,
 				A9D60C451B272C43003D7DFB /* iPhoneMain.storyboard */,
 				A9ECB8C91B273B7E003B0998 /* ControllerViewController.swift */,
+				A9ECB8CE1B28736D003B0998 /* Controller */,
 				A9D60C1F1B2729BF003D7DFB /* Supporting Files */,
 			);
 			path = StuffedAnimalMortalKombat;
@@ -101,10 +125,14 @@
 		A9D60C1F1B2729BF003D7DFB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A9B3145B1B2A66AB00890CB8 /* mensch-thin.ttf */,
+				A9B3145D1B2A670E00890CB8 /* mensch-bold.ttf */,
+				A9B3145E1B2A670E00890CB8 /* mensch.ttf */,
 				A9D60C211B2729BF003D7DFB /* AppDelegate.swift */,
 				A9D60C2C1B2729BF003D7DFB /* Images.xcassets */,
 				A9D60C2E1B2729BF003D7DFB /* LaunchScreen.xib */,
 				A9D60C201B2729BF003D7DFB /* Info.plist */,
+				A9B314571B29EC3A00890CB8 /* Functions.swift */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -131,6 +159,10 @@
 			children = (
 				A9D60C231B2729BF003D7DFB /* GameScene.sks */,
 				A9D60C251B2729BF003D7DFB /* GameScene.swift */,
+				A9B314611B2A682400890CB8 /* StatsBar.swift */,
+				A9B314631B2A683100890CB8 /* StatsLives.swift */,
+				A9B314651B2A683C00890CB8 /* StatsKills.swift */,
+				A9B314671B2A684800890CB8 /* PlayerStats.swift */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -138,9 +170,20 @@
 		A9ECB8CD1B273C71003B0998 /* Random */ = {
 			isa = PBXGroup;
 			children = (
+				A9B314691B2B240600890CB8 /* Math.playground */,
 				A9ECB8CB1B273C68003B0998 /* Connector.swift */,
 			);
 			name = Random;
+			sourceTree = "<group>";
+		};
+		A9ECB8CE1B28736D003B0998 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A9ECB8CF1B2873AA003B0998 /* Avatar.swift */,
+				A9C992801B29C3370039B54B /* MoveButton.swift */,
+				A9C992821B29D13A0039B54B /* PawButton.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -226,7 +269,10 @@
 				A9D60C301B2729BF003D7DFB /* LaunchScreen.xib in Resources */,
 				A9D60C2D1B2729BF003D7DFB /* Images.xcassets in Resources */,
 				A9D60C471B272C43003D7DFB /* iPhoneMain.storyboard in Resources */,
+				A9B3145C1B2A66B000890CB8 /* mensch-thin.ttf in Resources */,
+				A9B314601B2A670E00890CB8 /* mensch.ttf in Resources */,
 				A9D60C241B2729BF003D7DFB /* GameScene.sks in Resources */,
+				A9B3145F1B2A670E00890CB8 /* mensch-bold.ttf in Resources */,
 				A9D60C2B1B2729BF003D7DFB /* iPadMain.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,10 +291,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9ECB8D01B2873AA003B0998 /* Avatar.swift in Sources */,
+				A9B314681B2A684800890CB8 /* PlayerStats.swift in Sources */,
+				A9C992811B29C3370039B54B /* MoveButton.swift in Sources */,
+				A9B314581B29EC3A00890CB8 /* Functions.swift in Sources */,
+				A9B314621B2A682400890CB8 /* StatsBar.swift in Sources */,
 				A9ECB8CA1B273B7E003B0998 /* ControllerViewController.swift in Sources */,
+				A9B314661B2A683C00890CB8 /* StatsKills.swift in Sources */,
 				A9D60C261B2729BF003D7DFB /* GameScene.swift in Sources */,
 				A9D60C281B2729BF003D7DFB /* GameViewController.swift in Sources */,
 				A9ECB8CC1B273C68003B0998 /* Connector.swift in Sources */,
+				A9B314641B2A683100890CB8 /* StatsLives.swift in Sources */,
+				A9C992831B29D13A0039B54B /* PawButton.swift in Sources */,
 				A9D60C221B2729BF003D7DFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

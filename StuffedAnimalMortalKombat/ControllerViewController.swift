@@ -13,17 +13,40 @@ class ControllerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        Connector.sharedConnector().controller = self
         Connector.sharedConnector().startAdvertising()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
+        
     }
     
+    @IBAction func pressedUp(sender: AnyObject) {
+        
+        let info = [ "action":"jump" ]
+        
+        if let data = NSJSONSerialization.dataWithJSONObject(info, options: NSJSONWritingOptions.allZeros, error: nil) {
+            
+            Connector.sharedConnector().sendDataToWorld(data)
+            
+        }
+        
+    }
 
+    @IBAction func pressedLeft(sender: AnyObject) {
+        
+    }
+    
+    @IBAction func pressedRight(sender: AnyObject) {
+        
+        
+    }
+    
+    
     /*
     // MARK: - Navigation
 

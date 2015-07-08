@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         default :
             
-            print("why are you even using \(deviceType)?")
+            print("Why are you even using \(deviceType)?")
             
         }
         
