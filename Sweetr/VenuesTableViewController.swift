@@ -13,15 +13,6 @@ class VenuesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        FourSquareRequest().getVenuesWithLocation(CLLocation(), completion: { (venues) -> Bool in
-            
-            // code to be run when completion block is fired
-            println(venues)
-            
-            return true
-            
-        })
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
