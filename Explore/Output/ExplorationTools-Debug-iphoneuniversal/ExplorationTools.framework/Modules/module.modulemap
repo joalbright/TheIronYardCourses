@@ -1,0 +1,10 @@
+framework module ExplorationTools {
+  umbrella header "ExplorationTools.h"
+
+  export *
+  module * { export * }
+}
+
+module ExplorationTools.Swift {
+    header "ExplorationTools-Swift.h"
+}
