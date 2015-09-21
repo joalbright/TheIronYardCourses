@@ -152,6 +152,9 @@
                                         <exclude reference="g1i-cr-qUa"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="pressOne:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Lf-Qt-2vB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Oa-hz-O3j">
                                 <rect key="frame" x="80" y="408" width="80" height="80"/>
@@ -212,6 +215,9 @@
                                         <exclude reference="5YW-9v-qZp"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="pressZero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qHm-fH-Wli"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwN-m0-ohT">
                                 <rect key="frame" x="160" y="488" width="80" height="80"/>
@@ -225,21 +231,6 @@
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="wJV-40-WIO"/>
-                                    </mask>
-                                </variation>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4u-jh-0uJ">
-                                <rect key="frame" x="240" y="488" width="80" height="80"/>
-                                <color key="backgroundColor" red="0.97458814538043481" green="0.49632467589296569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="B4u-jh-0uJ" secondAttribute="height" multiplier="1:1" id="ain-Um-sSX"/>
-                                </constraints>
-                                <state key="normal" title="=">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="ain-Um-sSX"/>
                                     </mask>
                                 </variation>
                             </button>
@@ -263,6 +254,24 @@
                                     <constraint firstAttribute="bottom" secondItem="mRc-QG-AXo" secondAttribute="bottom" constant="10" id="QrO-9K-Ota"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4u-jh-0uJ">
+                                <rect key="frame" x="240" y="488" width="80" height="80"/>
+                                <color key="backgroundColor" red="0.97458814538043481" green="0.49632467589296569" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="B4u-jh-0uJ" secondAttribute="height" multiplier="1:1" id="ain-Um-sSX"/>
+                                </constraints>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ain-Um-sSX"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="doEquals:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DH0-c2-m7B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.58823529409999997" green="0.58823529409999997" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -371,6 +380,9 @@
                     </view>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
+                    <connections>
+                        <outlet property="displayLabel" destination="mRc-QG-AXo" id="bmK-yC-fiY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

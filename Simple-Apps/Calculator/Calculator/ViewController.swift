@@ -10,6 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var displayLabel: UILabel!
+    
+    
+    @IBAction func pressZero(sender: AnyObject) {
+        
+        displayLabel.text = "0"
+        
+    }
+    
+    @IBAction func pressOne(sender: AnyObject) {
+        
+        displayLabel.text = "1"
+        
+    }
+    
+    @IBAction func doEquals(sender: AnyObject) {
+        
+        print("=")
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
