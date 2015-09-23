@@ -32,3 +32,33 @@ calculateNumbers(n1: 3, n2: 2, operation: .Modulo)
 
 
 
+
+
+
+let total: Double = 5.5
+
+
+
+if total % 1 == 0 {
+    
+    "\(Int(total))"
+    
+} else {
+    
+    "\(total)"
+    
+}
+
+
+7 % 3
+3 % 7
+5 % 10
+10 % 5
+
+
+
+
+
+
+
+
