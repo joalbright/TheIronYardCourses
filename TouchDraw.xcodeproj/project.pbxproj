@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A93EBF331BBF065400B06EB5 /* TouchSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93EBF321BBF065400B06EB5 /* TouchSlider.swift */; settings = {ASSET_TAGS = (); }; };
 		A98560C91BBD7DE8006C8697 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98560C81BBD7DE8006C8697 /* ToggleButton.swift */; settings = {ASSET_TAGS = (); }; };
 		A9F4D53E1BBC18E500AE87D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4D53D1BBC18E500AE87D4 /* AppDelegate.swift */; };
 		A9F4D5401BBC18E500AE87D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4D53F1BBC18E500AE87D4 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A93EBF321BBF065400B06EB5 /* TouchSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchSlider.swift; sourceTree = "<group>"; };
 		A98560C81BBD7DE8006C8697 /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
 		A9F4D53A1BBC18E500AE87D4 /* TouchDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F4D53D1BBC18E500AE87D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		A9F4D53C1BBC18E500AE87D4 /* TouchDraw */ = {
 			isa = PBXGroup;
 			children = (
+				A93EBF321BBF065400B06EB5 /* TouchSlider.swift */,
 				A9F4D54F1BBC19A000AE87D4 /* DrawView.swift */,
 				A9F4D53D1BBC18E500AE87D4 /* AppDelegate.swift */,
 				A9F4D53F1BBC18E500AE87D4 /* ViewController.swift */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9F4D5401BBC18E500AE87D4 /* ViewController.swift in Sources */,
+				A93EBF331BBF065400B06EB5 /* TouchSlider.swift in Sources */,
 				A9F4D53E1BBC18E500AE87D4 /* AppDelegate.swift in Sources */,
 				A9F4D5501BBC19A000AE87D4 /* DrawView.swift in Sources */,
 				A98560C91BBD7DE8006C8697 /* ToggleButton.swift in Sources */,
