@@ -138,22 +138,37 @@
                                                     </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieJ-ov-CkB">
-                                                    <rect key="frame" x="8" y="8" width="274" height="33.5"/>
+                                                    <rect key="frame" x="8" y="8" width="194" height="33.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQw-X4-aTP">
+                                                    <rect key="frame" x="212" y="8" width="60" height="33"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="0.99">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="pressedBuyButton:" destination="oFN-uT-kja" eventType="touchUpInside" id="deH-09-2u5"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="tLD-nE-kDs" firstAttribute="leading" secondItem="fQw-X4-aTP" secondAttribute="trailing" constant="10" id="1SY-AG-gAh"/>
                                                 <constraint firstItem="tLD-nE-kDs" firstAttribute="centerY" secondItem="T6z-BD-2f8" secondAttribute="centerY" id="34j-dM-ap6"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="fQw-X4-aTP" secondAttribute="bottom" id="5ek-Fp-Pcz"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="ieJ-ov-CkB" secondAttribute="bottom" id="6Kk-WL-o9X"/>
-                                                <constraint firstItem="tLD-nE-kDs" firstAttribute="leading" secondItem="ieJ-ov-CkB" secondAttribute="trailing" id="BaB-Gb-wnM"/>
+                                                <constraint firstItem="tLD-nE-kDs" firstAttribute="leading" secondItem="ieJ-ov-CkB" secondAttribute="trailing" constant="80" id="BaB-Gb-wnM"/>
                                                 <constraint firstItem="ieJ-ov-CkB" firstAttribute="leading" secondItem="T6z-BD-2f8" secondAttribute="leadingMargin" id="ZqW-j5-0sl"/>
                                                 <constraint firstItem="ieJ-ov-CkB" firstAttribute="top" secondItem="T6z-BD-2f8" secondAttribute="topMargin" id="koY-Ku-ZO4"/>
+                                                <constraint firstItem="fQw-X4-aTP" firstAttribute="top" secondItem="T6z-BD-2f8" secondAttribute="topMargin" id="s5e-Xk-SCI"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="tLD-nE-kDs" secondAttribute="trailing" id="sIO-Eg-H8B"/>
+                                                <constraint firstItem="fQw-X4-aTP" firstAttribute="leading" secondItem="ieJ-ov-CkB" secondAttribute="trailing" constant="10" id="vHT-qe-zDG"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="buyButton" destination="fQw-X4-aTP" id="OP4-ci-e62"/>
                                             <outlet property="playButton" destination="tLD-nE-kDs" id="cmY-mV-7bp"/>
                                             <outlet property="trackNameLabel" destination="ieJ-ov-CkB" id="xf6-14-k5H"/>
                                         </connections>

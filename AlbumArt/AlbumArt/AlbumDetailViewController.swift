@@ -66,6 +66,8 @@ class TracksDataSource: NSObject, UITableViewDataSource {
         
         let track = tracks[indexPath.row]
         
+        cell.trackInfo = track
+        
         cell.trackNameLabel.text = track.trackName
         
         return cell
@@ -121,15 +123,31 @@ class Track: NSObject {
     
     var trackName: String?
     var trackNumber: Int?
-    var trackPrice: String?
+    var trackPrice: Double?
     var mediaURL: String?
+    var mediaData: NSData?
+    var trackViewURL: String?
     
     init(info: Dictionary) {
         
         trackName = info["trackName"] as? String
         trackNumber = info["trackNumber"] as? Int
-        trackPrice = info["trackPrice"] as? String // could be Double
+        trackPrice = info["trackPrice"] as? Double // could be Double
         mediaURL = info["previewUrl"] as? String
+        trackViewURL = info["trackViewUrl"] as? String
+        
+    }
+    
+    func getMedia() -> NSData? {
+        
+        if let mediaDataURL = NSURL(string: mediaURL ?? "") {
+            
+            mediaData = NSData(contentsOfURL: mediaDataURL)
+            return mediaData
+            
+        }
+        
+        return nil
         
     }
     
