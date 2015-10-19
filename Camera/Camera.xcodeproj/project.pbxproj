@@ -58,14 +58,11 @@
 		A9E4CF211BD526CC00BAD71E /* Camera */ = {
 			isa = PBXGroup;
 			children = (
+				A9E4CF2B1BD526CC00BAD71E /* Main.storyboard */,
 				A9E4CF251BD526CC00BAD71E /* AppDelegate.h */,
 				A9E4CF261BD526CC00BAD71E /* AppDelegate.m */,
 				A9E4CF281BD526CC00BAD71E /* ViewController.h */,
 				A9E4CF291BD526CC00BAD71E /* ViewController.m */,
-				A9E4CF2B1BD526CC00BAD71E /* Main.storyboard */,
-				A9E4CF2E1BD526CC00BAD71E /* Assets.xcassets */,
-				A9E4CF301BD526CC00BAD71E /* LaunchScreen.storyboard */,
-				A9E4CF331BD526CC00BAD71E /* Info.plist */,
 				A9E4CF221BD526CC00BAD71E /* Supporting Files */,
 			);
 			path = Camera;
@@ -74,6 +71,9 @@
 		A9E4CF221BD526CC00BAD71E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A9E4CF2E1BD526CC00BAD71E /* Assets.xcassets */,
+				A9E4CF301BD526CC00BAD71E /* LaunchScreen.storyboard */,
+				A9E4CF331BD526CC00BAD71E /* Info.plist */,
 				A9E4CF231BD526CC00BAD71E /* main.m */,
 			);
 			name = "Supporting Files";
