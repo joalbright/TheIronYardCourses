@@ -1,0 +1,11 @@
+### Week 2 Day 9
+
+// Normal
+
+- Create new app “CustomSlider”
+- Create new file “SimpleSlider” based on type “UIView”
+- IBDesignable & IBInspectable (the slider should be viewable in storyboard)
+- slider needs to be created by CoreGraphics
+- touches moved will update slider button position and current value
+- current value needs to be IBInspectable
+- color of slider should be controlled by IBInspectable

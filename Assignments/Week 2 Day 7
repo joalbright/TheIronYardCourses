@@ -1,0 +1,21 @@
+### Week 2 Day 7
+
+// Normal
+
+- Create a New App "DrawSomething"
+- Create a New File "DrawView" based on "UIView"
+- Using "CGContextRef" 
+    - draw a blue circle on the view
+    - draw a square with a red outline that is 10 pt thick
+
+// Hard
+
+- Add "BeginTouches" Function
+- Print "CGPoint" from location of touch
+- Using "CGContextRef" 
+    - draw a green triangle
+
+// Nightmare
+
+- Using "CGContextRef" 
+    - draw a scribble using arcs
