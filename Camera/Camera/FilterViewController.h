@@ -10,4 +10,6 @@
 
 @interface FilterViewController : UIViewController
 
+@property UIImage * originalImage;
+
 @end

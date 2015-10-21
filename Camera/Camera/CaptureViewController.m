@@ -8,7 +8,15 @@
 
 #import "CaptureViewController.h"
 
-@interface CaptureViewController ()
+#import "FilterViewController.h"
+
+#import "ImageEditing.h"
+
+@interface CaptureViewController () <UINavigationControllerDelegate,UIImagePickerControllerDelegate>
+
+@property (weak, nonatomic) IBOutlet UIView *cameraHolderView;
+
+@property UIImagePickerController * picker;
 
 @end
 
@@ -16,22 +24,54 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.picker = [[UIImagePickerController alloc] init];
+    self.picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    self.picker.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+    self.picker.delegate = self;
+    self.picker.showsCameraControls = NO;
+    
+    self.picker.view.frame = self.cameraHolderView.bounds;
+    
+    [self.cameraHolderView addSubview:self.picker.view];
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidLayoutSubviews {
+    
+    NSLog(@"%f %f",self.cameraHolderView.bounds.size.width,self.cameraHolderView.bounds.size.height);
+    
+    CGRect newFrame = self.picker.view.frame;
+    
+    newFrame.size.width = newFrame.size.height / 4 * 3;
+    
+    newFrame.origin.x = (self.cameraHolderView.frame.size.width - newFrame.size.width) / 2;
+    
+    NSLog(@"%f %f",newFrame.size.width,newFrame.size.height);
+    
+    self.picker.view.frame = newFrame;
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)takePicture:(id)sender {
+    
+    [self.picker takePicture];
+    
 }
-*/
+
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
+    
+    UIImage * image = info[UIImagePickerControllerOriginalImage];
+    
+    FilterViewController * filterVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FilterVC"];
+    
+    // pass the image
+//    #warning FIX THIS : Image is reversed horizontally.
+    filterVC.originalImage = flipImage(image);
+    
+    [self.navigationController pushViewController:filterVC animated:YES];
+    
+}
+
 
 @end
