@@ -19,8 +19,34 @@
     NSMutableArray * selfies;
 }
 
+- (void)logout {
+    
+    [PFUser logOut];
+    
+    UIStoryboard * userStoryboard = [UIStoryboard storyboardWithName:@"User" bundle:nil];
+    UINavigationController * nc = [userStoryboard instantiateInitialViewController];
+    
+    [UIApplication sharedApplication].windows[0].rootViewController = nc;
+    
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    ////////// Logout Button
+    
+    UIBarButtonItem * logoutButton = [[UIBarButtonItem alloc] initWithTitle:@"logout" style:UIBarButtonItemStylePlain target:self action:@selector(logout)];
+    
+//    self.navigationController.navigationItem.leftBarButtonItem = logoutButton; BAD BAD BAD BAD BAD
+    
+    self.navigationItem.leftBarButtonItem = logoutButton;
+    
+    NSLog(@"%@",self.navigationController.navigationItem);
+    NSLog(@"%@",self.navigationItem);
+    
+    //////////
+    
     
     selfies = [@[] mutableCopy];
     
