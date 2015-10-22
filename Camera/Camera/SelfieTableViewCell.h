@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Parse/Parse.h>
 
 @interface SelfieTableViewCell : UITableViewCell
+
+@property (nonatomic) PFObject * selfie;
 
 @end
