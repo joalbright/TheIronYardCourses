@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1Ch-Fr-os5">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Capture View Controller-->
@@ -107,6 +108,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="pressedNext:" destination="IhC-ji-7zq" eventType="touchUpInside" id="i9W-sD-s1l"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -141,35 +145,58 @@
                         <viewControllerLayoutGuide type="bottom" id="U6q-0h-to7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="oxi-di-eqW">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DOi-Dn-QVt">
-                                <rect key="frame" x="37" y="34" width="522" height="316"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DOi-Dn-QVt">
+                                <rect key="frame" x="20" y="40" width="280" height="280"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DOi-Dn-QVt" secondAttribute="height" multiplier="1:1" id="49W-oY-3eM"/>
+                                </constraints>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KDy-bQ-BAI">
-                                <rect key="frame" x="37" y="379" width="522" height="118"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KDy-bQ-BAI">
+                                <rect key="frame" x="20" y="340" width="280" height="158"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFd-mU-Ukt">
-                                <rect key="frame" x="37" y="530" width="522" height="50"/>
-                                <state key="normal" title="Submit"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KFd-mU-Ukt">
+                                <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="232-vd-XQq"/>
+                                </constraints>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="submitSelfie:" destination="BIE-Ss-Brv" eventType="touchUpInside" id="5ih-0p-ncB"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="DOi-Dn-QVt" firstAttribute="top" secondItem="V2k-cU-wbS" secondAttribute="bottom" constant="20" id="AKC-hv-ubv"/>
+                            <constraint firstAttribute="trailing" secondItem="DOi-Dn-QVt" secondAttribute="trailing" constant="20" id="KYT-1R-v7N"/>
+                            <constraint firstItem="KFd-mU-Ukt" firstAttribute="top" secondItem="KDy-bQ-BAI" secondAttribute="bottom" constant="20" id="UOC-r2-e3M"/>
+                            <constraint firstItem="U6q-0h-to7" firstAttribute="top" secondItem="KFd-mU-Ukt" secondAttribute="bottom" id="Z1T-2g-n9W"/>
+                            <constraint firstItem="KDy-bQ-BAI" firstAttribute="top" secondItem="DOi-Dn-QVt" secondAttribute="bottom" constant="20" id="cE5-Sn-27P"/>
+                            <constraint firstItem="DOi-Dn-QVt" firstAttribute="leading" secondItem="oxi-di-eqW" secondAttribute="leading" constant="20" id="k1N-B9-PlZ"/>
+                            <constraint firstAttribute="trailing" secondItem="KFd-mU-Ukt" secondAttribute="trailing" id="mBO-9z-LTo"/>
+                            <constraint firstItem="KDy-bQ-BAI" firstAttribute="leading" secondItem="oxi-di-eqW" secondAttribute="leading" constant="20" id="pTm-jm-DVb"/>
+                            <constraint firstAttribute="trailing" secondItem="KDy-bQ-BAI" secondAttribute="trailing" constant="20" id="rd6-fP-ZU2"/>
+                            <constraint firstItem="KFd-mU-Ukt" firstAttribute="leading" secondItem="oxi-di-eqW" secondAttribute="leading" id="uuN-Ib-hoZ"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="captionTextView" destination="KDy-bQ-BAI" id="HoK-VA-3VM"/>
+                        <outlet property="filteredImageView" destination="DOi-Dn-QVt" id="zPx-2d-ljA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAL-7z-ofL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2674" y="395"/>
+            <point key="canvasLocation" x="2598" y="386"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B5N-Gy-w1f">

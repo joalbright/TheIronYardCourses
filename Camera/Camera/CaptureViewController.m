@@ -66,7 +66,6 @@
     FilterViewController * filterVC = [self.storyboard instantiateViewControllerWithIdentifier:@"FilterVC"];
     
     // pass the image
-//    #warning FIX THIS : Image is reversed horizontally.
     filterVC.originalImage = flipImage(image);
     
     [self.navigationController pushViewController:filterVC animated:YES];

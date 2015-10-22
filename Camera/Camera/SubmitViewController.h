@@ -10,4 +10,6 @@
 
 @interface SubmitViewController : UIViewController
 
+@property UIImage * filteredImage;
+
 @end
