@@ -32,6 +32,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             
             print(location)
             
+            // JO EXPLAIN
+            
             Foursquare.session().getVenuesWithLocation(location) {
                 
                 // add annotations to map view

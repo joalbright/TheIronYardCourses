@@ -15,6 +15,8 @@
 		A9A0BB361BC421B5008C80B4 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0BB351BC421B5008C80B4 /* MapViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A9A0BB431BC46328008C80B4 /* VenuesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0BB421BC46328008C80B4 /* VenuesTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A9A0BB451BC468A6008C80B4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0BB441BC468A6008C80B4 /* Constants.swift */; settings = {ASSET_TAGS = (); }; };
+		A9A20FBA1BC561A000BCDABD /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A20FB91BC561A000BCDABD /* ProfileViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		A9A20FBC1BC5645100BCDABD /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A20FBB1BC5645100BCDABD /* WebViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		A9A0BB351BC421B5008C80B4 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		A9A0BB421BC46328008C80B4 /* VenuesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenuesTableViewController.swift; sourceTree = "<group>"; };
 		A9A0BB441BC468A6008C80B4 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A9A20FB91BC561A000BCDABD /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A9A20FBB1BC5645100BCDABD /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				A9A0BB2D1BC40037008C80B4 /* Info.plist */,
 				A9A0BB421BC46328008C80B4 /* VenuesTableViewController.swift */,
 				A9A0BB441BC468A6008C80B4 /* Constants.swift */,
+				A9A20FB91BC561A000BCDABD /* ProfileViewController.swift */,
+				A9A20FBB1BC5645100BCDABD /* WebViewController.swift */,
 			);
 			path = Venues;
 			sourceTree = "<group>";
@@ -144,9 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A20FBA1BC561A000BCDABD /* ProfileViewController.swift in Sources */,
 				A9A0BB451BC468A6008C80B4 /* Constants.swift in Sources */,
 				A9A0BB341BC40166008C80B4 /* Foursquare.swift in Sources */,
 				A9A0BB361BC421B5008C80B4 /* MapViewController.swift in Sources */,
+				A9A20FBC1BC5645100BCDABD /* WebViewController.swift in Sources */,
 				A9A0BB221BC40037008C80B4 /* AppDelegate.swift in Sources */,
 				A9A0BB431BC46328008C80B4 /* VenuesTableViewController.swift in Sources */,
 			);
@@ -298,6 +306,7 @@
 				A9A0BB321BC40037008C80B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
