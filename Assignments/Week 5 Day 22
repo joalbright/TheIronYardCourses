@@ -1,0 +1,15 @@
+### Week 5 Day 22
+
+// Normal
+// - add a commit to the master branch with the new updates
+// - create new homework branch
+// - add constraints to the filterImageView & fix the stretching issue
+// - add a new button on filter view controller that will send you to the submit view controller
+// - pass originalImage to submit view controller
+// - set submitImageView.image to originalImage
+
+// Hard
+// - add the image to the "selfie" PFObject with key "image"
+// - make sure the "image" column in the "Selfie" class is a "File"
+// - make login work
+// - set PFUser.currentUser() with key "user" on the "selfie" PFObject

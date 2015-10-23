@@ -1,0 +1,13 @@
+### Week 3 Day 23
+
+// Normal
+// - add IBAction for the new button in filter view controller
+// - action should push a submit view controller
+// - action should also pass filtered image to submit view controller
+// - save filtered image to selfie object with key "image"
+
+// Hard
+// - hook up selfies tableview controller to an array property named "selfies"
+// - in viewdidload, query parse for all selfie objects created
+// - add imageview to selfie cell
+// - download image from selfie object and add to imageview
