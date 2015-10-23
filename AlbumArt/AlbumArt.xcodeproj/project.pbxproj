@@ -17,6 +17,7 @@
 		A9573A4C1BCD5183005149A0 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9573A4B1BCD5183005149A0 /* AlbumDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		A9573A4E1BCD51CA005149A0 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9573A4D1BCD51CA005149A0 /* AlbumCell.swift */; settings = {ASSET_TAGS = (); }; };
 		A9573A501BCD521E005149A0 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9573A4F1BCD521E005149A0 /* TrackCell.swift */; settings = {ASSET_TAGS = (); }; };
+		A9E4CF151BD02A8100BAD71E /* PrettyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E4CF141BD02A8100BAD71E /* PrettyButton.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A9573A4B1BCD5183005149A0 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
 		A9573A4D1BCD51CA005149A0 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
 		A9573A4F1BCD521E005149A0 /* TrackCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
+		A9E4CF141BD02A8100BAD71E /* PrettyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrettyButton.swift; sourceTree = "<group>"; };
 		DD9F2AD79ACB36B2A927C9D2 /* Pods-AlbumArt.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumArt.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlbumArt/Pods-AlbumArt.release.xcconfig"; sourceTree = "<group>"; };
 		E248A0AD3C436CA722051CDF /* Pods-AlbumArt.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlbumArt.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlbumArt/Pods-AlbumArt.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +93,7 @@
 				A9573A4D1BCD51CA005149A0 /* AlbumCell.swift */,
 				A9573A4B1BCD5183005149A0 /* AlbumDetailViewController.swift */,
 				A9573A4F1BCD521E005149A0 /* TrackCell.swift */,
+				A9E4CF141BD02A8100BAD71E /* PrettyButton.swift */,
 				A9573A511BCD5235005149A0 /* System */,
 			);
 			path = AlbumArt;
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9573A501BCD521E005149A0 /* TrackCell.swift in Sources */,
+				A9E4CF151BD02A8100BAD71E /* PrettyButton.swift in Sources */,
 				A9573A3A1BCD4463005149A0 /* AlbumsViewController.swift in Sources */,
 				A9573A381BCD4463005149A0 /* AppDelegate.swift in Sources */,
 				A9573A4C1BCD5183005149A0 /* AlbumDetailViewController.swift in Sources */,
