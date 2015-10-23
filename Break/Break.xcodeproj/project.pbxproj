@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A917DDBD1BC95ECE00684C31 /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A917DDBC1BC95ECE00684C31 /* GameData.swift */; settings = {ASSET_TAGS = (); }; };
 		A97EFF2C1BC6AD29006ED73E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A97EFF2B1BC6AD29006ED73E /* AppDelegate.swift */; };
 		A97EFF311BC6AD29006ED73E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97EFF2F1BC6AD29006ED73E /* Main.storyboard */; };
 		A97EFF331BC6AD29006ED73E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A97EFF321BC6AD29006ED73E /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A917DDBC1BC95ECE00684C31 /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		A97EFF281BC6AD29006ED73E /* Break.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Break.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A97EFF2B1BC6AD29006ED73E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A97EFF301BC6AD29006ED73E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				A97EFF2F1BC6AD29006ED73E /* Main.storyboard */,
+				A917DDBC1BC95ECE00684C31 /* GameData.swift */,
 				A97EFF3E1BC6AEB9006ED73E /* StartViewController.swift */,
 				A97EFF401BC6AEC8006ED73E /* GameViewController.swift */,
 				A97EFF441BC6AF29006ED73E /* TopBarView.swift */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A97EFF451BC6AF29006ED73E /* TopBarView.swift in Sources */,
+				A917DDBD1BC95ECE00684C31 /* GameData.swift in Sources */,
 				A97EFF2C1BC6AD29006ED73E /* AppDelegate.swift in Sources */,
 				A97EFF411BC6AEC8006ED73E /* GameViewController.swift in Sources */,
 				A97EFF3F1BC6AEB9006ED73E /* StartViewController.swift in Sources */,
@@ -303,6 +307,7 @@
 				A97EFF3C1BC6AD29006ED73E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
