@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="abR-qU-gvx">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
@@ -75,6 +76,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4c-8z-4E0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1243" y="402"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="IkS-Xr-hKb">
+            <objects>
+                <viewController storyboardIdentifier="SettingsVC" id="lAD-ZQ-JQt" customClass="SettingsViewController" customModule="Selfie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zQP-zw-R1h"/>
+                        <viewControllerLayoutGuide type="bottom" id="O5R-pL-lxh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sNE-ya-LpT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1YC-2j-fWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="561" y="1490"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="KmP-s8-5i7">
