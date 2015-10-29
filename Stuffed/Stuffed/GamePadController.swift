@@ -10,7 +10,6 @@ import UIKit
 import MultipeerConnectivity
 
 
-
 class GamePadController: UIViewController, MCNearbyServiceAdvertiserDelegate, MCSessionDelegate {
     
     var session: MCSession!
@@ -25,7 +24,7 @@ class GamePadController: UIViewController, MCNearbyServiceAdvertiserDelegate, MC
         session = MCSession(peer: myPeerID)
         session.delegate = self
         
-        advertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: ["color":"red"], serviceType: "stuffed")
+        advertiser = MCNearbyServiceAdvertiser(peer: myPeerID, discoveryInfo: ["color":"red"], serviceType: serviceType)
         advertiser.delegate = self
         advertiser.startAdvertisingPeer()
 
@@ -125,14 +124,35 @@ class GamePadController: UIViewController, MCNearbyServiceAdvertiserDelegate, MC
     
     @IBAction func right(sender: AnyObject) {
         
-        let info = [
+//        let info = [
+//        
+//            "action" : "move",
+//            "direction" : "right"
+//        
+//        ]
+//        
+//        sendInfo(info)
         
-            "action" : "move",
-            "direction" : "right"
+        let gameData = GameData(action: .Move, direction: .Right)
+        sendData(gameData)
         
-        ]
+    }
+    
+    func sendData(gameData: GameData) {
         
-        sendInfo(info)
+        if let bID = boardID {
+            
+            do {
+                
+                try session.sendData(gameData.data, toPeers: [bID], withMode: .Reliable)
+                
+            } catch {
+                
+                print(error)
+                
+            }
+            
+        }
         
     }
     

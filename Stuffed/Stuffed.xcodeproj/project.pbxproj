@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A972BD901BE252C100669A4D /* GameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A972BD8F1BE252C100669A4D /* GameData.swift */; };
 		A9C6753C1BDFB13B0027B305 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C6753B1BDFB13B0027B305 /* AppDelegate.swift */; };
 		A9C6753E1BDFB13B0027B305 /* GameBoardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C6753D1BDFB13B0027B305 /* GameBoardController.swift */; };
 		A9C675411BDFB13B0027B305 /* GameBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9C6753F1BDFB13B0027B305 /* GameBoard.storyboard */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A972BD8F1BE252C100669A4D /* GameData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameData.swift; sourceTree = "<group>"; };
 		A9C675381BDFB13B0027B305 /* Stuffed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stuffed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9C6753B1BDFB13B0027B305 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9C6753D1BDFB13B0027B305 /* GameBoardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				A9C675541BE0019F0027B305 /* GameBoardScene.swift */,
 				A9C6754D1BDFB16B0027B305 /* GamePad.storyboard */,
 				A9C675501BDFB2180027B305 /* GamePadController.swift */,
+				A972BD8F1BE252C100669A4D /* GameData.swift */,
 				A9C6754F1BDFB1D00027B305 /* Supporting Files */,
 			);
 			path = Stuffed;
@@ -158,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9C6753E1BDFB13B0027B305 /* GameBoardController.swift in Sources */,
+				A972BD901BE252C100669A4D /* GameData.swift in Sources */,
 				A9C675511BDFB2180027B305 /* GamePadController.swift in Sources */,
 				A9C6753C1BDFB13B0027B305 /* AppDelegate.swift in Sources */,
 				A9C675551BE0019F0027B305 /* GameBoardScene.swift in Sources */,
@@ -312,6 +316,7 @@
 				A9C6754C1BDFB13B0027B305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
