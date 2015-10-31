@@ -23,12 +23,6 @@
     
 }
 
-//- (void)prepareForReuse {
-//    
-//    [self updateInfo];
-//    
-//}
-
 - (void)updateInfo {
     
     NSLog(@"%@",self.selfie);
@@ -40,10 +34,6 @@
             
         }
     }];
-    
-    
-    
-//    self.selfieImageView.image = self.selfie[@"image"];
     
 }
 

@@ -10,8 +10,6 @@
 		A924CF861BDE5F430013D741 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A924CF851BDE5F430013D741 /* AppDelegate.swift */; };
 		A924CF8D1BDE5F430013D741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A924CF8C1BDE5F430013D741 /* Assets.xcassets */; };
 		A924CFA01BDE62150013D741 /* SelfieTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A924CF9B1BDE62150013D741 /* SelfieTableViewController.m */; };
-		A924CFA11BDE62150013D741 /* SelfieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A924CF9D1BDE62150013D741 /* SelfieTableViewCell.m */; };
-		A924CFA21BDE62150013D741 /* SelfieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A924CF9F1BDE62150013D741 /* SelfieDetailViewController.m */; };
 		A924CFAA1BDE625A0013D741 /* CaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A924CFA51BDE625A0013D741 /* CaptureViewController.m */; };
 		A924CFAB1BDE625A0013D741 /* FilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A924CFA71BDE625A0013D741 /* FilterViewController.m */; };
 		A924CFAC1BDE625A0013D741 /* SubmitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A924CFA91BDE625A0013D741 /* SubmitViewController.m */; };
@@ -19,7 +17,6 @@
 		A924CFB71BDE626B0013D741 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A924CFB11BDE626B0013D741 /* LoginViewController.m */; };
 		A924CFB81BDE626B0013D741 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A924CFB31BDE626B0013D741 /* RegisterViewController.m */; };
 		A924CFB91BDE626B0013D741 /* AvatarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A924CFB51BDE626B0013D741 /* AvatarViewController.m */; };
-		A924CFBF1BDE62FC0013D741 /* FilterDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = A924CFBC1BDE62FC0013D741 /* FilterDataSource.m */; };
 		A924CFC01BDE62FC0013D741 /* FilterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A924CFBE1BDE62FC0013D741 /* FilterCollectionViewCell.m */; };
 		A924CFC51BDE64F60013D741 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A924CFC21BDE64F60013D741 /* Main.storyboard */; };
 		A924CFC61BDE64F60013D741 /* Create.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A924CFC31BDE64F60013D741 /* Create.storyboard */; };
@@ -38,6 +35,10 @@
 		A924CFE11BDE67830013D741 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A924CFD51BDE67830013D741 /* Bolts.framework */; };
 		A924CFE21BDE67830013D741 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A924CFD61BDE67830013D741 /* Parse.framework */; };
 		A924CFE41BDE70DE0013D741 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A924CFE31BDE70DE0013D741 /* SettingsViewController.swift */; };
+		A972BE0B1BE3A72400669A4D /* SelfieTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A972BE0A1BE3A72400669A4D /* SelfieTableViewController.swift */; };
+		A972BE0D1BE3A77000669A4D /* SelfieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A972BE0C1BE3A77000669A4D /* SelfieTableViewCell.swift */; };
+		A972BE0F1BE3A7BA00669A4D /* SelfieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A972BE0E1BE3A7BA00669A4D /* SelfieDetailViewController.swift */; };
+		A972BE111BE3B7D300669A4D /* ImageEditing.swift in Sources */ = {isa = PBXBuildFile; fileRef = A972BE101BE3B7D300669A4D /* ImageEditing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,10 +50,6 @@
 		A924CF991BDE62140013D741 /* Selfie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Selfie-Bridging-Header.h"; sourceTree = "<group>"; };
 		A924CF9A1BDE62150013D741 /* SelfieTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieTableViewController.h; sourceTree = "<group>"; };
 		A924CF9B1BDE62150013D741 /* SelfieTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieTableViewController.m; sourceTree = "<group>"; };
-		A924CF9C1BDE62150013D741 /* SelfieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieTableViewCell.h; sourceTree = "<group>"; };
-		A924CF9D1BDE62150013D741 /* SelfieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieTableViewCell.m; sourceTree = "<group>"; };
-		A924CF9E1BDE62150013D741 /* SelfieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelfieDetailViewController.h; sourceTree = "<group>"; };
-		A924CF9F1BDE62150013D741 /* SelfieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelfieDetailViewController.m; sourceTree = "<group>"; };
 		A924CFA41BDE625A0013D741 /* CaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptureViewController.h; sourceTree = "<group>"; };
 		A924CFA51BDE625A0013D741 /* CaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaptureViewController.m; sourceTree = "<group>"; };
 		A924CFA61BDE625A0013D741 /* FilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterViewController.h; sourceTree = "<group>"; };
@@ -67,8 +64,6 @@
 		A924CFB31BDE626B0013D741 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		A924CFB41BDE626B0013D741 /* AvatarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvatarViewController.h; sourceTree = "<group>"; };
 		A924CFB51BDE626B0013D741 /* AvatarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvatarViewController.m; sourceTree = "<group>"; };
-		A924CFBB1BDE62FC0013D741 /* FilterDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterDataSource.h; sourceTree = "<group>"; };
-		A924CFBC1BDE62FC0013D741 /* FilterDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterDataSource.m; sourceTree = "<group>"; };
 		A924CFBD1BDE62FC0013D741 /* FilterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterCollectionViewCell.h; sourceTree = "<group>"; };
 		A924CFBE1BDE62FC0013D741 /* FilterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterCollectionViewCell.m; sourceTree = "<group>"; };
 		A924CFC21BDE64F60013D741 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +83,10 @@
 		A924CFD51BDE67830013D741 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../iOS-2015-September/_resources/Frameworks/Parse/Bolts.framework"; sourceTree = "<group>"; };
 		A924CFD61BDE67830013D741 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../iOS-2015-September/_resources/Frameworks/Parse/Parse.framework"; sourceTree = "<group>"; };
 		A924CFE31BDE70DE0013D741 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		A972BE0A1BE3A72400669A4D /* SelfieTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieTableViewController.swift; sourceTree = "<group>"; };
+		A972BE0C1BE3A77000669A4D /* SelfieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieTableViewCell.swift; sourceTree = "<group>"; };
+		A972BE0E1BE3A7BA00669A4D /* SelfieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelfieDetailViewController.swift; sourceTree = "<group>"; };
+		A972BE101BE3B7D300669A4D /* ImageEditing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageEditing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				A924CF981BDE611B0013D741 /* ImageEditing.h */,
+				A972BE101BE3B7D300669A4D /* ImageEditing.swift */,
 				A924CFA31BDE622C0013D741 /* Main Flow */,
 				A924CFAD1BDE625E0013D741 /* Create Flow */,
 				A924CFBA1BDE62700013D741 /* User Flow */,
@@ -157,12 +157,11 @@
 		A924CFA31BDE622C0013D741 /* Main Flow */ = {
 			isa = PBXGroup;
 			children = (
+				A972BE0A1BE3A72400669A4D /* SelfieTableViewController.swift */,
 				A924CF9A1BDE62150013D741 /* SelfieTableViewController.h */,
 				A924CF9B1BDE62150013D741 /* SelfieTableViewController.m */,
-				A924CF9C1BDE62150013D741 /* SelfieTableViewCell.h */,
-				A924CF9D1BDE62150013D741 /* SelfieTableViewCell.m */,
-				A924CF9E1BDE62150013D741 /* SelfieDetailViewController.h */,
-				A924CF9F1BDE62150013D741 /* SelfieDetailViewController.m */,
+				A972BE0C1BE3A77000669A4D /* SelfieTableViewCell.swift */,
+				A972BE0E1BE3A7BA00669A4D /* SelfieDetailViewController.swift */,
 			);
 			name = "Main Flow";
 			sourceTree = "<group>";
@@ -170,8 +169,6 @@
 		A924CFAD1BDE625E0013D741 /* Create Flow */ = {
 			isa = PBXGroup;
 			children = (
-				A924CFBB1BDE62FC0013D741 /* FilterDataSource.h */,
-				A924CFBC1BDE62FC0013D741 /* FilterDataSource.m */,
 				A924CFBD1BDE62FC0013D741 /* FilterCollectionViewCell.h */,
 				A924CFBE1BDE62FC0013D741 /* FilterCollectionViewCell.m */,
 				A924CFA41BDE625A0013D741 /* CaptureViewController.h */,
@@ -307,15 +304,16 @@
 				A924CFA01BDE62150013D741 /* SelfieTableViewController.m in Sources */,
 				A924CFB61BDE626B0013D741 /* ChoiceViewController.m in Sources */,
 				A924CFB91BDE626B0013D741 /* AvatarViewController.m in Sources */,
-				A924CFA21BDE62150013D741 /* SelfieDetailViewController.m in Sources */,
+				A972BE111BE3B7D300669A4D /* ImageEditing.swift in Sources */,
 				A924CFB71BDE626B0013D741 /* LoginViewController.m in Sources */,
 				A924CF861BDE5F430013D741 /* AppDelegate.swift in Sources */,
+				A972BE0B1BE3A72400669A4D /* SelfieTableViewController.swift in Sources */,
+				A972BE0D1BE3A77000669A4D /* SelfieTableViewCell.swift in Sources */,
 				A924CFAC1BDE625A0013D741 /* SubmitViewController.m in Sources */,
+				A972BE0F1BE3A7BA00669A4D /* SelfieDetailViewController.swift in Sources */,
 				A924CFAB1BDE625A0013D741 /* FilterViewController.m in Sources */,
 				A924CFE41BDE70DE0013D741 /* SettingsViewController.swift in Sources */,
 				A924CFC01BDE62FC0013D741 /* FilterCollectionViewCell.m in Sources */,
-				A924CFBF1BDE62FC0013D741 /* FilterDataSource.m in Sources */,
-				A924CFA11BDE62150013D741 /* SelfieTableViewCell.m in Sources */,
 				A924CFAA1BDE625A0013D741 /* CaptureViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +450,7 @@
 				A924CF961BDE5F430013D741 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
