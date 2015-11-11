@@ -10,9 +10,11 @@ import UIKit
 
 import AVFoundation
 
-class ViewController: UIViewController, AVCaptureAudioDataOutputSampleBufferDelegate {
+class ViewController: UIViewController, AVCaptureAudioDataOutputSampleBufferDelegate, AVAudioPlayerDelegate {
 
     var session = AVCaptureSession()
+    
+    var players: [AVAudioPlayer] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,18 +47,22 @@ class ViewController: UIViewController, AVCaptureAudioDataOutputSampleBufferDele
 
     func captureOutput(captureOutput: AVCaptureOutput!, didOutputSampleBuffer sampleBuffer: CMSampleBuffer!, fromConnection connection: AVCaptureConnection!) {
         
-        guard let channel = connection.audioChannels.first where channel.averagePowerLevel > -5 else { return print("Not Blowing") }
+        guard let channel = connection.audioChannels.first where channel.averagePowerLevel > -5 else { return }
         
-        print("Blowing")
+        let bubbleSize = CGFloat(arc4random_uniform(15) * 5) + 30
         
         // randomize width & height
-        let bubble = UIView(frame: CGRect(origin: CGPointZero, size: CGSize(width: 50, height: 50)))
+        let bubble = UIView(frame: CGRect(origin: CGPointZero, size: CGSize(width: bubbleSize, height: bubbleSize)))
         
         // change based on width / height
-        bubble.layer.cornerRadius = 25
+        bubble.layer.cornerRadius = bubbleSize / 2
+        
+        let colors = [UIColor.blueColor(),UIColor.cyanColor(),UIColor.purpleColor()]
+        
+        let randomColorIndex = Int(arc4random_uniform(3))
         
         // randomize color between blue and purple
-        bubble.layer.borderColor = UIColor.cyanColor().CGColor
+        bubble.layer.borderColor = colors[randomColorIndex].CGColor
         bubble.layer.borderWidth = 1
         bubble.center = CGPoint(x: view.frame.midX, y: view.frame.maxY)
         
@@ -65,24 +71,50 @@ class ViewController: UIViewController, AVCaptureAudioDataOutputSampleBufferDele
             self.view.addSubview(bubble)
             
             // change based on the APL
-            let randomDuration = 2.0
+            let randomDuration = Double(abs(channel.averagePowerLevel))
+            
+            let randomX = CGFloat(arc4random_uniform(UInt32(self.view.frame.maxX)))
+            let randomY = CGFloat(arc4random_uniform(UInt32(self.view.frame.midY)))
             
             UIView.animateWithDuration(randomDuration, delay: 0, options: .CurveEaseOut, animations: { () -> Void in
                 
                 // randomize the bubble.center x & y
-                bubble.center.y = self.view.center.y
+                bubble.center.x = randomX
+                bubble.center.y = randomY
                 
             }) { (finished) -> Void in
                 
                 bubble.removeFromSuperview()
+                
                 // play pop sound
-                    
+                
+                let popData = NSDataAsset(name: "Pop")
+                
+                let player = try? AVAudioPlayer(data: popData!.data)
+                
+                self.players.append(player!)
+                
+                player?.delegate = self
+                player?.play()
+                
             }
             
         }
         
+    }
+    
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
+        
+        guard let index = players.indexOf(player) else { return }
+        players.removeAtIndex(index)
+        
+        print(players.count)
         
     }
 
 }
+
+
+
+
 
