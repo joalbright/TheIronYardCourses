@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A9A0E9061C108C80000C3368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0E9051C108C80000C3368 /* AppDelegate.swift */; };
+		A9A0E9081C108C80000C3368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0E9071C108C80000C3368 /* ViewController.swift */; };
+		A9A0E90B1C108C80000C3368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A0E9091C108C80000C3368 /* Main.storyboard */; };
+		A9A0E90D1C108C80000C3368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9A0E90C1C108C80000C3368 /* Assets.xcassets */; };
+		A9A0E9101C108C80000C3368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9A0E90E1C108C80000C3368 /* LaunchScreen.storyboard */; };
+		A9A0E9181C108E15000C3368 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A0E9171C108E15000C3368 /* iAd.framework */; };
+		A9A0E91A1C109CCE000C3368 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9A0E9191C109CCE000C3368 /* GameKit.framework */; };
+		A9A0E91D1C10A0AC000C3368 /* TouchButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A0E91C1C10A0AC000C3368 /* TouchButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A9A0E9021C108C80000C3368 /* TouchyDot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchyDot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9A0E9051C108C80000C3368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A9A0E9071C108C80000C3368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A9A0E90A1C108C80000C3368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A9A0E90C1C108C80000C3368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9A0E90F1C108C80000C3368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A9A0E9111C108C80000C3368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9A0E9171C108E15000C3368 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		A9A0E9191C109CCE000C3368 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		A9A0E91C1C10A0AC000C3368 /* TouchButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A9A0E8FF1C108C80000C3368 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A0E9181C108E15000C3368 /* iAd.framework in Frameworks */,
+				A9A0E91A1C109CCE000C3368 /* GameKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A9A0E8F91C108C80000C3368 = {
+			isa = PBXGroup;
+			children = (
+				A9A0E9041C108C80000C3368 /* TouchyDot */,
+				A9A0E9031C108C80000C3368 /* Products */,
+				A9A0E91B1C109D6E000C3368 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A9A0E9031C108C80000C3368 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A9A0E9021C108C80000C3368 /* TouchyDot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A9A0E9041C108C80000C3368 /* TouchyDot */ = {
+			isa = PBXGroup;
+			children = (
+				A9A0E9051C108C80000C3368 /* AppDelegate.swift */,
+				A9A0E9071C108C80000C3368 /* ViewController.swift */,
+				A9A0E9091C108C80000C3368 /* Main.storyboard */,
+				A9A0E90C1C108C80000C3368 /* Assets.xcassets */,
+				A9A0E90E1C108C80000C3368 /* LaunchScreen.storyboard */,
+				A9A0E9111C108C80000C3368 /* Info.plist */,
+				A9A0E91C1C10A0AC000C3368 /* TouchButton.swift */,
+			);
+			path = TouchyDot;
+			sourceTree = "<group>";
+		};
+		A9A0E91B1C109D6E000C3368 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A9A0E9191C109CCE000C3368 /* GameKit.framework */,
+				A9A0E9171C108E15000C3368 /* iAd.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A9A0E9011C108C80000C3368 /* TouchyDot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9A0E9141C108C80000C3368 /* Build configuration list for PBXNativeTarget "TouchyDot" */;
+			buildPhases = (
+				A9A0E8FE1C108C80000C3368 /* Sources */,
+				A9A0E8FF1C108C80000C3368 /* Frameworks */,
+				A9A0E9001C108C80000C3368 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchyDot;
+			productName = TouchyDot;
+			productReference = A9A0E9021C108C80000C3368 /* TouchyDot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A9A0E8FA1C108C80000C3368 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Jo Albright";
+				TargetAttributes = {
+					A9A0E9011C108C80000C3368 = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = YUM7RTQH92;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A9A0E8FD1C108C80000C3368 /* Build configuration list for PBXProject "TouchyDot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A9A0E8F91C108C80000C3368;
+			productRefGroup = A9A0E9031C108C80000C3368 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A9A0E9011C108C80000C3368 /* TouchyDot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A9A0E9001C108C80000C3368 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A0E9101C108C80000C3368 /* LaunchScreen.storyboard in Resources */,
+				A9A0E90D1C108C80000C3368 /* Assets.xcassets in Resources */,
+				A9A0E90B1C108C80000C3368 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9A0E8FE1C108C80000C3368 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9A0E91D1C10A0AC000C3368 /* TouchButton.swift in Sources */,
+				A9A0E9081C108C80000C3368 /* ViewController.swift in Sources */,
+				A9A0E9061C108C80000C3368 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A9A0E9091C108C80000C3368 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9A0E90A1C108C80000C3368 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A9A0E90E1C108C80000C3368 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A9A0E90F1C108C80000C3368 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A9A0E9121C108C80000C3368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A9A0E9131C108C80000C3368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A9A0E9151C108C80000C3368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TouchyDot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jo2.TouchyDot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		A9A0E9161C108C80000C3368 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TouchyDot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jo2.TouchyDot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A9A0E8FD1C108C80000C3368 /* Build configuration list for PBXProject "TouchyDot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A0E9121C108C80000C3368 /* Debug */,
+				A9A0E9131C108C80000C3368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A9A0E9141C108C80000C3368 /* Build configuration list for PBXNativeTarget "TouchyDot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9A0E9151C108C80000C3368 /* Debug */,
+				A9A0E9161C108C80000C3368 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A9A0E8FA1C108C80000C3368 /* Project object */;
+}
