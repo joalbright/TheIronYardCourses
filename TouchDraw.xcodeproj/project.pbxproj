@@ -7,19 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A93EBF331BBF065400B06EB5 /* TouchSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93EBF321BBF065400B06EB5 /* TouchSlider.swift */; settings = {ASSET_TAGS = (); }; };
-		A98560C91BBD7DE8006C8697 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98560C81BBD7DE8006C8697 /* ToggleButton.swift */; settings = {ASSET_TAGS = (); }; };
+		A93EBF331BBF065400B06EB5 /* TouchSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A93EBF321BBF065400B06EB5 /* TouchSlider.swift */; };
+		A98560C91BBD7DE8006C8697 /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98560C81BBD7DE8006C8697 /* ToggleButton.swift */; };
+		A9C626CF1C1765F800E9B6FA /* TouchDrawTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C626CE1C1765F800E9B6FA /* TouchDrawTests.swift */; };
 		A9F4D53E1BBC18E500AE87D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4D53D1BBC18E500AE87D4 /* AppDelegate.swift */; };
 		A9F4D5401BBC18E500AE87D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4D53F1BBC18E500AE87D4 /* ViewController.swift */; };
 		A9F4D5431BBC18E500AE87D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F4D5411BBC18E500AE87D4 /* Main.storyboard */; };
 		A9F4D5451BBC18E500AE87D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F4D5441BBC18E500AE87D4 /* Assets.xcassets */; };
 		A9F4D5481BBC18E500AE87D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9F4D5461BBC18E500AE87D4 /* LaunchScreen.storyboard */; };
-		A9F4D5501BBC19A000AE87D4 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4D54F1BBC19A000AE87D4 /* DrawView.swift */; settings = {ASSET_TAGS = (); }; };
+		A9F4D5501BBC19A000AE87D4 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F4D54F1BBC19A000AE87D4 /* DrawView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A9C626D11C1765F800E9B6FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A9F4D5321BBC18E500AE87D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A9F4D5391BBC18E500AE87D4;
+			remoteInfo = TouchDraw;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A93EBF321BBF065400B06EB5 /* TouchSlider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TouchSlider.swift; sourceTree = "<group>"; };
 		A98560C81BBD7DE8006C8697 /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		A9C626CC1C1765F800E9B6FA /* TouchDrawTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchDrawTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9C626CE1C1765F800E9B6FA /* TouchDrawTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDrawTests.swift; sourceTree = "<group>"; };
+		A9C626D01C1765F800E9B6FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9F4D53A1BBC18E500AE87D4 /* TouchDraw.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDraw.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F4D53D1BBC18E500AE87D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9F4D53F1BBC18E500AE87D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -31,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A9C626C91C1765F800E9B6FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9F4D5371BBC18E500AE87D4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,10 +62,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9C626CD1C1765F800E9B6FA /* TouchDrawTests */ = {
+			isa = PBXGroup;
+			children = (
+				A9C626CE1C1765F800E9B6FA /* TouchDrawTests.swift */,
+				A9C626D01C1765F800E9B6FA /* Info.plist */,
+			);
+			path = TouchDrawTests;
+			sourceTree = "<group>";
+		};
 		A9F4D5311BBC18E500AE87D4 = {
 			isa = PBXGroup;
 			children = (
 				A9F4D53C1BBC18E500AE87D4 /* TouchDraw */,
+				A9C626CD1C1765F800E9B6FA /* TouchDrawTests */,
 				A9F4D53B1BBC18E500AE87D4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				A9F4D53A1BBC18E500AE87D4 /* TouchDraw.app */,
+				A9C626CC1C1765F800E9B6FA /* TouchDrawTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +108,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A9C626CB1C1765F800E9B6FA /* TouchDrawTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A9C626D51C1765F800E9B6FA /* Build configuration list for PBXNativeTarget "TouchDrawTests" */;
+			buildPhases = (
+				A9C626C81C1765F800E9B6FA /* Sources */,
+				A9C626C91C1765F800E9B6FA /* Frameworks */,
+				A9C626CA1C1765F800E9B6FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A9C626D21C1765F800E9B6FA /* PBXTargetDependency */,
+			);
+			name = TouchDrawTests;
+			productName = TouchDrawTests;
+			productReference = A9C626CC1C1765F800E9B6FA /* TouchDrawTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A9F4D5391BBC18E500AE87D4 /* TouchDraw */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A9F4D54C1BBC18E500AE87D4 /* Build configuration list for PBXNativeTarget "TouchDraw" */;
@@ -99,9 +149,14 @@
 		A9F4D5321BBC18E500AE87D4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Jo Albright";
 				TargetAttributes = {
+					A9C626CB1C1765F800E9B6FA = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = A9F4D5391BBC18E500AE87D4;
+					};
 					A9F4D5391BBC18E500AE87D4 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -121,11 +176,19 @@
 			projectRoot = "";
 			targets = (
 				A9F4D5391BBC18E500AE87D4 /* TouchDraw */,
+				A9C626CB1C1765F800E9B6FA /* TouchDrawTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A9C626CA1C1765F800E9B6FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9F4D5381BBC18E500AE87D4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +202,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A9C626C81C1765F800E9B6FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9C626CF1C1765F800E9B6FA /* TouchDrawTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A9F4D5361BBC18E500AE87D4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,6 +223,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A9C626D21C1765F800E9B6FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A9F4D5391BBC18E500AE87D4 /* TouchDraw */;
+			targetProxy = A9C626D11C1765F800E9B6FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A9F4D5411BBC18E500AE87D4 /* Main.storyboard */ = {
@@ -173,6 +252,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A9C626D31C1765F800E9B6FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TouchDrawTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jo2.TouchDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchDraw.app/TouchDraw";
+			};
+			name = Debug;
+		};
+		A9C626D41C1765F800E9B6FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TouchDrawTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.jo2.TouchDrawTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchDraw.app/TouchDraw";
+			};
+			name = Release;
+		};
 		A9F4D54A1BBC18E500AE87D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -281,6 +386,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A9C626D51C1765F800E9B6FA /* Build configuration list for PBXNativeTarget "TouchDrawTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9C626D31C1765F800E9B6FA /* Debug */,
+				A9C626D41C1765F800E9B6FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A9F4D5351BBC18E500AE87D4 /* Build configuration list for PBXProject "TouchDraw" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
