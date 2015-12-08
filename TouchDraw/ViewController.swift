@@ -8,7 +8,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UICollectionViewDelegate {
+    
+    @IBOutlet weak var colorPallete: UICollectionView!
 
     @IBOutlet weak var controlPanelTop: NSLayoutConstraint!
     
@@ -38,11 +40,17 @@ class ViewController: UIViewController {
         
     }
     
+    let colorSource = Colors()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         controlPanelTop.constant = -200
         
+        colorPallete.delegate = self
+        colorPallete.dataSource = colorSource
+        
+//        colorPallete.reloadData()
         
     }
     
@@ -56,9 +64,11 @@ class ViewController: UIViewController {
     
     var chosenColor: UIColor = UIColor.blackColor()
     
-    @IBAction func chooseColor(button: UIButton) {
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         
-        chosenColor = button.backgroundColor ?? UIColor.blackColor()
+        let cell = collectionView.cellForItemAtIndexPath(indexPath)
+        
+        chosenColor = cell?.backgroundColor ?? UIColor.blackColor()
         
     }
     
@@ -172,5 +182,46 @@ class ViewController: UIViewController {
         
     }
 
+}
+
+class Colors: NSObject, UICollectionViewDataSource {
+    
+    let fillColors = [
+    
+        UIColor.redColor(),
+        UIColor.blackColor(),
+        UIColor.cyanColor(),
+        UIColor.orangeColor(),
+        UIColor.purpleColor()
+    
+    ]
+    
+    let strokeColors = [
+        
+        UIColor.magentaColor(),
+        UIColor.blueColor(),
+        UIColor.yellowColor(),
+        UIColor.greenColor()
+        
+    ]
+    
+    var isFill = true
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        
+        return isFill ? fillColors.count : strokeColors.count
+        
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("ColorCell", forIndexPath: indexPath)
+        
+        cell.backgroundColor = isFill ? fillColors[indexPath.item] : strokeColors[indexPath.item]
+                
+        return cell
+        
+    }
+    
 }
 

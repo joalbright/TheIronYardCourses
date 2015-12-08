@@ -67,34 +67,6 @@
                                                         <action selector="chooseTool:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MZg-WQ-yJA"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="euf-ZQ-ZK9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
-                                                    <color key="backgroundColor" red="0.97458814540000005" green="0.49632467590000001" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ocY-Vd-zoJ"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q9W-DZ-zIb">
-                                                    <rect key="frame" x="61" y="0.0" width="60" height="60"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.73725490199999999" blue="0.83137254900000002" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zCa-qm-Krb"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nbu-me-MYs">
-                                                    <rect key="frame" x="123" y="0.0" width="60" height="60"/>
-                                                    <color key="backgroundColor" red="0.82352941180000006" green="0.0" blue="0.1960784314" alpha="1" colorSpace="deviceRGB"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rjy-vW-ek9"/>
-                                                    </connections>
-                                                </button>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nxb-gM-Ot1">
-                                                    <rect key="frame" x="184" y="0.0" width="60" height="60"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <connections>
-                                                        <action selector="chooseColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzU-7E-IzB"/>
-                                                    </connections>
-                                                </button>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ekT-y3-lVa">
                                                     <rect key="frame" x="143" y="115" width="123" height="29"/>
                                                     <state key="normal" title="Clear"/>
@@ -124,6 +96,28 @@
                                                         </userDefinedRuntimeAttribute>
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Dc8-cv-Ee4">
+                                                    <rect key="frame" x="7" y="8" width="305" height="43"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MB4-5u-0as">
+                                                        <size key="itemSize" width="40" height="40"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ColorCell" id="Tk4-Tp-1T8">
+                                                            <rect key="frame" x="0.0" y="1.5" width="40" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                            </view>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                </collectionView>
                                             </subviews>
                                         </view>
                                         <blurEffect style="light"/>
@@ -170,6 +164,7 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
+                        <outlet property="colorPallete" destination="Dc8-cv-Ee4" id="C1p-TU-Zns"/>
                         <outlet property="controlPanelTop" destination="XNW-bw-Epn" id="zZz-aQ-Bqd"/>
                         <outlet property="controlPanelView" destination="wTP-Pl-dOM" id="NM1-zm-PPY"/>
                         <outlet property="toggleButton" destination="hQZ-VK-tia" id="Qjy-zb-KhN"/>
