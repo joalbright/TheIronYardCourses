@@ -1,0 +1,17 @@
+### Week 3 Day 12
+
+// Normal
+
+// - build a new playground called FizzBuzz
+// - create a loop to run from 1 - 100
+// - follow the rules of Fizz Buzz
+// - print current number unless you are printing fizz or buzz (based on rules)
+
+// Hard
+
+// - create a function that will run an infinite loop
+// - create a function that loops though an input String and prints every letter
+
+// Nightmare
+
+// - create a function that will run the Fibonacci sequence

@@ -1,0 +1,17 @@
+### Week 3 Day 11
+
+// Normal
+
+// - change the marker to an image
+// - turn “showsUserLocation” back on & fix it so that you see the blue dot again (currently being overwritten)
+// - add iboutlet for detail label & pass the annotation title to the detail label
+
+// Hard
+
+// - add an image to the leftcalloutaccesoryview
+// - add multiple annotations
+
+// Nightmare
+
+// - get JSON data from Foursquare and place it as a fake data model within app
+// - create annotations based on data

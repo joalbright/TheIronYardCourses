@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Cubano-Regular.otf">
+            <string>Cubano-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BeaconHunt" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZUN-hj-DHv" customClass="AccuracyView" customModule="BeaconHunt" customModuleProvider="target">
+                                <rect key="frame" x="-30" y="94" width="380" height="380"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BeaconGrey" translatesAutoresizingMaskIntoConstraints="NO" id="rFP-ii-u3v">
+                                        <rect key="frame" x="120" y="120" width="140" height="140"/>
+                                        <animations/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="rFP-ii-u3v" secondAttribute="height" multiplier="1:1" id="2nL-f2-tkQ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="rFP-ii-u3v" firstAttribute="leading" secondItem="ZUN-hj-DHv" secondAttribute="leading" constant="120" id="Drh-fI-guv"/>
+                                    <constraint firstAttribute="width" secondItem="ZUN-hj-DHv" secondAttribute="height" multiplier="1:1" id="IGc-8Q-j6p"/>
+                                    <constraint firstItem="rFP-ii-u3v" firstAttribute="centerY" secondItem="ZUN-hj-DHv" secondAttribute="centerY" id="l5C-rv-lHA"/>
+                                    <constraint firstAttribute="trailing" secondItem="rFP-ii-u3v" secondAttribute="trailing" constant="120" id="xPC-Tn-EkA"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="COLD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMw-2K-ziE">
+                                <rect key="frame" x="0.0" y="20" width="320" height="50"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BAd-GG-nmO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Cubano-Regular" family="Cubano" pointSize="40"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vul-iI-d0s">
+                                <rect key="frame" x="20" y="488" width="280" height="60"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BeaconGrey" translatesAutoresizingMaskIntoConstraints="NO" id="YmO-MI-8VG">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="60"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BeaconGrey" translatesAutoresizingMaskIntoConstraints="NO" id="ceV-qE-nWH">
+                                        <rect key="frame" x="50" y="0.0" width="30" height="60"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BeaconGrey" translatesAutoresizingMaskIntoConstraints="NO" id="1Cz-J9-fQj">
+                                        <rect key="frame" x="100" y="0.0" width="30" height="60"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BeaconGrey" translatesAutoresizingMaskIntoConstraints="NO" id="jCc-qY-NMn">
+                                        <rect key="frame" x="150" y="0.0" width="30" height="60"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BeaconGrey" translatesAutoresizingMaskIntoConstraints="NO" id="fXC-mi-jkb">
+                                        <rect key="frame" x="200" y="0.0" width="30" height="60"/>
+                                        <animations/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BeaconGrey" translatesAutoresizingMaskIntoConstraints="NO" id="qei-Ke-0Fl">
+                                        <rect key="frame" x="250" y="0.0" width="30" height="60"/>
+                                        <animations/>
+                                    </imageView>
+                                </subviews>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ab4-nw-Q0T"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bMw-2K-ziE" secondAttribute="trailing" id="738-Tr-hyg"/>
+                            <constraint firstItem="bMw-2K-ziE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="ABH-8n-RP3"/>
+                            <constraint firstItem="ZUN-hj-DHv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-30" id="JiN-7H-zNe"/>
+                            <constraint firstItem="vul-iI-d0s" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="JuE-0B-mYO"/>
+                            <constraint firstItem="ZUN-hj-DHv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Udx-u6-g6f"/>
+                            <constraint firstAttribute="trailing" secondItem="ZUN-hj-DHv" secondAttribute="trailing" constant="-30" id="dMP-TG-tUM"/>
+                            <constraint firstAttribute="trailing" secondItem="vul-iI-d0s" secondAttribute="trailing" constant="20" id="kJ4-E1-dzd"/>
+                            <constraint firstItem="bMw-2K-ziE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="lOS-qZ-fVx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vul-iI-d0s" secondAttribute="bottom" constant="20" id="ng7-Ay-ZPT"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="beaconAccuracyView" destination="ZUN-hj-DHv" id="0YZ-0B-prC"/>
+                        <outlet property="beaconImageView" destination="rFP-ii-u3v" id="lrN-lO-3m4"/>
+                        <outlet property="beaconProximityLabel" destination="bMw-2K-ziE" id="CeK-bG-Yfq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="605" y="367"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BeaconGrey" width="94" height="138"/>
+    </resources>
+</document>

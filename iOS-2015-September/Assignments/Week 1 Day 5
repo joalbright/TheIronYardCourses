@@ -1,0 +1,10 @@
+### Week 1 Day 5
+
+// Normal
+// - add a label above the gamestatuslabel "score p1: 0 p2: 0 s: 0"
+// - add a button at bottom to reset game board
+// - add a button at bottom to reset scores
+// - reset game board button will say "end game" during play and "play again" when someone wins
+// - red x button = the reset score button
+// - play button = the reset game button
+// - player turn label changes background color based on “whos turn” and “who wins"

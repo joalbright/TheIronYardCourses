@@ -1,0 +1,20 @@
+### Week 3 Day 15
+
+// Normal
+
+// - add a small label to the Start View Controller to show Top Score (should pull from singleton topScore)
+// - integrate GameData.swift into app
+// - connect currentScore to score updates within game
+// - make the brick creation dynamic based on the level info from game data singleton
+// - add comments to GameData.swift explaining what everything is
+
+// Hard
+
+// - when you win a game, increment currentLevel and switch current game controller with a new one to play next level
+// - make currentScore back to 0 when you lose... but keep it going through next level
+
+// Nightmare
+
+// - add a brick busted count & ball lost count to singleton
+// - add stats view controller with values from singleton and play button to send to next level
+// - if you lost the stats view should show a game over button that send you to start view controller

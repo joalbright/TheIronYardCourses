@@ -1,0 +1,10 @@
+### Week 2 Day 10
+
+Weekend Practice : (using design above)
+- make drawing type buttons look like the design 
+- add toggle fill/color button and have it toggle the isFill property on the colorSource
+
+Research : 
+- check out Foursquare
+   - what does the product do?
+   - take a look at the developer API
