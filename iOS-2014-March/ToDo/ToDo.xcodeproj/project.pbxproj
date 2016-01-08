@@ -1,0 +1,575 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A963D10918EC8A0D00E0AADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A963D10818EC8A0D00E0AADD /* Foundation.framework */; };
+		A963D10B18EC8A0D00E0AADD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A963D10A18EC8A0D00E0AADD /* CoreGraphics.framework */; };
+		A963D10D18EC8A0D00E0AADD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A963D10C18EC8A0D00E0AADD /* UIKit.framework */; };
+		A963D11318EC8A0D00E0AADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A963D11118EC8A0D00E0AADD /* InfoPlist.strings */; };
+		A963D11518EC8A0D00E0AADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A963D11418EC8A0D00E0AADD /* main.m */; };
+		A963D11918EC8A0D00E0AADD /* TDLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A963D11818EC8A0D00E0AADD /* TDLAppDelegate.m */; };
+		A963D11B18EC8A0D00E0AADD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A963D11A18EC8A0D00E0AADD /* Images.xcassets */; };
+		A963D12218EC8A0D00E0AADD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A963D12118EC8A0D00E0AADD /* XCTest.framework */; };
+		A963D12318EC8A0D00E0AADD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A963D10818EC8A0D00E0AADD /* Foundation.framework */; };
+		A963D12418EC8A0D00E0AADD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A963D10C18EC8A0D00E0AADD /* UIKit.framework */; };
+		A963D12C18EC8A0D00E0AADD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A963D12A18EC8A0D00E0AADD /* InfoPlist.strings */; };
+		A963D12E18EC8A0D00E0AADD /* ToDoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A963D12D18EC8A0D00E0AADD /* ToDoTests.m */; };
+		A963D13918EC8A1F00E0AADD /* TDLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A963D13818EC8A1F00E0AADD /* TDLTableViewController.m */; };
+		A963D13B18EC8AC300E0AADD /* savithareddy.png in Resources */ = {isa = PBXBuildFile; fileRef = A963D13A18EC8AC300E0AADD /* savithareddy.png */; };
+		A963D13E18EC978600E0AADD /* jeffking.png in Resources */ = {isa = PBXBuildFile; fileRef = A963D13D18EC978600E0AADD /* jeffking.png */; };
+		A963D14118EDA78B00E0AADD /* TDLTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A963D14018EDA78B00E0AADD /* TDLTableViewCell.m */; };
+		A98144FA18EF332400CDCAB0 /* GitHubFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A98144F918EF332400CDCAB0 /* GitHubFlow.storyboard */; };
+		A98144FE18F2F44B00CDCAB0 /* TDLGitHubRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A98144FD18F2F44B00CDCAB0 /* TDLGitHubRequest.m */; };
+		A9DCCB5E18EDE36F00444AD2 /* alihoushmand.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5118EDE36F00444AD2 /* alihoushmand.png */; };
+		A9DCCB5F18EDE36F00444AD2 /* ashbythornwell.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5218EDE36F00444AD2 /* ashbythornwell.png */; };
+		A9DCCB6018EDE36F00444AD2 /* austenjohnson.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5318EDE36F00444AD2 /* austenjohnson.png */; };
+		A9DCCB6118EDE36F00444AD2 /* austinnolan.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5418EDE36F00444AD2 /* austinnolan.png */; };
+		A9DCCB6218EDE36F00444AD2 /* derekweber.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5518EDE36F00444AD2 /* derekweber.png */; };
+		A9DCCB6318EDE36F00444AD2 /* edsalter.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5618EDE36F00444AD2 /* edsalter.png */; };
+		A9DCCB6418EDE36F00444AD2 /* heidi.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5718EDE36F00444AD2 /* heidi.png */; };
+		A9DCCB6518EDE36F00444AD2 /* jefferymoulds.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5818EDE36F00444AD2 /* jefferymoulds.png */; };
+		A9DCCB6618EDE36F00444AD2 /* jishaobukwelu.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5918EDE36F00444AD2 /* jishaobukwelu.png */; };
+		A9DCCB6718EDE36F00444AD2 /* johnyam.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5A18EDE36F00444AD2 /* johnyam.png */; };
+		A9DCCB6818EDE36F00444AD2 /* jonfox.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5B18EDE36F00444AD2 /* jonfox.png */; };
+		A9DCCB6918EDE36F00444AD2 /* teddyconyers.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5C18EDE36F00444AD2 /* teddyconyers.png */; };
+		A9DCCB6A18EDE36F00444AD2 /* tjmercer.png in Resources */ = {isa = PBXBuildFile; fileRef = A9DCCB5D18EDE36F00444AD2 /* tjmercer.png */; };
+		A9F2A72719195A740066D68E /* TDLSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F2A72619195A740066D68E /* TDLSingleton.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A963D12518EC8A0D00E0AADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A963D0FD18EC8A0D00E0AADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A963D10418EC8A0D00E0AADD;
+			remoteInfo = ToDo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A963D10518EC8A0D00E0AADD /* ToDo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A963D10818EC8A0D00E0AADD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A963D10A18EC8A0D00E0AADD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A963D10C18EC8A0D00E0AADD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A963D11018EC8A0D00E0AADD /* ToDo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDo-Info.plist"; sourceTree = "<group>"; };
+		A963D11218EC8A0D00E0AADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A963D11418EC8A0D00E0AADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A963D11618EC8A0D00E0AADD /* ToDo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ToDo-Prefix.pch"; sourceTree = "<group>"; };
+		A963D11718EC8A0D00E0AADD /* TDLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TDLAppDelegate.h; sourceTree = "<group>"; };
+		A963D11818EC8A0D00E0AADD /* TDLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TDLAppDelegate.m; sourceTree = "<group>"; };
+		A963D11A18EC8A0D00E0AADD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A963D12018EC8A0D00E0AADD /* ToDoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A963D12118EC8A0D00E0AADD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A963D12918EC8A0D00E0AADD /* ToDoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoTests-Info.plist"; sourceTree = "<group>"; };
+		A963D12B18EC8A0D00E0AADD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A963D12D18EC8A0D00E0AADD /* ToDoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoTests.m; sourceTree = "<group>"; };
+		A963D13718EC8A1F00E0AADD /* TDLTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDLTableViewController.h; path = ToDo/TDLTableViewController.h; sourceTree = "<group>"; };
+		A963D13818EC8A1F00E0AADD /* TDLTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDLTableViewController.m; path = ToDo/TDLTableViewController.m; sourceTree = "<group>"; };
+		A963D13A18EC8AC300E0AADD /* savithareddy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = savithareddy.png; sourceTree = "<group>"; };
+		A963D13D18EC978600E0AADD /* jeffking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeffking.png; sourceTree = "<group>"; };
+		A963D13F18EDA78B00E0AADD /* TDLTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDLTableViewCell.h; path = ToDo/TDLTableViewCell.h; sourceTree = "<group>"; };
+		A963D14018EDA78B00E0AADD /* TDLTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDLTableViewCell.m; path = ToDo/TDLTableViewCell.m; sourceTree = "<group>"; };
+		A98144F918EF332400CDCAB0 /* GitHubFlow.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = GitHubFlow.storyboard; sourceTree = SOURCE_ROOT; };
+		A98144FC18F2F44B00CDCAB0 /* TDLGitHubRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDLGitHubRequest.h; path = ToDo/TDLGitHubRequest.h; sourceTree = "<group>"; };
+		A98144FD18F2F44B00CDCAB0 /* TDLGitHubRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDLGitHubRequest.m; path = ToDo/TDLGitHubRequest.m; sourceTree = "<group>"; };
+		A9DCCB5118EDE36F00444AD2 /* alihoushmand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alihoushmand.png; sourceTree = "<group>"; };
+		A9DCCB5218EDE36F00444AD2 /* ashbythornwell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ashbythornwell.png; sourceTree = "<group>"; };
+		A9DCCB5318EDE36F00444AD2 /* austenjohnson.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = austenjohnson.png; sourceTree = "<group>"; };
+		A9DCCB5418EDE36F00444AD2 /* austinnolan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = austinnolan.png; sourceTree = "<group>"; };
+		A9DCCB5518EDE36F00444AD2 /* derekweber.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = derekweber.png; sourceTree = "<group>"; };
+		A9DCCB5618EDE36F00444AD2 /* edsalter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edsalter.png; sourceTree = "<group>"; };
+		A9DCCB5718EDE36F00444AD2 /* heidi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = heidi.png; sourceTree = "<group>"; };
+		A9DCCB5818EDE36F00444AD2 /* jefferymoulds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jefferymoulds.png; sourceTree = "<group>"; };
+		A9DCCB5918EDE36F00444AD2 /* jishaobukwelu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jishaobukwelu.png; sourceTree = "<group>"; };
+		A9DCCB5A18EDE36F00444AD2 /* johnyam.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = johnyam.png; sourceTree = "<group>"; };
+		A9DCCB5B18EDE36F00444AD2 /* jonfox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jonfox.png; sourceTree = "<group>"; };
+		A9DCCB5C18EDE36F00444AD2 /* teddyconyers.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teddyconyers.png; sourceTree = "<group>"; };
+		A9DCCB5D18EDE36F00444AD2 /* tjmercer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tjmercer.png; sourceTree = "<group>"; };
+		A9F2A72519195A740066D68E /* TDLSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TDLSingleton.h; path = ToDo/TDLSingleton.h; sourceTree = "<group>"; };
+		A9F2A72619195A740066D68E /* TDLSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TDLSingleton.m; path = ToDo/TDLSingleton.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A963D10218EC8A0D00E0AADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A963D10B18EC8A0D00E0AADD /* CoreGraphics.framework in Frameworks */,
+				A963D10D18EC8A0D00E0AADD /* UIKit.framework in Frameworks */,
+				A963D10918EC8A0D00E0AADD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A963D11D18EC8A0D00E0AADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A963D12218EC8A0D00E0AADD /* XCTest.framework in Frameworks */,
+				A963D12418EC8A0D00E0AADD /* UIKit.framework in Frameworks */,
+				A963D12318EC8A0D00E0AADD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A963D0FC18EC8A0D00E0AADD = {
+			isa = PBXGroup;
+			children = (
+				A98144FB18F2F3C200CDCAB0 /* Random */,
+				A98144F918EF332400CDCAB0 /* GitHubFlow.storyboard */,
+				A963D14218EDA79F00E0AADD /* Controllers */,
+				A963D10E18EC8A0D00E0AADD /* ToDo */,
+				A963D12718EC8A0D00E0AADD /* ToDoTests */,
+				A963D10718EC8A0D00E0AADD /* Frameworks */,
+				A963D10618EC8A0D00E0AADD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A963D10618EC8A0D00E0AADD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A963D10518EC8A0D00E0AADD /* ToDo.app */,
+				A963D12018EC8A0D00E0AADD /* ToDoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A963D10718EC8A0D00E0AADD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A963D10818EC8A0D00E0AADD /* Foundation.framework */,
+				A963D10A18EC8A0D00E0AADD /* CoreGraphics.framework */,
+				A963D10C18EC8A0D00E0AADD /* UIKit.framework */,
+				A963D12118EC8A0D00E0AADD /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A963D10E18EC8A0D00E0AADD /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				A963D13C18EC8AF300E0AADD /* Images */,
+				A963D11718EC8A0D00E0AADD /* TDLAppDelegate.h */,
+				A963D11818EC8A0D00E0AADD /* TDLAppDelegate.m */,
+				A963D11A18EC8A0D00E0AADD /* Images.xcassets */,
+				A963D10F18EC8A0D00E0AADD /* Supporting Files */,
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
+		A963D10F18EC8A0D00E0AADD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A963D11018EC8A0D00E0AADD /* ToDo-Info.plist */,
+				A963D11118EC8A0D00E0AADD /* InfoPlist.strings */,
+				A963D11418EC8A0D00E0AADD /* main.m */,
+				A963D11618EC8A0D00E0AADD /* ToDo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A963D12718EC8A0D00E0AADD /* ToDoTests */ = {
+			isa = PBXGroup;
+			children = (
+				A963D12D18EC8A0D00E0AADD /* ToDoTests.m */,
+				A963D12818EC8A0D00E0AADD /* Supporting Files */,
+			);
+			path = ToDoTests;
+			sourceTree = "<group>";
+		};
+		A963D12818EC8A0D00E0AADD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A963D12918EC8A0D00E0AADD /* ToDoTests-Info.plist */,
+				A963D12A18EC8A0D00E0AADD /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A963D13C18EC8AF300E0AADD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A9DCCB5118EDE36F00444AD2 /* alihoushmand.png */,
+				A9DCCB5218EDE36F00444AD2 /* ashbythornwell.png */,
+				A9DCCB5318EDE36F00444AD2 /* austenjohnson.png */,
+				A9DCCB5418EDE36F00444AD2 /* austinnolan.png */,
+				A9DCCB5518EDE36F00444AD2 /* derekweber.png */,
+				A9DCCB5618EDE36F00444AD2 /* edsalter.png */,
+				A9DCCB5718EDE36F00444AD2 /* heidi.png */,
+				A9DCCB5818EDE36F00444AD2 /* jefferymoulds.png */,
+				A9DCCB5918EDE36F00444AD2 /* jishaobukwelu.png */,
+				A9DCCB5A18EDE36F00444AD2 /* johnyam.png */,
+				A9DCCB5B18EDE36F00444AD2 /* jonfox.png */,
+				A9DCCB5C18EDE36F00444AD2 /* teddyconyers.png */,
+				A9DCCB5D18EDE36F00444AD2 /* tjmercer.png */,
+				A963D13D18EC978600E0AADD /* jeffking.png */,
+				A963D13A18EC8AC300E0AADD /* savithareddy.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		A963D14218EDA79F00E0AADD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A963D13718EC8A1F00E0AADD /* TDLTableViewController.h */,
+				A963D13818EC8A1F00E0AADD /* TDLTableViewController.m */,
+				A963D14318EDA7B200E0AADD /* TableView */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A963D14318EDA7B200E0AADD /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				A963D13F18EDA78B00E0AADD /* TDLTableViewCell.h */,
+				A963D14018EDA78B00E0AADD /* TDLTableViewCell.m */,
+			);
+			name = TableView;
+			sourceTree = "<group>";
+		};
+		A98144FB18F2F3C200CDCAB0 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				A98144FC18F2F44B00CDCAB0 /* TDLGitHubRequest.h */,
+				A98144FD18F2F44B00CDCAB0 /* TDLGitHubRequest.m */,
+				A9F2A72519195A740066D68E /* TDLSingleton.h */,
+				A9F2A72619195A740066D68E /* TDLSingleton.m */,
+			);
+			name = Random;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A963D10418EC8A0D00E0AADD /* ToDo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A963D13118EC8A0D00E0AADD /* Build configuration list for PBXNativeTarget "ToDo" */;
+			buildPhases = (
+				A963D10118EC8A0D00E0AADD /* Sources */,
+				A963D10218EC8A0D00E0AADD /* Frameworks */,
+				A963D10318EC8A0D00E0AADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToDo;
+			productName = ToDo;
+			productReference = A963D10518EC8A0D00E0AADD /* ToDo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A963D11F18EC8A0D00E0AADD /* ToDoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A963D13418EC8A0D00E0AADD /* Build configuration list for PBXNativeTarget "ToDoTests" */;
+			buildPhases = (
+				A963D11C18EC8A0D00E0AADD /* Sources */,
+				A963D11D18EC8A0D00E0AADD /* Frameworks */,
+				A963D11E18EC8A0D00E0AADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A963D12618EC8A0D00E0AADD /* PBXTargetDependency */,
+			);
+			name = ToDoTests;
+			productName = ToDoTests;
+			productReference = A963D12018EC8A0D00E0AADD /* ToDoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A963D0FD18EC8A0D00E0AADD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TDL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Jo Albright";
+				TargetAttributes = {
+					A963D11F18EC8A0D00E0AADD = {
+						TestTargetID = A963D10418EC8A0D00E0AADD;
+					};
+				};
+			};
+			buildConfigurationList = A963D10018EC8A0D00E0AADD /* Build configuration list for PBXProject "ToDo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A963D0FC18EC8A0D00E0AADD;
+			productRefGroup = A963D10618EC8A0D00E0AADD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A963D10418EC8A0D00E0AADD /* ToDo */,
+				A963D11F18EC8A0D00E0AADD /* ToDoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A963D10318EC8A0D00E0AADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9DCCB6918EDE36F00444AD2 /* teddyconyers.png in Resources */,
+				A963D11318EC8A0D00E0AADD /* InfoPlist.strings in Resources */,
+				A9DCCB6218EDE36F00444AD2 /* derekweber.png in Resources */,
+				A9DCCB6018EDE36F00444AD2 /* austenjohnson.png in Resources */,
+				A9DCCB6818EDE36F00444AD2 /* jonfox.png in Resources */,
+				A9DCCB6418EDE36F00444AD2 /* heidi.png in Resources */,
+				A9DCCB6318EDE36F00444AD2 /* edsalter.png in Resources */,
+				A9DCCB5E18EDE36F00444AD2 /* alihoushmand.png in Resources */,
+				A963D11B18EC8A0D00E0AADD /* Images.xcassets in Resources */,
+				A9DCCB5F18EDE36F00444AD2 /* ashbythornwell.png in Resources */,
+				A963D13B18EC8AC300E0AADD /* savithareddy.png in Resources */,
+				A98144FA18EF332400CDCAB0 /* GitHubFlow.storyboard in Resources */,
+				A9DCCB6118EDE36F00444AD2 /* austinnolan.png in Resources */,
+				A9DCCB6718EDE36F00444AD2 /* johnyam.png in Resources */,
+				A963D13E18EC978600E0AADD /* jeffking.png in Resources */,
+				A9DCCB6A18EDE36F00444AD2 /* tjmercer.png in Resources */,
+				A9DCCB6618EDE36F00444AD2 /* jishaobukwelu.png in Resources */,
+				A9DCCB6518EDE36F00444AD2 /* jefferymoulds.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A963D11E18EC8A0D00E0AADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A963D12C18EC8A0D00E0AADD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A963D10118EC8A0D00E0AADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A963D14118EDA78B00E0AADD /* TDLTableViewCell.m in Sources */,
+				A963D13918EC8A1F00E0AADD /* TDLTableViewController.m in Sources */,
+				A9F2A72719195A740066D68E /* TDLSingleton.m in Sources */,
+				A98144FE18F2F44B00CDCAB0 /* TDLGitHubRequest.m in Sources */,
+				A963D11518EC8A0D00E0AADD /* main.m in Sources */,
+				A963D11918EC8A0D00E0AADD /* TDLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A963D11C18EC8A0D00E0AADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A963D12E18EC8A0D00E0AADD /* ToDoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A963D12618EC8A0D00E0AADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A963D10418EC8A0D00E0AADD /* ToDo */;
+			targetProxy = A963D12518EC8A0D00E0AADD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A963D11118EC8A0D00E0AADD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A963D11218EC8A0D00E0AADD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A963D12A18EC8A0D00E0AADD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A963D12B18EC8A0D00E0AADD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A963D12F18EC8A0D00E0AADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A963D13018EC8A0D00E0AADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A963D13218EC8A0D00E0AADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToDo/ToDo-Prefix.pch";
+				INFOPLIST_FILE = "ToDo/ToDo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A963D13318EC8A0D00E0AADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToDo/ToDo-Prefix.pch";
+				INFOPLIST_FILE = "ToDo/ToDo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A963D13518EC8A0D00E0AADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToDo.app/ToDo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToDo/ToDo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ToDoTests/ToDoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A963D13618EC8A0D00E0AADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ToDo.app/ToDo";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ToDo/ToDo-Prefix.pch";
+				INFOPLIST_FILE = "ToDoTests/ToDoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A963D10018EC8A0D00E0AADD /* Build configuration list for PBXProject "ToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A963D12F18EC8A0D00E0AADD /* Debug */,
+				A963D13018EC8A0D00E0AADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A963D13118EC8A0D00E0AADD /* Build configuration list for PBXNativeTarget "ToDo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A963D13218EC8A0D00E0AADD /* Debug */,
+				A963D13318EC8A0D00E0AADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A963D13418EC8A0D00E0AADD /* Build configuration list for PBXNativeTarget "ToDoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A963D13518EC8A0D00E0AADD /* Debug */,
+				A963D13618EC8A0D00E0AADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A963D0FD18EC8A0D00E0AADD /* Project object */;
+}
