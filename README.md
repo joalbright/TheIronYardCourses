@@ -7,6 +7,7 @@
 - 2015 January . *Started in Swift -> last 5 weeks in Objective-C*
 - 2015 May . *Started in Swift -> middle 3 weeks in Objective-C*
 - 2015 September . *Started in Swift -> middle 2 weeks in Objective-C*
+- Random Projects . *Projects created across all courses*
 
 > Projects within folders are just a few of the ones I lectured on. Most are unfinished as homework was to finish them.
 
