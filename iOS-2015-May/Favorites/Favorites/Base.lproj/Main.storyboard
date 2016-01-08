@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Favorites" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="31n-Fm-ONG">
+                                <rect key="frame" x="10" y="30" width="450" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1AO-WZ-4ht"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="9UK-ET-uhC">
+                                <rect key="frame" x="0.0" y="80" width="600" height="520"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoriteCell" id="oYx-1q-d2R">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oYx-1q-d2R" id="RED-ZV-GK9">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KrB-2b-PrU">
+                                <rect key="frame" x="470" y="30" width="120" height="40"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="VQQ-bu-na0"/>
+                                    <constraint firstAttribute="height" constant="40" id="dKR-Ih-EDX"/>
+                                </constraints>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addFavorite:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tvb-oH-f1c"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="31n-Fm-ONG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="61q-iX-6LR"/>
+                            <constraint firstItem="9UK-ET-uhC" firstAttribute="top" secondItem="31n-Fm-ONG" secondAttribute="bottom" constant="10" id="6vf-qV-9hZ"/>
+                            <constraint firstAttribute="trailing" secondItem="KrB-2b-PrU" secondAttribute="trailing" constant="10" id="A5f-LM-xcR"/>
+                            <constraint firstAttribute="bottom" secondItem="9UK-ET-uhC" secondAttribute="bottom" id="Gn6-KQ-hLa"/>
+                            <constraint firstItem="31n-Fm-ONG" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="10" id="IVZ-L5-dza"/>
+                            <constraint firstItem="KrB-2b-PrU" firstAttribute="leading" secondItem="31n-Fm-ONG" secondAttribute="trailing" constant="10" id="Slg-mN-dMw"/>
+                            <constraint firstItem="KrB-2b-PrU" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="10" id="Tnb-nh-Lwr"/>
+                            <constraint firstItem="9UK-ET-uhC" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="t1l-jt-gvJ"/>
+                            <constraint firstAttribute="trailing" secondItem="9UK-ET-uhC" secondAttribute="trailing" id="uOB-sa-doS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="favoriteTextField" destination="31n-Fm-ONG" id="ARY-hQ-e9N"/>
+                        <outlet property="favoritesTableView" destination="9UK-ET-uhC" id="kjN-SI-mee"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="444" y="64"/>
+        </scene>
+    </scenes>
+</document>
