@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W1u-tZ-3oV">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Selfies-->
+        <scene sceneID="sWv-mH-R5b">
+            <objects>
+                <tableViewController id="i3N-Lu-lag" customClass="SelfieTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="419" sectionHeaderHeight="28" sectionFooterHeight="28" id="ILH-TO-wYj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SelfieCell" rowHeight="419" id="DOA-eq-3KW" customClass="SelfieTableViewCell">
+                                <rect key="frame" x="0.0" y="92" width="320" height="419"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DOA-eq-3KW" id="rb2-iE-vHQ">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="418.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Vkb-YZ-1vX">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="302"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaN-Bw-HgV">
+                                            <rect key="frame" x="8" y="319" width="304" height="40"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="selfieImageView" destination="Vkb-YZ-1vX" id="m4c-st-VGj"/>
+                                    <segue destination="q5k-FV-cKR" kind="show" id="k2u-Y8-7JS"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="i3N-Lu-lag" id="Qhh-KV-E2e"/>
+                            <outlet property="delegate" destination="i3N-Lu-lag" id="CA8-p0-2vd"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Selfies" id="Db1-DP-cS6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Zp-RP-JP1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="354"/>
+        </scene>
+        <!--Selfie Detail View Controller-->
+        <scene sceneID="wRa-0T-ZIq">
+            <objects>
+                <viewController id="q5k-FV-cKR" customClass="SelfieDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XaF-dj-9d9"/>
+                        <viewControllerLayoutGuide type="bottom" id="XRw-8P-6KW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kCT-ET-fgz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gA9-up-DAE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1262" y="354"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Wlh-QD-KKJ">
+            <objects>
+                <navigationController id="W1u-tZ-3oV" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DTn-Ts-Ce7">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="i3N-Lu-lag" kind="relationship" relationship="rootViewController" id="qyZ-AQ-qaS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gWT-xH-6OX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="424" y="354"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "99FF2DCBE9920DF34A56B7CA9DC922CD836D842F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "EA6B21FB6D16E67278EE8958B033E74ED7E3DC19" : 0,
+    "99FF2DCBE9920DF34A56B7CA9DC922CD836D842F" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F8F9A45F-E116-4CCF-8C6F-081267A6EF4D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "EA6B21FB6D16E67278EE8958B033E74ED7E3DC19" : "iOS-2015-September\/",
+    "99FF2DCBE9920DF34A56B7CA9DC922CD836D842F" : "Camera\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Selfie",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Selfie\/Selfie.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joalbright\/Camera.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "99FF2DCBE9920DF34A56B7CA9DC922CD836D842F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joalbright\/iOS-2015-September.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EA6B21FB6D16E67278EE8958B033E74ED7E3DC19"
+    }
+  ]
+}
